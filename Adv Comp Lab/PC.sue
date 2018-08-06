@@ -1,0 +1,16 @@
+# SUE version MMI_SUE4.4.0
+
+proc SCHEMATIC_PC {} {
+  make MUX_64_32 -origin {390 190}
+  make Adder_32bits -origin {770 190}
+  make input -name 4 -origin {670 200}
+  make input -name select -origin {290 210}
+  make input -name {load[31:0]} -origin {290 190}
+  make output -name PCout -origin {900 200}
+  make_wire 870 200 900 200
+  make_wire 900 200 900 260
+  make_wire 900 260 160 260
+  make_wire 160 260 160 170
+  make_wire 160 170 290 170
+}
+

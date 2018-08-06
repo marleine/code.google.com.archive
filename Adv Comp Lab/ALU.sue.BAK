@@ -1,0 +1,54 @@
+# SUE version MMI_SUE4.4.0
+
+proc SCHEMATIC_ALU {} {
+  make Comp -origin {120 190}
+  make MUX_64_32 -origin {730 340}
+  make Adder_32bits -origin {450 170}
+  make input -name {a[31:0]} -origin {320 160}
+  make input -name {b[31:0]} -origin {-50 180}
+  make input -name {s[2:0]} -origin {40 110}
+  make output -name cout -origin {550 160}
+  make input -name {s[1]} -origin {-40 200}
+  make input -name {s[0]} -origin {320 200}
+  make input -name {s[2]} -origin {630 360}
+  make Logic_64_32 -origin {450 360}
+  make output -name {ALU_Result[31:0]} -origin {900 320}
+  make input -name {s[1:0]} -origin {320 380}
+  make_wire 0 180 0 360
+  make_wire 570 180 550 180
+  make_wire 570 320 630 320
+  make_wire 570 180 570 320
+  make_wire 550 340 630 340
+  make_wire 830 320 900 320
+  make_wire 350 380 320 380
+  make_wire 0 360 350 360
+  make_wire 210 180 350 180
+  make_wire -50 180 0 180
+  make_wire 0 180 20 180
+  make_wire -40 200 20 200
+  make_wire 320 200 350 200
+  make_wire 330 160 330 340
+  make_wire 320 160 330 160
+  make_wire 330 160 350 160
+  make_wire 330 340 350 340
+}
+
+proc ICON_ALU args {
+  icon_setup $args {{origin {0 0}} {orient R0} {name {}} {M {}} {dpc {}}}
+  icon_term -type input -origin {-100 -20} -name {a[31:0]}
+  icon_term -type input -origin {-100 0} -name {b[31:0]}
+  icon_term -type input -origin {-100 20} -name {s[2:0]}
+  icon_term -type output -origin {180 -20} -name cout
+  icon_term -type output -origin {180 0} -name {ALU_Result[31:0]}
+  icon_property -origin {-50 130} -type user -name name
+  icon_property -origin {-50 150} -type user -name M
+  icon_property -origin {-50 170} -type user -name dpc
+  icon_property -origin {-90 -20} -label {a[31:0]}
+  icon_property -origin {-90 0} -label {b[31:0]}
+  icon_property -origin {-90 20} -label {s[2:0]}
+  icon_property -origin {20 40} -label ALU
+  icon_property -origin {120 -20} -label cout
+  icon_property -origin {10 0} -label {ALU_Result[31:0]}
+  icon_line -100 -50 -100 50 180 50 180 -50 -100 -50
+}
+

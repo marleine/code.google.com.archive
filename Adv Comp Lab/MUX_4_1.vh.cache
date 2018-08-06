@@ -1,0 +1,7 @@
+set NETLIST_CACHE(MUX_4_1,cells) {{schematic MUX_2_1}}
+set netlist_props verilog
+set netlist_level 1000
+set NETLIST_CACHE(MUX_4_1,version) MMI_SUE4.4.0
+set NETLIST_CACHE(MUX_4_1) {{module MUX_4_1 (S, a, b, c, d, out);} {	input		a;} {	input		b;} {	input		c;} {	input		d;} {	input	[1:0]	S;} {	output		out;} { } {	wire		net_2;} {	wire		net_1;} { } {	MUX_2_1 MUX_2_1(.out(net_1), .a(a), .b(b), .S0(S[0]));} {	MUX_2_1 MUX_2_2(.out(net_2), .b(d), .S0(S[0]), .a(c));} {	MUX_2_1 MUX_2_3(.a(net_1), .b(net_2), .out(out), .S0(S[1]));} {} {endmodule		// MUX_4_1} {}}
+set NETLIST_CACHE(MUX_4_1,names) {{260 440 {0 c} {2 c}} {260 460 {0 d} {2 d}} {460 440 {0 net_2}} {360 460 {0 MUX_2_2}} {260 480 {0 S[0]}} {460 380 {1 S[1]}} {510 340 {0 net_1}} {710 340 {0 out} {2 out}} {510 360 {0 net_2}} {610 360 {0 MUX_2_3}} {510 380 {0 S[1]}} {260 300 {0 a} {2 a}} {140 340 {1 S[0]}} {260 320 {0 b} {2 b}} {460 300 {0 net_1}} {360 320 {0 MUX_2_1}} {260 340 {0 S[0]}}}
+set NETLIST_CACHE(MUX_4_1,wires) {{140 340 140 480 S[0]} {460 380 510 380 S[1]} {460 300 490 300 net_1} {490 300 490 340 net_1} {490 340 510 340 net_1} {460 440 490 440 net_2} {490 360 490 440 net_2} {490 360 510 360 net_2} {140 480 260 480 S[0]} {140 340 260 340 S[0]}}

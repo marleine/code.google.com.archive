@@ -1,0 +1,16 @@
+# SUE version MMI_SUE4.4.0
+
+proc SCHEMATIC_Reg0_1bit {} {
+  make global -name gnd -origin {130 200}
+  make nmos -orient R90 -origin {440 60}
+  make nmos -orient R90 -origin {440 200}
+  make output -name out1 -origin {480 60}
+  make output -name out2 -origin {480 200}
+  make input -orient R90 -name R1 -origin {440 0}
+  make input -orient R90 -name R2 -origin {440 140}
+  make_wire 320 200 400 200
+  make_wire 320 200 130 200
+  make_wire 320 60 400 60
+  make_wire 320 60 320 200
+}
+

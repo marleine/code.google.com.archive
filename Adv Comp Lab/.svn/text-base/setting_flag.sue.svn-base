@@ -1,0 +1,70 @@
+# SUE version MMI_SUE4.4.0
+
+proc SCHEMATIC_setting_flag {} {
+  make neg -origin {220 240}
+  make nor2 -origin {560 250}
+  make input -name {ALU_Result[31]} -origin {480 330}
+  make nor2 -origin {120 -60}
+  make nand2 -origin {270 40}
+  make inverter -origin {370 40}
+  make input -name {IR[11]} -origin {210 60}
+  make input -name {IR[31]} -origin {40 -40}
+  make input -name {IR[30]} -origin {50 -80}
+  make output -name Z -origin {840 -100}
+  make output -name N -origin {860 30}
+  make output -name P -origin {900 200}
+  make input -name {ALU_Result[31:0]} -origin {130 230}
+  make flags -origin {680 -90}
+  make flags -origin {690 30}
+  make flags -origin {770 210}
+  make_wire 540 270 520 270
+  make_wire 190 -60 220 -60
+  make_wire 220 -60 220 20
+  make_wire 220 20 250 20
+  make_wire 420 40 500 40
+  make_wire 500 40 500 -80
+  make_wire 500 -80 580 -80
+  make_wire 500 40 500 180
+  make_wire 500 180 640 180
+  make_wire 640 180 640 220
+  make_wire 640 220 670 220
+  make_wire 630 250 650 250
+  make_wire 650 250 650 200
+  make_wire 650 200 670 200
+  make_wire 450 230 450 -100
+  make_wire 450 -100 580 -100
+  make_wire 450 230 540 230
+  make_wire 450 230 330 230
+  make_wire 780 -100 840 -100
+  make_wire 870 200 900 200
+  make_wire 480 330 520 330
+  make_wire 790 20 860 20
+  make_wire 860 20 860 30
+  make_wire 590 40 500 40
+  make_wire 520 20 590 20
+  make_wire 520 20 520 270
+  make_wire 520 270 520 330
+  make_wire 250 60 210 60
+  make_wire 100 -40 40 -40
+  make_wire 100 -80 50 -80
+}
+
+proc ICON_setting_flag args {
+  icon_setup $args {{origin {0 0}} {orient R0} {name {}} {M {}} {dpc {}}}
+  icon_term -type input -origin {-100 -20} -name {ALU_Result[31:0]}
+  icon_term -type input -origin {-100 30} -name {IR[31:11]}
+  icon_term -type output -origin {100 10} -name N
+  icon_term -type output -origin {100 30} -name P
+  icon_term -type output -origin {100 50} -name Z
+  icon_property -origin {-50 160} -type user -name name
+  icon_property -origin {-50 180} -type user -name M
+  icon_property -origin {-50 200} -type user -name dpc
+  icon_line -100 -30 -100 70 100 70 100 -40 -100 -40 -100 -30
+  icon_property -origin {-60 60} -label Setting_Flag
+  icon_property -origin {-90 -20} -label {ALU_Result[31:0]}
+  icon_property -origin {-90 30} -label {IR[31:11]}
+  icon_property -origin {70 10} -label N
+  icon_property -origin {70 30} -label P
+  icon_property -origin {70 50} -label Z
+}
+

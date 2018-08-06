@@ -1,0 +1,67 @@
+# SUE version MMI_SUE4.4.0
+
+proc SCHEMATIC_Logic {} {
+  make inverter -origin {510 270}
+  make inverter -origin {510 380}
+  make my_xor -origin {420 460}
+  make my_xor -origin {420 540}
+  make inverter -origin {500 540}
+  make input -name a -origin {270 250}
+  make input -name b -origin {270 290}
+  make output -name Out -origin {930 320}
+  make nand2 -origin {410 270}
+  make nor2 -origin {410 380}
+  make MUX_4_1 -origin {820 400}
+  make input -name {S[1:0]} -origin {720 400}
+  make_wire 340 250 340 360
+  make_wire 300 290 300 400
+  make_wire 350 360 350 440
+  make_wire 360 440 360 520
+  make_wire 330 400 330 480
+  make_wire 350 480 350 560
+  make_wire 270 290 300 290
+  make_wire 300 290 390 290
+  make_wire 300 400 330 400
+  make_wire 330 400 390 400
+  make_wire 330 480 350 480
+  make_wire 350 480 380 480
+  make_wire 350 560 380 560
+  make_wire 270 250 340 250
+  make_wire 340 250 390 250
+  make_wire 340 360 350 360
+  make_wire 350 360 390 360
+  make_wire 360 520 380 520
+  make_wire 350 440 360 440
+  make_wire 360 440 380 440
+  make_wire 560 270 640 270
+  make_wire 560 380 640 380
+  make_wire 650 460 470 460
+  make_wire 660 540 550 540
+  make_wire 660 380 720 380
+  make_wire 660 380 660 540
+  make_wire 920 320 930 320
+  make_wire 650 360 720 360
+  make_wire 650 360 650 460
+  make_wire 640 340 720 340
+  make_wire 640 340 640 380
+  make_wire 640 320 720 320
+  make_wire 640 270 640 320
+}
+
+proc ICON_Logic args {
+  icon_setup $args {{origin {0 0}} {orient R0} {name {}} {M {}} {dpc {}}}
+  icon_term -type input -origin {-100 -20} -name a
+  icon_term -type input -origin {-100 0} -name b
+  icon_term -type input -origin {-100 20} -name {S[1:0]}
+  icon_term -type output -origin {100 -20} -name Out
+  icon_property -origin {-50 130} -type user -name name
+  icon_property -origin {-50 150} -type user -name M
+  icon_property -origin {-50 170} -type user -name dpc
+  icon_line -100 -50 -100 50 100 50 100 -50 -100 -50
+  icon_property -origin {-90 -20} -label a
+  icon_property -origin {-90 0} -label b
+  icon_property -origin {-90 20} -label {S[1:0]}
+  icon_property -origin {60 -20} -label Out
+  icon_property -origin {-10 30} -label Logic_2_1
+}
+

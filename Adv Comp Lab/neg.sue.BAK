@@ -1,0 +1,53 @@
+# SUE version MMI_SUE4.4.0
+
+proc SCHEMATIC_neg {} {
+  generate nor2 nor32 -ninputs 32
+  make nor32 -WP 4 -origin {-30 570}
+  make output -name out -origin {40 570}
+  make input -name {A[0]} -origin {-50 260}
+  make input -name {A[1]} -origin {-50 280}
+  make input -name {A[2]} -origin {-50 300}
+  make input -name {A[3]} -origin {-50 320}
+  make input -name {A[4]} -origin {-50 340}
+  make input -name {A[5]} -origin {-50 360}
+  make input -name {A[6]} -origin {-50 380}
+  make input -name {A[7]} -origin {-50 400}
+  make input -name {A[8]} -origin {-50 420}
+  make input -name {A[9]} -origin {-50 440}
+  make input -name {A[10]} -origin {-50 460}
+  make input -name {A[11]} -origin {-50 480}
+  make input -name {A[12]} -origin {-50 500}
+  make input -name {A[13]} -origin {-50 520}
+  make input -name {A[14]} -origin {-50 540}
+  make input -name {A[15]} -origin {-50 560}
+  make input -name {A[16]} -origin {-50 580}
+  make input -name {A[17]} -origin {-50 600}
+  make input -name {A[18]} -origin {-50 620}
+  make input -name {A[19]} -origin {-50 640}
+  make input -name {A[20]} -origin {-50 660}
+  make input -name {A[21]} -origin {-50 680}
+  make input -name {A[22]} -origin {-50 700}
+  make input -name {A[23]} -origin {-50 720}
+  make input -name {A[24]} -origin {-50 740}
+  make input -name {A[25]} -origin {-50 760}
+  make input -name {A[26]} -origin {-50 780}
+  make input -name {A[27]} -origin {-50 800}
+  make input -name {A[28]} -origin {-50 820}
+  make input -name {A[29]} -origin {-50 840}
+  make input -name {A[30]} -origin {-50 860}
+  make input -name {A[31]} -origin {-50 880}
+}
+
+proc ICON_neg args {
+  icon_setup $args {{origin {0 0}} {orient R0} {name {}} {M {}} {dpc {}}}
+  icon_term -type input -origin {-90 -10} -name {A[31:0]}
+  icon_term -type output -origin {110 -10} -name out
+  icon_property -origin {-40 140} -type user -name name
+  icon_property -origin {-40 160} -type user -name M
+  icon_property -origin {-40 180} -type user -name dpc
+  icon_line -90 -40 -90 30 110 30 110 -40 -90 -40
+  icon_property -origin {-80 -10} -label {A[31:0]}
+  icon_property -origin {70 -10} -label out
+  icon_property -origin {-10 20} -label {Neg - Nor}
+}
+

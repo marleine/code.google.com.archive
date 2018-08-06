@@ -1,0 +1,199 @@
+# SUE version MMI_SUE4.4.0 (auto-save)
+
+proc SCHEMATIC_Logic_64_32 {} {
+  make Logic -origin {470 120}
+  make Logic -origin {470 230}
+  make Logic -origin {470 340}
+  make Logic -origin {470 450}
+  make Logic -origin {470 560}
+  make Logic -origin {470 670}
+  make Logic -origin {470 780}
+  make Logic -origin {470 890}
+  make Logic -origin {470 1000}
+  make Logic -origin {470 1110}
+  make Logic -origin {470 1220}
+  make Logic -origin {470 1330}
+  make Logic -origin {470 1440}
+  make Logic -origin {470 1550}
+  make Logic -origin {470 1660}
+  make Logic -origin {470 1770}
+  make Logic -origin {470 1880}
+  make Logic -origin {470 1990}
+  make Logic -origin {470 2100}
+  make Logic -origin {470 2210}
+  make Logic -origin {470 2320}
+  make Logic -origin {470 2430}
+  make Logic -origin {470 2540}
+  make Logic -origin {470 2650}
+  make Logic -origin {470 2760}
+  make Logic -origin {470 2870}
+  make Logic -origin {470 2980}
+  make Logic -origin {470 3090}
+  make Logic -origin {470 3200}
+  make Logic -origin {470 3310}
+  make Logic -origin {470 3420}
+  make Logic -origin {470 3530}
+  make input -name {A[0]} -origin {370 100}
+  make input -name {A[1]} -origin {370 210}
+  make input -name {A[2]} -origin {370 320}
+  make input -name {A[3]} -origin {370 430}
+  make input -name {A[4]} -origin {370 540}
+  make input -name {A[5]} -origin {370 650}
+  make input -name {A[6]} -origin {370 760}
+  make input -name {A[7]} -origin {370 870}
+  make input -name {A[8]} -origin {370 980}
+  make input -name {A[9]} -origin {370 1090}
+  make input -name {A[10]} -origin {370 1200}
+  make input -name {A[11]} -origin {370 1310}
+  make input -name {A[12]} -origin {370 1420}
+  make input -name {A[13]} -origin {370 1530}
+  make input -name {A[14]} -origin {370 1640}
+  make input -name {A[15]} -origin {370 1750}
+  make input -name {A[16]} -origin {370 1860}
+  make input -name {A[17]} -origin {370 1970}
+  make input -name {A[18]} -origin {370 2080}
+  make input -name {A[19]} -origin {370 2190}
+  make input -name {A[20]} -origin {370 2300}
+  make input -name {A[21]} -origin {370 2410}
+  make input -name {A[22]} -origin {370 2520}
+  make input -name {A[23]} -origin {370 2630}
+  make input -name {A[24]} -origin {370 2740}
+  make input -name {A[25]} -origin {370 2850}
+  make input -name {A[26]} -origin {370 2960}
+  make input -name {A[27]} -origin {370 3070}
+  make input -name {A[28]} -origin {370 3180}
+  make input -name {A[29]} -origin {370 3290}
+  make input -name {A[30]} -origin {370 3400}
+  make input -name {A[31]} -origin {370 3510}
+  make input -name {B[0]} -origin {370 120}
+  make input -name {B[1]} -origin {370 230}
+  make input -name {B[2]} -origin {370 340}
+  make input -name {B[3]} -origin {370 450}
+  make input -name {B[4]} -origin {370 560}
+  make input -name {B[5]} -origin {370 670}
+  make input -name {B[6]} -origin {370 780}
+  make input -name {B[7]} -origin {370 890}
+  make input -name {B[8]} -origin {370 1000}
+  make input -name {B[9]} -origin {370 1110}
+  make input -name {B[10]} -origin {370 1220}
+  make input -name {B[11]} -origin {370 1330}
+  make input -name {B[12]} -origin {370 1440}
+  make input -name {B[13]} -origin {370 1550}
+  make input -name {B[14]} -origin {370 1660}
+  make input -name {B[15]} -origin {370 1770}
+  make input -name {B[16]} -origin {370 1880}
+  make input -name {B[17]} -origin {370 1990}
+  make input -name {B[18]} -origin {370 2100}
+  make input -name {B[19]} -origin {370 2210}
+  make input -name {B[20]} -origin {370 2320}
+  make input -name {B[21]} -origin {370 2430}
+  make input -name {B[22]} -origin {370 2540}
+  make input -name {B[23]} -origin {370 2650}
+  make input -name {B[24]} -origin {370 2760}
+  make input -name {B[25]} -origin {370 2870}
+  make input -name {B[26]} -origin {370 2980}
+  make input -name {B[27]} -origin {370 3090}
+  make input -name {B[28]} -origin {370 3200}
+  make input -name {B[29]} -origin {370 3310}
+  make input -name {B[30]} -origin {370 3420}
+  make input -name {B[31]} -origin {370 3530}
+  make input -name {S[1:0]} -origin {100 60}
+  make output -origin {570 100}
+  make output -origin {570 210}
+  make output -origin {570 320}
+  make output -origin {570 430}
+  make output -origin {570 540}
+  make output -origin {570 650}
+  make output -origin {570 760}
+  make output -origin {570 870}
+  make output -origin {570 980}
+  make output -origin {570 1090}
+  make output -origin {570 1200}
+  make output -origin {570 1310}
+  make output -origin {570 1420}
+  make output -origin {570 1530}
+  make output -origin {570 1640}
+  make output -origin {570 1750}
+  make output -origin {570 1860}
+  make output -origin {570 1970}
+  make output -origin {570 2080}
+  make output -origin {570 2190}
+  make output -origin {570 2300}
+  make output -origin {570 2410}
+  make output -origin {570 2520}
+  make output -origin {570 2630}
+  make output -origin {570 3180}
+  make output -origin {570 3290}
+  make output -origin {570 3400}
+  make output -origin {570 3510}
+  make output -origin {570 2740}
+  make output -origin {570 2850}
+  make output -origin {570 2960}
+  make output -origin {570 3070}
+  make_wire 100 60 230 60
+  make_wire 230 3550 370 3550
+  make_wire 370 3440 230 3440
+  make_wire 230 3440 230 3550
+  make_wire 370 3330 230 3330
+  make_wire 230 3330 230 3440
+  make_wire 370 3220 230 3220
+  make_wire 230 3220 230 3330
+  make_wire 370 3110 230 3110
+  make_wire 230 3110 230 3220
+  make_wire 370 3000 230 3000
+  make_wire 230 3000 230 3110
+  make_wire 370 2890 230 2890
+  make_wire 230 2890 230 3000
+  make_wire 370 2780 230 2780
+  make_wire 230 2780 230 2890
+  make_wire 370 2670 230 2670
+  make_wire 230 2670 230 2780
+  make_wire 370 2560 230 2560
+  make_wire 230 2560 230 2670
+  make_wire 370 2450 230 2450
+  make_wire 230 2450 230 2560
+  make_wire 370 2340 230 2340
+  make_wire 230 2340 230 2450
+  make_wire 370 2230 230 2230
+  make_wire 230 2230 230 2340
+  make_wire 370 2120 230 2120
+  make_wire 230 2120 230 2230
+  make_wire 370 2010 230 2010
+  make_wire 230 2010 230 2120
+  make_wire 370 1900 230 1900
+  make_wire 230 1900 230 2010
+  make_wire 370 1790 230 1790
+  make_wire 230 1790 230 1900
+  make_wire 370 1680 230 1680
+  make_wire 230 1680 230 1790
+  make_wire 370 1570 230 1570
+  make_wire 230 1570 230 1680
+  make_wire 370 1460 230 1460
+  make_wire 230 1460 230 1570
+  make_wire 370 1350 230 1350
+  make_wire 230 1350 230 1460
+  make_wire 370 1240 230 1240
+  make_wire 230 1240 230 1350
+  make_wire 370 1130 230 1130
+  make_wire 230 1130 230 1240
+  make_wire 370 1020 230 1020
+  make_wire 230 1020 230 1130
+  make_wire 370 910 230 910
+  make_wire 230 910 230 1020
+  make_wire 370 800 230 800
+  make_wire 230 800 230 910
+  make_wire 370 690 230 690
+  make_wire 230 690 230 800
+  make_wire 370 580 230 580
+  make_wire 230 580 230 690
+  make_wire 370 470 230 470
+  make_wire 230 470 230 580
+  make_wire 370 360 230 360
+  make_wire 230 360 230 470
+  make_wire 370 250 230 250
+  make_wire 230 250 230 360
+  make_wire 370 140 230 140
+  make_wire 230 140 230 250
+  make_wire 230 140 230 60
+}
+

@@ -1,0 +1,55 @@
+# SUE version MMI_SUE4.4.0
+
+proc SCHEMATIC_Reg_1bit {} {
+  make inverter -orient RXY -origin {560 210}
+  make input -name data -origin {230 260}
+  make nmos -orient R90 -M 4 -origin {390 260}
+  make inverter -M 4 -origin {550 380}
+  make input -orient R90 -name write -origin {390 200}
+  make inverter -M 4 -origin {290 260}
+  make nmos -orient R90 -origin {730 230}
+  make nmos -orient R90 -origin {730 360}
+  make output -name out1 -origin {770 230}
+  make output -name out2 -origin {770 360}
+  make input -orient R90 -name R1 -origin {730 170}
+  make input -orient R90 -name R2 -origin {730 300}
+  make_wire 590 210 660 210
+  make_wire 440 210 510 210
+  make_wire 600 380 660 380
+  make_wire 440 380 520 380
+  make_wire 440 210 440 260
+  make_wire 440 260 440 380
+  make_wire 230 260 260 260
+  make_wire 340 260 350 260
+  make_wire 430 260 440 260
+  make_wire 660 360 690 360
+  make_wire 660 360 660 380
+  make_wire 660 230 690 230
+  make_wire 660 230 660 210
+  make_wire 660 230 660 360
+}
+
+proc ICON_Reg_1bit args {
+  icon_setup $args {{origin {0 0}} {orient R0} {name {}} {M {}} {dpc {}}}
+  icon_term -type input -origin {-100 -40} -name data
+  icon_term -type input -origin {-100 -10} -name R1
+  icon_term -type input -origin {-100 10} -name R2
+  icon_term -type input -origin {-100 40} -name write
+  icon_term -type output -origin {100 -20} -name out1
+  icon_term -type output -origin {100 0} -name out2
+  icon_property -origin {-90 140} -type user -name name
+  icon_property -origin {-90 160} -type user -name M
+  icon_property -origin {-90 180} -type user -name dpc
+  icon_line -100 -60 -100 60 100 60 100 -60 -100 -60
+  icon_property -origin {-90 -40} -label data
+  icon_property -origin {-90 -10} -label R1
+  icon_property -origin {-90 10} -label R2
+  icon_property -origin {-90 40} -label write
+  icon_property -origin {50 -20} -label out1
+  icon_property -origin {50 0} -label out2
+  icon_property -origin {0 40} -label Reg_1bit
+  icon_property -origin {-900 90} -type auto -name verilog -text {Reg_1bit [unique_name "" $name Reg_1bit]
+(.data($data), .R1($R1), .R2($R2), .write($write), 
+.out1($out1), .out2($out2))\;}
+}
+

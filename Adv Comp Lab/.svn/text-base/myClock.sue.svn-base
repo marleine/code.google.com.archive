@@ -1,0 +1,26 @@
+# SUE version MMI_SUE4.4.0
+
+proc SCHEMATIC_myClock {} {
+  make Dec_3x8 -origin {600 220}
+  make name_net_s -name {out2D[7:0]} -origin {720 220}
+  make name_net_s -name {out2D[0]} -origin {820 170}
+  make name_net_s -name {out2D[1]} -origin {820 190}
+  make name_net_s -name {out2D[2]} -origin {820 210}
+  make name_net_s -name {out2D[3]} -origin {820 230}
+  make name_net_s -name {out2D[4]} -origin {820 250}
+  make name_net_s -name {out2D[5]} -origin {820 270}
+  make output -name {Clockout[0]} -origin {860 170}
+  make output -name {Clockout[1]} -origin {860 190}
+  make output -name {Clockout[2]} -origin {860 210}
+  make output -name {Clockout[3]} -origin {860 230}
+  make output -name {Clockout[4]} -origin {860 250}
+  make output -name {Clockout[5]} -origin {860 270}
+  make_wire 820 170 860 170
+  make_wire 700 220 720 220
+  make_wire 820 190 860 190
+  make_wire 820 210 860 210
+  make_wire 820 230 860 230
+  make_wire 820 250 860 250
+  make_wire 820 270 860 270
+}
+

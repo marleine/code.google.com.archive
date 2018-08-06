@@ -1,0 +1,363 @@
+| units: 1.0  tech: sue  format: MIT
+A ALU_Result[0] input
+A ALU_Result[1] input
+A ALU_Result[2] input
+A ALU_Result[3] input
+A ALU_Result[4] input
+A ALU_Result[5] input
+A ALU_Result[6] input
+A ALU_Result[7] input
+A ALU_Result[8] input
+A ALU_Result[9] input
+A ALU_Result[10] input
+A ALU_Result[11] input
+A ALU_Result[12] input
+A ALU_Result[13] input
+A ALU_Result[14] input
+A ALU_Result[15] input
+A ALU_Result[16] input
+A ALU_Result[17] input
+A ALU_Result[18] input
+A ALU_Result[19] input
+A ALU_Result[20] input
+A ALU_Result[21] input
+A ALU_Result[22] input
+A ALU_Result[23] input
+A ALU_Result[24] input
+A ALU_Result[25] input
+A ALU_Result[26] input
+A ALU_Result[27] input
+A ALU_Result[28] input
+A ALU_Result[29] input
+A ALU_Result[30] input
+A ALU_Result[31] input
+A IR[11] input
+A IR[30] input
+A IR[31] input
+A N output
+A P output
+A Z output
+| begin neg 220 240
+| begin neg.nor32 -30 570
+| device neg.nor32.nmos 0 100
+n ALU_Result[31] gnd net_3 24 100
+| device neg.nor32.pmos 0 0
+p ALU_Result[31] neg.nor32.net_21 net_3 24 400
+| device neg.nor32.nmos_1 160 100
+n ALU_Result[30] gnd net_3 24 100
+| device neg.nor32.pmos_1 0 -100
+p ALU_Result[30] neg.nor32.net_19 neg.nor32.net_21 24 400
+| device neg.nor32.nmos_2 320 100
+n ALU_Result[29] gnd net_3 24 100
+| device neg.nor32.pmos_2 0 -200
+p ALU_Result[29] neg.nor32.net_29 neg.nor32.net_19 24 400
+| device neg.nor32.nmos_3 480 100
+n ALU_Result[28] gnd net_3 24 100
+| device neg.nor32.pmos_3 0 -300
+p ALU_Result[28] neg.nor32.net_8 neg.nor32.net_29 24 400
+| device neg.nor32.nmos_4 640 100
+n ALU_Result[27] gnd net_3 24 100
+| device neg.nor32.pmos_4 0 -400
+p ALU_Result[27] neg.nor32.net_17 neg.nor32.net_8 24 400
+| device neg.nor32.nmos_5 800 100
+n ALU_Result[26] gnd net_3 24 100
+| device neg.nor32.pmos_5 0 -500
+p ALU_Result[26] neg.nor32.net_27 neg.nor32.net_17 24 400
+| device neg.nor32.nmos_6 960 100
+n ALU_Result[25] gnd net_3 24 100
+| device neg.nor32.pmos_6 0 -600
+p ALU_Result[25] neg.nor32.net_6 neg.nor32.net_27 24 400
+| device neg.nor32.nmos_7 1120 100
+n ALU_Result[24] gnd net_3 24 100
+| device neg.nor32.pmos_7 0 -700
+p ALU_Result[24] neg.nor32.net_15 neg.nor32.net_6 24 400
+| device neg.nor32.nmos_8 1280 100
+n ALU_Result[23] gnd net_3 24 100
+| device neg.nor32.pmos_8 0 -800
+p ALU_Result[23] neg.nor32.net_25 neg.nor32.net_15 24 400
+| device neg.nor32.nmos_9 1440 100
+n ALU_Result[22] gnd net_3 24 100
+| device neg.nor32.pmos_9 0 -900
+p ALU_Result[22] neg.nor32.net_2 neg.nor32.net_25 24 400
+| device neg.nor32.nmos_10 1600 100
+n ALU_Result[21] gnd net_3 24 100
+| device neg.nor32.pmos_10 0 -1000
+p ALU_Result[21] neg.nor32.net_14 neg.nor32.net_2 24 400
+| device neg.nor32.nmos_11 1760 100
+n ALU_Result[20] gnd net_3 24 100
+| device neg.nor32.pmos_11 0 -1100
+p ALU_Result[20] neg.nor32.net_24 neg.nor32.net_14 24 400
+| device neg.nor32.nmos_12 1920 100
+n ALU_Result[19] gnd net_3 24 100
+| device neg.nor32.pmos_12 0 -1200
+p ALU_Result[19] neg.nor32.net_5 neg.nor32.net_24 24 400
+| device neg.nor32.nmos_13 2080 100
+n ALU_Result[18] gnd net_3 24 100
+| device neg.nor32.pmos_13 0 -1300
+p ALU_Result[18] neg.nor32.net_13 neg.nor32.net_5 24 400
+| device neg.nor32.nmos_14 2240 100
+n ALU_Result[17] gnd net_3 24 100
+| device neg.nor32.pmos_14 0 -1400
+p ALU_Result[17] neg.nor32.net_23 neg.nor32.net_13 24 400
+| device neg.nor32.nmos_15 2400 100
+n ALU_Result[16] gnd net_3 24 100
+| device neg.nor32.pmos_15 0 -1500
+p ALU_Result[16] neg.nor32.net_1 neg.nor32.net_23 24 400
+| device neg.nor32.nmos_16 2560 100
+n ALU_Result[15] gnd net_3 24 100
+| device neg.nor32.pmos_16 0 -1600
+p ALU_Result[15] neg.nor32.net_12 neg.nor32.net_1 24 400
+| device neg.nor32.nmos_17 2720 100
+n ALU_Result[14] gnd net_3 24 100
+| device neg.nor32.pmos_17 0 -1700
+p ALU_Result[14] neg.nor32.net_22 neg.nor32.net_12 24 400
+| device neg.nor32.nmos_18 2880 100
+n ALU_Result[13] gnd net_3 24 100
+| device neg.nor32.pmos_18 0 -1800
+p ALU_Result[13] neg.nor32.net_31 neg.nor32.net_22 24 400
+| device neg.nor32.nmos_19 3040 100
+n ALU_Result[12] gnd net_3 24 100
+| device neg.nor32.pmos_19 0 -1900
+p ALU_Result[12] neg.nor32.net_10 neg.nor32.net_31 24 400
+| device neg.nor32.nmos_20 3200 100
+n ALU_Result[11] gnd net_3 24 100
+| device neg.nor32.pmos_20 0 -2000
+p ALU_Result[11] neg.nor32.net_11 neg.nor32.net_10 24 400
+| device neg.nor32.nmos_21 3360 100
+n ALU_Result[10] gnd net_3 24 100
+| device neg.nor32.pmos_21 0 -2100
+p ALU_Result[10] neg.nor32.net_20 neg.nor32.net_11 24 400
+| device neg.nor32.nmos_22 3520 100
+n ALU_Result[9] gnd net_3 24 100
+| device neg.nor32.pmos_22 0 -2200
+p ALU_Result[9] neg.nor32.net_30 neg.nor32.net_20 24 400
+| device neg.nor32.nmos_23 3680 100
+n ALU_Result[8] gnd net_3 24 100
+| device neg.nor32.pmos_23 0 -2300
+p ALU_Result[8] neg.nor32.net_9 neg.nor32.net_30 24 400
+| device neg.nor32.nmos_24 3840 100
+n ALU_Result[7] gnd net_3 24 100
+| device neg.nor32.pmos_24 0 -2400
+p ALU_Result[7] neg.nor32.net_18 neg.nor32.net_9 24 400
+| device neg.nor32.nmos_25 4000 100
+n ALU_Result[6] gnd net_3 24 100
+| device neg.nor32.pmos_25 0 -2500
+p ALU_Result[6] neg.nor32.net_28 neg.nor32.net_18 24 400
+| device neg.nor32.nmos_26 4160 100
+n ALU_Result[5] gnd net_3 24 100
+| device neg.nor32.pmos_26 0 -2600
+p ALU_Result[5] neg.nor32.net_7 neg.nor32.net_28 24 400
+| device neg.nor32.nmos_27 4320 100
+n ALU_Result[4] gnd net_3 24 100
+| device neg.nor32.pmos_27 0 -2700
+p ALU_Result[4] neg.nor32.net_16 neg.nor32.net_7 24 400
+| device neg.nor32.nmos_28 4480 100
+n ALU_Result[3] gnd net_3 24 100
+| device neg.nor32.pmos_28 0 -2800
+p ALU_Result[3] neg.nor32.net_26 neg.nor32.net_16 24 400
+| device neg.nor32.nmos_29 4640 100
+n ALU_Result[2] gnd net_3 24 100
+| device neg.nor32.pmos_29 0 -2900
+p ALU_Result[2] neg.nor32.net_3 neg.nor32.net_26 24 400
+| device neg.nor32.nmos_30 4800 100
+n ALU_Result[1] gnd net_3 24 100
+| device neg.nor32.pmos_30 0 -3000
+p ALU_Result[1] neg.nor32.net_4 neg.nor32.net_3 24 400
+| device neg.nor32.nmos_31 4960 100
+n ALU_Result[0] gnd net_3 24 100
+| device neg.nor32.pmos_31 0 -3100
+p ALU_Result[0] vdd neg.nor32.net_4 24 400
+| end neg.nor32
+| end neg
+| begin nor2 560 250
+| device nor2.nmos 0 100
+n ALU_Result[31] gnd net_5 24 100
+| device nor2.pmos 0 0
+p ALU_Result[31] nor2.net_1 net_5 24 400
+| device nor2.nmos_1 160 100
+n net_3 gnd net_5 24 100
+| device nor2.pmos_1 0 -100
+p net_3 vdd nor2.net_1 24 400
+| end nor2
+| begin nor2_1 120 -60
+| device nor2_1.nmos 0 100
+n IR[31] gnd net_2 24 100
+| device nor2_1.pmos 0 0
+p IR[31] nor2_1.net_1 net_2 24 400
+| device nor2_1.nmos_1 160 100
+n IR[30] gnd net_2 24 100
+| device nor2_1.pmos_1 0 -100
+p IR[30] vdd nor2_1.net_1 24 400
+| end nor2_1
+| begin nand2 270 40
+| device nand2.pmos 0 -100
+p net_2 vdd net_4 24 200
+| device nand2.nmos 0 0
+n net_2 nand2.net_1 net_4 24 200
+| device nand2.pmos_1 160 -100
+p IR[11] vdd net_4 24 200
+| device nand2.nmos_1 0 100
+n IR[11] gnd nand2.net_1 24 200
+| end nand2
+| begin inverter 370 40
+| device inverter.nmos 550 360
+n net_4 gnd net_1 24 100
+| device inverter.pmos 550 200
+p net_4 vdd net_1 24 200
+| end inverter
+| begin flags 680 -90
+| begin flags.inverter 560 210
+| device flags.inverter.nmos 550 360
+n Z gnd flags.net_1 24 100
+| device flags.inverter.pmos 550 200
+p Z vdd flags.net_1 24 200
+| end flags.inverter
+| device flags.nmos.1 390 260
+n net_1 flags.net_2 flags.net_1 24 100
+| device flags.nmos.2 390 260
+n net_1 flags.net_2 flags.net_1 24 100
+| device flags.nmos.3 390 260
+n net_1 flags.net_2 flags.net_1 24 100
+| device flags.nmos.4 390 260
+n net_1 flags.net_2 flags.net_1 24 100
+| begin flags.inverter_1 550 380
+| device flags.inverter_1.nmos.1 550 360
+n flags.net_1 gnd Z 24 100
+| device flags.inverter_1.nmos.2 550 360
+n flags.net_1 gnd Z 24 100
+| device flags.inverter_1.nmos.3 550 360
+n flags.net_1 gnd Z 24 100
+| device flags.inverter_1.nmos.4 550 360
+n flags.net_1 gnd Z 24 100
+| device flags.inverter_1.pmos.1 550 200
+p flags.net_1 vdd Z 24 200
+| device flags.inverter_1.pmos.2 550 200
+p flags.net_1 vdd Z 24 200
+| device flags.inverter_1.pmos.3 550 200
+p flags.net_1 vdd Z 24 200
+| device flags.inverter_1.pmos.4 550 200
+p flags.net_1 vdd Z 24 200
+| end flags.inverter_1
+| begin flags.inverter_2 290 260
+| device flags.inverter_2.nmos.1 550 360
+n net_3 gnd flags.net_2 24 100
+| device flags.inverter_2.nmos.2 550 360
+n net_3 gnd flags.net_2 24 100
+| device flags.inverter_2.nmos.3 550 360
+n net_3 gnd flags.net_2 24 100
+| device flags.inverter_2.nmos.4 550 360
+n net_3 gnd flags.net_2 24 100
+| device flags.inverter_2.pmos.1 550 200
+p net_3 vdd flags.net_2 24 200
+| device flags.inverter_2.pmos.2 550 200
+p net_3 vdd flags.net_2 24 200
+| device flags.inverter_2.pmos.3 550 200
+p net_3 vdd flags.net_2 24 200
+| device flags.inverter_2.pmos.4 550 200
+p net_3 vdd flags.net_2 24 200
+| end flags.inverter_2
+| end flags
+| begin flags_1 690 30
+| begin flags_1.inverter 560 210
+| device flags_1.inverter.nmos 550 360
+n N gnd flags_1.net_1 24 100
+| device flags_1.inverter.pmos 550 200
+p N vdd flags_1.net_1 24 200
+| end flags_1.inverter
+| device flags_1.nmos.1 390 260
+n net_1 flags_1.net_2 flags_1.net_1 24 100
+| device flags_1.nmos.2 390 260
+n net_1 flags_1.net_2 flags_1.net_1 24 100
+| device flags_1.nmos.3 390 260
+n net_1 flags_1.net_2 flags_1.net_1 24 100
+| device flags_1.nmos.4 390 260
+n net_1 flags_1.net_2 flags_1.net_1 24 100
+| begin flags_1.inverter_1 550 380
+| device flags_1.inverter_1.nmos.1 550 360
+n flags_1.net_1 gnd N 24 100
+| device flags_1.inverter_1.nmos.2 550 360
+n flags_1.net_1 gnd N 24 100
+| device flags_1.inverter_1.nmos.3 550 360
+n flags_1.net_1 gnd N 24 100
+| device flags_1.inverter_1.nmos.4 550 360
+n flags_1.net_1 gnd N 24 100
+| device flags_1.inverter_1.pmos.1 550 200
+p flags_1.net_1 vdd N 24 200
+| device flags_1.inverter_1.pmos.2 550 200
+p flags_1.net_1 vdd N 24 200
+| device flags_1.inverter_1.pmos.3 550 200
+p flags_1.net_1 vdd N 24 200
+| device flags_1.inverter_1.pmos.4 550 200
+p flags_1.net_1 vdd N 24 200
+| end flags_1.inverter_1
+| begin flags_1.inverter_2 290 260
+| device flags_1.inverter_2.nmos.1 550 360
+n ALU_Result[31] gnd flags_1.net_2 24 100
+| device flags_1.inverter_2.nmos.2 550 360
+n ALU_Result[31] gnd flags_1.net_2 24 100
+| device flags_1.inverter_2.nmos.3 550 360
+n ALU_Result[31] gnd flags_1.net_2 24 100
+| device flags_1.inverter_2.nmos.4 550 360
+n ALU_Result[31] gnd flags_1.net_2 24 100
+| device flags_1.inverter_2.pmos.1 550 200
+p ALU_Result[31] vdd flags_1.net_2 24 200
+| device flags_1.inverter_2.pmos.2 550 200
+p ALU_Result[31] vdd flags_1.net_2 24 200
+| device flags_1.inverter_2.pmos.3 550 200
+p ALU_Result[31] vdd flags_1.net_2 24 200
+| device flags_1.inverter_2.pmos.4 550 200
+p ALU_Result[31] vdd flags_1.net_2 24 200
+| end flags_1.inverter_2
+| end flags_1
+| begin flags_2 770 210
+| begin flags_2.inverter 560 210
+| device flags_2.inverter.nmos 550 360
+n P gnd flags_2.net_1 24 100
+| device flags_2.inverter.pmos 550 200
+p P vdd flags_2.net_1 24 200
+| end flags_2.inverter
+| device flags_2.nmos.1 390 260
+n net_1 flags_2.net_2 flags_2.net_1 24 100
+| device flags_2.nmos.2 390 260
+n net_1 flags_2.net_2 flags_2.net_1 24 100
+| device flags_2.nmos.3 390 260
+n net_1 flags_2.net_2 flags_2.net_1 24 100
+| device flags_2.nmos.4 390 260
+n net_1 flags_2.net_2 flags_2.net_1 24 100
+| begin flags_2.inverter_1 550 380
+| device flags_2.inverter_1.nmos.1 550 360
+n flags_2.net_1 gnd P 24 100
+| device flags_2.inverter_1.nmos.2 550 360
+n flags_2.net_1 gnd P 24 100
+| device flags_2.inverter_1.nmos.3 550 360
+n flags_2.net_1 gnd P 24 100
+| device flags_2.inverter_1.nmos.4 550 360
+n flags_2.net_1 gnd P 24 100
+| device flags_2.inverter_1.pmos.1 550 200
+p flags_2.net_1 vdd P 24 200
+| device flags_2.inverter_1.pmos.2 550 200
+p flags_2.net_1 vdd P 24 200
+| device flags_2.inverter_1.pmos.3 550 200
+p flags_2.net_1 vdd P 24 200
+| device flags_2.inverter_1.pmos.4 550 200
+p flags_2.net_1 vdd P 24 200
+| end flags_2.inverter_1
+| begin flags_2.inverter_2 290 260
+| device flags_2.inverter_2.nmos.1 550 360
+n net_5 gnd flags_2.net_2 24 100
+| device flags_2.inverter_2.nmos.2 550 360
+n net_5 gnd flags_2.net_2 24 100
+| device flags_2.inverter_2.nmos.3 550 360
+n net_5 gnd flags_2.net_2 24 100
+| device flags_2.inverter_2.nmos.4 550 360
+n net_5 gnd flags_2.net_2 24 100
+| device flags_2.inverter_2.pmos.1 550 200
+p net_5 vdd flags_2.net_2 24 200
+| device flags_2.inverter_2.pmos.2 550 200
+p net_5 vdd flags_2.net_2 24 200
+| device flags_2.inverter_2.pmos.3 550 200
+p net_5 vdd flags_2.net_2 24 200
+| device flags_2.inverter_2.pmos.4 550 200
+p net_5 vdd flags_2.net_2 24 200
+| end flags_2.inverter_2
+| end flags_2

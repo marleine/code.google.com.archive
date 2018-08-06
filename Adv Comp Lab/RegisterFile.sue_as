@@ -1,0 +1,426 @@
+# SUE version MMI_SUE4.4.0 (auto-save)
+
+proc SCHEMATIC_RegisterFile {} {
+  make writeEnable -origin {400 420}
+  make input -name writeEnable -origin {300 430}
+  make Dec_5x32 -origin {40 400}
+  make Dec_5x32 -origin {40 270}
+  make Dec_5x32 -origin {40 140}
+  make input -name {inR1[4:0]} -origin {-60 140}
+  make input -name {inR2[4:0]} -origin {-60 270}
+  make input -name {inW[4:0]} -origin {-60 400}
+  make Reg0_32bit -origin {1040 390}
+  make Reg_32bit -origin {1030 500}
+  make Reg_32bit -origin {1030 620}
+  make Reg_32bit -origin {1030 740}
+  make Reg_32bit -origin {1030 860}
+  make Reg_32bit -origin {1030 980}
+  make Reg_32bit -origin {1030 1100}
+  make Reg_32bit -origin {1030 1220}
+  make Reg_32bit -origin {1030 1340}
+  make Reg_32bit -origin {1030 1470}
+  make Reg_32bit -origin {1030 1590}
+  make Reg_32bit -origin {1030 1710}
+  make Reg_32bit -origin {1030 1830}
+  make Reg_32bit -origin {1030 1950}
+  make Reg_32bit -origin {1030 2070}
+  make Reg_32bit -origin {1030 2190}
+  make Reg_32bit -origin {1030 2310}
+  make Reg_32bit -origin {1030 2430}
+  make Reg_32bit -origin {1030 2550}
+  make Reg_32bit -origin {1030 2670}
+  make Reg_32bit -origin {1030 2790}
+  make Reg_32bit -origin {1030 2910}
+  make Reg_32bit -origin {1030 3030}
+  make Reg_32bit -origin {1030 3150}
+  make Reg_32bit -origin {1030 3270}
+  make Reg_32bit -origin {1030 3400}
+  make Reg_32bit -origin {1030 3520}
+  make Reg_32bit -origin {1030 3640}
+  make Reg_32bit -origin {1030 3760}
+  make Reg_32bit -origin {1030 3880}
+  make Reg_32bit -origin {1030 4000}
+  make Reg_32bit -origin {1030 4120}
+  make input -name {data[31:0]} -origin {690 460}
+  make output -name {out2[31:0]} -origin {1190 400}
+  make output -name {out2[31:0]} -origin {1190 510}
+  make output -name {out2[31:0]} -origin {1190 630}
+  make output -name {out2[31:0]} -origin {1190 750}
+  make output -name {out2[31:0]} -origin {1190 870}
+  make output -name {out2[31:0]} -origin {1190 990}
+  make output -name {out2[31:0]} -origin {1190 1110}
+  make output -name {out2[31:0]} -origin {1190 1230}
+  make output -name {out2[31:0]} -origin {1190 1350}
+  make output -name {out2[31:0]} -origin {1190 1480}
+  make output -name {out2[31:0]} -origin {1190 1600}
+  make output -name {out2[31:0]} -origin {1190 1720}
+  make output -name {out2[31:0]} -origin {1190 1840}
+  make output -name {out2[31:0]} -origin {1190 1960}
+  make output -name {out2[31:0]} -origin {1190 2080}
+  make output -name {out2[31:0]} -origin {1190 2200}
+  make output -name {out2[31:0]} -origin {1190 2320}
+  make output -name {out2[31:0]} -origin {1190 2440}
+  make output -name {out2[31:0]} -origin {1190 2560}
+  make output -name {out2[31:0]} -origin {1190 2680}
+  make output -name {out2[31:0]} -origin {1190 2800}
+  make output -name {out2[31:0]} -origin {1190 2920}
+  make output -name {out2[31:0]} -origin {1190 3040}
+  make output -name {out2[31:0]} -origin {1190 3160}
+  make output -name {out2[31:0]} -origin {1190 3280}
+  make output -name {out2[31:0]} -origin {1190 3410}
+  make output -name {out2[31:0]} -origin {1190 3530}
+  make output -name {out2[31:0]} -origin {1190 3650}
+  make output -name {out2[31:0]} -origin {1190 3770}
+  make output -name {out2[31:0]} -origin {1190 3890}
+  make output -name {out2[31:0]} -origin {1190 4010}
+  make output -name {out2[31:0]} -origin {1190 4130}
+  make output -name {out1[31:0]} -origin {1290 370}
+  make output -name {out1[31:0]} -origin {1290 480}
+  make output -name {out1[31:0]} -origin {1290 600}
+  make output -name {out1[31:0]} -origin {1290 720}
+  make output -name {out1[31:0]} -origin {1290 840}
+  make output -name {out1[31:0]} -origin {1290 960}
+  make output -name {out1[31:0]} -origin {1290 1080}
+  make output -name {out1[31:0]} -origin {1290 1200}
+  make output -name {out1[31:0]} -origin {1290 1320}
+  make output -name {out1[31:0]} -origin {1290 1450}
+  make output -name {out1[31:0]} -origin {1290 1570}
+  make output -name {out1[31:0]} -origin {1290 1690}
+  make output -name {out1[31:0]} -origin {1290 1810}
+  make output -name {out1[31:0]} -origin {1290 1930}
+  make output -name {out1[31:0]} -origin {1290 2050}
+  make output -name {out1[31:0]} -origin {1290 2170}
+  make output -name {out1[31:0]} -origin {1290 2290}
+  make output -name {out1[31:0]} -origin {1290 2410}
+  make output -name {out1[31:0]} -origin {1290 2530}
+  make output -name {out1[31:0]} -origin {1290 2650}
+  make output -name {out1[31:0]} -origin {1290 2770}
+  make output -name {out1[31:0]} -origin {1290 2890}
+  make output -name {out1[31:0]} -origin {1290 3010}
+  make output -name {out1[31:0]} -origin {1290 3130}
+  make output -name {out1[31:0]} -origin {1290 3250}
+  make output -name {out1[31:0]} -origin {1290 3380}
+  make output -name {out1[31:0]} -origin {1290 3500}
+  make output -name {out1[31:0]} -origin {1290 3620}
+  make output -name {out1[31:0]} -origin {1290 3740}
+  make output -name {out1[31:0]} -origin {1290 3860}
+  make output -name {out1[31:0]} -origin {1290 3980}
+  make output -name {out1[31:0]} -origin {1290 4100}
+  make name_net_s -name {R1[31:0]} -origin {200 140}
+  make name_net_s -name {R1[0]} -origin {790 380}
+  make name_net_s -name {R2[31:0]} -origin {200 270}
+  make name_net_s -name {w[31:0]} -origin {550 410}
+  make name_net_s -name {R2[0]} -origin {830 400}
+  make name_net_s -name {R1[1]} -origin {790 480}
+  make name_net_s -origin {830 500}
+  make name_net_s -origin {900 520}
+  make name_net_s -origin {790 600}
+  make name_net_s -origin {830 620}
+  make name_net_s -origin {900 640}
+  make name_net_s -origin {790 720}
+  make name_net_s -origin {830 740}
+  make name_net_s -origin {900 760}
+  make_wire 140 400 300 400
+  make_wire 1140 370 1290 370
+  make_wire 1140 400 1190 400
+  make_wire 1140 480 1290 480
+  make_wire 1140 510 1190 510
+  make_wire 940 520 900 520
+  make_wire 830 400 940 400
+  make_wire 690 460 940 460
+  make_wire 830 500 940 500
+  make_wire 790 480 940 480
+  make_wire 790 380 940 380
+  make_wire 1140 600 1290 600
+  make_wire 1140 630 1190 630
+  make_wire 690 580 940 580
+  make_wire 830 620 940 620
+  make_wire 790 600 940 600
+  make_wire 1140 720 1290 720
+  make_wire 1140 750 1190 750
+  make_wire 940 760 900 760
+  make_wire 690 700 940 700
+  make_wire 830 740 940 740
+  make_wire 1140 840 1290 840
+  make_wire 1140 870 1190 870
+  make_wire 940 880 900 880
+  make_wire 690 820 940 820
+  make_wire 830 860 940 860
+  make_wire 790 840 940 840
+  make_wire 1140 960 1290 960
+  make_wire 1140 990 1190 990
+  make_wire 940 1000 900 1000
+  make_wire 690 940 940 940
+  make_wire 830 980 940 980
+  make_wire 790 960 940 960
+  make_wire 1140 1080 1290 1080
+  make_wire 1140 1110 1190 1110
+  make_wire 940 1120 900 1120
+  make_wire 690 1060 940 1060
+  make_wire 830 1100 940 1100
+  make_wire 790 1080 940 1080
+  make_wire 1140 1200 1290 1200
+  make_wire 1140 1230 1190 1230
+  make_wire 940 1240 900 1240
+  make_wire 690 1180 940 1180
+  make_wire 830 1220 940 1220
+  make_wire 790 1200 940 1200
+  make_wire 1140 1320 1290 1320
+  make_wire 1140 1350 1190 1350
+  make_wire 940 1360 900 1360
+  make_wire 690 1300 940 1300
+  make_wire 830 1340 940 1340
+  make_wire 790 1320 940 1320
+  make_wire 1140 1450 1290 1450
+  make_wire 1140 1480 1190 1480
+  make_wire 940 1490 900 1490
+  make_wire 690 1430 940 1430
+  make_wire 830 1470 940 1470
+  make_wire 790 1450 940 1450
+  make_wire 1140 1570 1290 1570
+  make_wire 1140 1600 1190 1600
+  make_wire 940 1610 900 1610
+  make_wire 690 1550 940 1550
+  make_wire 830 1590 940 1590
+  make_wire 790 1570 940 1570
+  make_wire 1140 1690 1290 1690
+  make_wire 1140 1720 1190 1720
+  make_wire 940 1730 900 1730
+  make_wire 690 1670 940 1670
+  make_wire 830 1710 940 1710
+  make_wire 790 1690 940 1690
+  make_wire 1140 1810 1290 1810
+  make_wire 1140 1840 1190 1840
+  make_wire 940 1850 900 1850
+  make_wire 690 1790 940 1790
+  make_wire 830 1830 940 1830
+  make_wire 790 1810 940 1810
+  make_wire 1140 1930 1290 1930
+  make_wire 1140 1960 1190 1960
+  make_wire 940 1970 900 1970
+  make_wire 690 1910 940 1910
+  make_wire 830 1950 940 1950
+  make_wire 790 1930 940 1930
+  make_wire 1140 2050 1290 2050
+  make_wire 1140 2080 1190 2080
+  make_wire 940 2090 900 2090
+  make_wire 690 2030 940 2030
+  make_wire 830 2070 940 2070
+  make_wire 790 2050 940 2050
+  make_wire 1140 2170 1290 2170
+  make_wire 1140 2200 1190 2200
+  make_wire 940 2210 900 2210
+  make_wire 690 2150 940 2150
+  make_wire 830 2190 940 2190
+  make_wire 790 2170 940 2170
+  make_wire 1140 2290 1290 2290
+  make_wire 1140 2320 1190 2320
+  make_wire 940 2330 900 2330
+  make_wire 690 2270 940 2270
+  make_wire 830 2310 940 2310
+  make_wire 790 2290 940 2290
+  make_wire 1140 2410 1290 2410
+  make_wire 1140 2440 1190 2440
+  make_wire 940 2450 900 2450
+  make_wire 690 2390 940 2390
+  make_wire 830 2430 940 2430
+  make_wire 790 2410 940 2410
+  make_wire 1140 2530 1290 2530
+  make_wire 1140 2560 1190 2560
+  make_wire 940 2570 900 2570
+  make_wire 690 2510 940 2510
+  make_wire 830 2550 940 2550
+  make_wire 790 2530 940 2530
+  make_wire 1140 2650 1290 2650
+  make_wire 1140 2680 1190 2680
+  make_wire 940 2690 900 2690
+  make_wire 690 2630 940 2630
+  make_wire 830 2670 940 2670
+  make_wire 790 2650 940 2650
+  make_wire 1140 2770 1290 2770
+  make_wire 1140 2800 1190 2800
+  make_wire 940 2810 900 2810
+  make_wire 690 2750 940 2750
+  make_wire 830 2790 940 2790
+  make_wire 790 2770 940 2770
+  make_wire 1140 2890 1290 2890
+  make_wire 1140 2920 1190 2920
+  make_wire 940 2930 900 2930
+  make_wire 690 2870 940 2870
+  make_wire 830 2910 940 2910
+  make_wire 790 2890 940 2890
+  make_wire 1140 3010 1290 3010
+  make_wire 1140 3040 1190 3040
+  make_wire 940 3050 900 3050
+  make_wire 690 2990 940 2990
+  make_wire 830 3030 940 3030
+  make_wire 790 3010 940 3010
+  make_wire 1140 3130 1290 3130
+  make_wire 1140 3160 1190 3160
+  make_wire 940 3170 900 3170
+  make_wire 690 3110 940 3110
+  make_wire 830 3150 940 3150
+  make_wire 790 3130 940 3130
+  make_wire 1140 3250 1290 3250
+  make_wire 1140 3280 1190 3280
+  make_wire 940 3290 900 3290
+  make_wire 690 3230 940 3230
+  make_wire 830 3270 940 3270
+  make_wire 790 3250 940 3250
+  make_wire 1140 3380 1290 3380
+  make_wire 1140 3410 1190 3410
+  make_wire 940 3420 900 3420
+  make_wire 690 3360 940 3360
+  make_wire 830 3400 940 3400
+  make_wire 790 3380 940 3380
+  make_wire 1140 3500 1290 3500
+  make_wire 1140 3530 1190 3530
+  make_wire 940 3540 900 3540
+  make_wire 690 3480 940 3480
+  make_wire 830 3520 940 3520
+  make_wire 790 3500 940 3500
+  make_wire 1140 3620 1290 3620
+  make_wire 1140 3650 1190 3650
+  make_wire 940 3660 900 3660
+  make_wire 690 3600 940 3600
+  make_wire 830 3640 940 3640
+  make_wire 790 3620 940 3620
+  make_wire 1140 3740 1290 3740
+  make_wire 1140 3770 1190 3770
+  make_wire 940 3780 900 3780
+  make_wire 690 3720 940 3720
+  make_wire 830 3760 940 3760
+  make_wire 790 3740 940 3740
+  make_wire 1140 3860 1290 3860
+  make_wire 1140 3890 1190 3890
+  make_wire 940 3900 900 3900
+  make_wire 690 3840 940 3840
+  make_wire 830 3880 940 3880
+  make_wire 790 3860 940 3860
+  make_wire 1140 3980 1290 3980
+  make_wire 1140 4010 1190 4010
+  make_wire 940 4020 900 4020
+  make_wire 690 3960 940 3960
+  make_wire 830 4000 940 4000
+  make_wire 790 3980 940 3980
+  make_wire 1140 4100 1290 4100
+  make_wire 1140 4130 1190 4130
+  make_wire 940 4140 900 4140
+  make_wire 690 4080 940 4080
+  make_wire 830 4120 940 4120
+  make_wire 790 4100 940 4100
+  make_wire 790 1080 790 960
+  make_wire 790 1200 790 1080
+  make_wire 790 1320 790 1200
+  make_wire 790 1450 790 1320
+  make_wire 790 1570 790 1450
+  make_wire 790 1690 790 1570
+  make_wire 790 1810 790 1690
+  make_wire 790 1930 790 1810
+  make_wire 790 2050 790 1930
+  make_wire 790 2170 790 2050
+  make_wire 790 2290 790 2170
+  make_wire 790 2410 790 2290
+  make_wire 790 2530 790 2410
+  make_wire 790 2650 790 2530
+  make_wire 790 2770 790 2650
+  make_wire 790 2890 790 2770
+  make_wire 790 3010 790 2890
+  make_wire 790 3130 790 3010
+  make_wire 790 3250 790 3130
+  make_wire 790 3380 790 3250
+  make_wire 790 3500 790 3380
+  make_wire 790 3620 790 3500
+  make_wire 790 3740 790 3620
+  make_wire 790 3860 790 3740
+  make_wire 790 3980 790 3860
+  make_wire 790 4100 790 3980
+  make_wire 830 1100 830 980
+  make_wire 830 1220 830 1100
+  make_wire 830 1340 830 1220
+  make_wire 830 1470 830 1340
+  make_wire 830 1590 830 1470
+  make_wire 830 1710 830 1590
+  make_wire 830 1830 830 1710
+  make_wire 830 1950 830 1830
+  make_wire 830 2070 830 1950
+  make_wire 830 2190 830 2070
+  make_wire 830 2310 830 2190
+  make_wire 830 2430 830 2310
+  make_wire 830 2550 830 2430
+  make_wire 830 2670 830 2550
+  make_wire 830 2790 830 2670
+  make_wire 830 2910 830 2790
+  make_wire 830 3030 830 2910
+  make_wire 830 3150 830 3030
+  make_wire 830 3270 830 3150
+  make_wire 830 3400 830 3270
+  make_wire 830 3520 830 3400
+  make_wire 830 3640 830 3520
+  make_wire 830 3760 830 3640
+  make_wire 830 3880 830 3760
+  make_wire 830 4000 830 3880
+  make_wire 830 4120 830 4000
+  make_wire 900 1120 900 1000
+  make_wire 900 1240 900 1120
+  make_wire 900 1360 900 1240
+  make_wire 900 1490 900 1360
+  make_wire 900 1610 900 1490
+  make_wire 900 1730 900 1610
+  make_wire 900 1850 900 1730
+  make_wire 900 1970 900 1850
+  make_wire 900 2090 900 1970
+  make_wire 900 2210 900 2090
+  make_wire 900 2330 900 2210
+  make_wire 900 2450 900 2330
+  make_wire 900 2570 900 2450
+  make_wire 900 2690 900 2570
+  make_wire 900 2810 900 2690
+  make_wire 900 2930 900 2810
+  make_wire 900 3050 900 2930
+  make_wire 900 3170 900 3050
+  make_wire 900 3290 900 3170
+  make_wire 900 3420 900 3290
+  make_wire 900 3540 900 3420
+  make_wire 900 3660 900 3540
+  make_wire 900 3780 900 3660
+  make_wire 900 3900 900 3780
+  make_wire 900 4020 900 3900
+  make_wire 900 4140 900 4020
+  make_wire 690 460 690 580
+  make_wire 690 580 690 700
+  make_wire 690 700 690 820
+  make_wire 690 820 690 940
+  make_wire 690 940 690 1060
+  make_wire 690 1060 690 1180
+  make_wire 690 1180 690 1300
+  make_wire 690 1300 690 1430
+  make_wire 690 1430 690 1550
+  make_wire 690 1550 690 1670
+  make_wire 690 1670 690 1790
+  make_wire 690 1790 690 1910
+  make_wire 690 1910 690 2030
+  make_wire 690 2030 690 2150
+  make_wire 690 2150 690 2270
+  make_wire 690 2270 690 2390
+  make_wire 690 2390 690 2510
+  make_wire 690 2510 690 2630
+  make_wire 690 2630 690 2750
+  make_wire 690 2750 690 2870
+  make_wire 690 2870 690 2990
+  make_wire 690 2990 690 3110
+  make_wire 690 3110 690 3230
+  make_wire 690 3230 690 3360
+  make_wire 690 3360 690 3480
+  make_wire 690 3480 690 3600
+  make_wire 690 3600 690 3720
+  make_wire 690 3720 690 3840
+  make_wire 690 3840 690 3960
+  make_wire 690 3960 690 4080
+  make_wire 140 140 200 140
+  make_wire 500 410 550 410
+  make_wire 140 270 200 270
+  make_wire 900 640 940 640
+  make_wire 940 720 790 720
+}
+

@@ -1,0 +1,455 @@
+# SUE version MMI_SUE4.4.0 (auto-save)
+
+proc SCHEMATIC_Register_file_32bits {} {
+  make writeEnable -origin {400 420}
+  make Dec_5x32 -origin {40 400}
+  make Dec_5x32 -origin {40 270}
+  make Dec_5x32 -origin {40 140}
+  make Reg0_32bit -origin {950 -60}
+  make input -name {data[31:0]} -origin {600 10}
+  make output -name {out2[31:0]} -origin {1100 -50}
+  make output -name {out2[31:0]} -origin {1100 60}
+  make output -name {out2[31:0]} -origin {1100 180}
+  make output -name {out2[31:0]} -origin {1100 300}
+  make output -name {out2[31:0]} -origin {1100 420}
+  make output -name {out2[31:0]} -origin {1100 540}
+  make output -name {out2[31:0]} -origin {1100 660}
+  make output -name {out2[31:0]} -origin {1100 780}
+  make output -name {out2[31:0]} -origin {1100 900}
+  make output -name {out2[31:0]} -origin {1100 1030}
+  make output -name {out2[31:0]} -origin {1100 1150}
+  make output -name {out2[31:0]} -origin {1100 1270}
+  make output -name {out2[31:0]} -origin {1100 1390}
+  make output -name {out2[31:0]} -origin {1100 1510}
+  make output -name {out2[31:0]} -origin {1100 1630}
+  make output -name {out2[31:0]} -origin {1100 1750}
+  make output -name {out2[31:0]} -origin {1100 1870}
+  make output -name {out2[31:0]} -origin {1100 1990}
+  make output -name {out2[31:0]} -origin {1100 2110}
+  make output -name {out2[31:0]} -origin {1100 2230}
+  make output -name {out2[31:0]} -origin {1100 2350}
+  make output -name {out2[31:0]} -origin {1100 2470}
+  make output -name {out2[31:0]} -origin {1100 2590}
+  make output -name {out2[31:0]} -origin {1100 2710}
+  make output -name {out2[31:0]} -origin {1100 2830}
+  make output -name {out2[31:0]} -origin {1100 2960}
+  make output -name {out2[31:0]} -origin {1100 3080}
+  make output -name {out2[31:0]} -origin {1100 3200}
+  make output -name {out2[31:0]} -origin {1100 3320}
+  make output -name {out2[31:0]} -origin {1100 3440}
+  make output -name {out2[31:0]} -origin {1100 3560}
+  make output -name {out2[31:0]} -origin {1100 3680}
+  make output -name {out1[31:0]} -origin {1200 -80}
+  make output -name {out1[31:0]} -origin {1200 30}
+  make output -name {out1[31:0]} -origin {1200 150}
+  make output -name {out1[31:0]} -origin {1200 270}
+  make output -name {out1[31:0]} -origin {1200 390}
+  make output -name {out1[31:0]} -origin {1200 510}
+  make output -name {out1[31:0]} -origin {1200 630}
+  make output -name {out1[31:0]} -origin {1200 750}
+  make output -name {out1[31:0]} -origin {1200 870}
+  make output -name {out1[31:0]} -origin {1200 1000}
+  make output -name {out1[31:0]} -origin {1200 1120}
+  make output -name {out1[31:0]} -origin {1200 1240}
+  make output -name {out1[31:0]} -origin {1200 1360}
+  make output -name {out1[31:0]} -origin {1200 1480}
+  make output -name {out1[31:0]} -origin {1200 1600}
+  make output -name {out1[31:0]} -origin {1200 1720}
+  make output -name {out1[31:0]} -origin {1200 1840}
+  make output -name {out1[31:0]} -origin {1200 1960}
+  make output -name {out1[31:0]} -origin {1200 2080}
+  make output -name {out1[31:0]} -origin {1200 2200}
+  make output -name {out1[31:0]} -origin {1200 2320}
+  make output -name {out1[31:0]} -origin {1200 2440}
+  make output -name {out1[31:0]} -origin {1200 2560}
+  make output -name {out1[31:0]} -origin {1200 2680}
+  make output -name {out1[31:0]} -origin {1200 2800}
+  make output -name {out1[31:0]} -origin {1200 2930}
+  make output -name {out1[31:0]} -origin {1200 3050}
+  make output -name {out1[31:0]} -origin {1200 3170}
+  make output -name {out1[31:0]} -origin {1200 3290}
+  make output -name {out1[31:0]} -origin {1200 3410}
+  make output -name {out1[31:0]} -origin {1200 3530}
+  make output -name {out1[31:0]} -origin {1200 3650}
+  make name_net_s -name {R1[31:0]} -origin {200 140}
+  make name_net_s -name {R2[31:0]} -origin {200 270}
+  make name_net_s -name {w[31:0]} -origin {550 410}
+  make name_net_s -name {inR1[0]} -origin {700 -70}
+  make name_net_s -name {inR1[1]} -origin {700 30}
+  make name_net_s -name {inR1[2]} -origin {700 150}
+  make name_net_s -name {inR1[3]} -origin {700 270}
+  make name_net_s -name {inR1[4]} -origin {700 390}
+  make name_net_s -name {inR1[5]} -origin {700 510}
+  make name_net_s -name {inR1[6]} -origin {700 630}
+  make name_net_s -name {inR1[7]} -origin {700 750}
+  make name_net_s -name {inR1[8]} -origin {700 870}
+  make name_net_s -name {inR1[9]} -origin {700 1000}
+  make name_net_s -name {inR1[10]} -origin {700 1120}
+  make name_net_s -name {inR1[11]} -origin {700 1240}
+  make name_net_s -name {inR1[12]} -origin {700 1360}
+  make name_net_s -name {inR1[13]} -origin {700 1480}
+  make name_net_s -name {inR1[14]} -origin {700 1600}
+  make name_net_s -name {inR1[15]} -origin {700 1720}
+  make name_net_s -name {inR1[16]} -origin {700 1840}
+  make name_net_s -name {inR1[17]} -origin {700 1960}
+  make name_net_s -name {inR1[18]} -origin {700 2080}
+  make name_net_s -name {inR1[19]} -origin {700 2200}
+  make name_net_s -name {inR1[20]} -origin {700 2320}
+  make name_net_s -name {inR1[21]} -origin {700 2440}
+  make name_net_s -name {inR1[22]} -origin {700 2560}
+  make name_net_s -name {inR1[23]} -origin {700 2680}
+  make name_net_s -name {inR1[24]} -origin {700 2800}
+  make name_net_s -name {inR1[25]} -origin {700 2930}
+  make name_net_s -name {inR1[26]} -origin {700 3050}
+  make name_net_s -name {inR1[27]} -origin {700 3170}
+  make name_net_s -name {inR1[28]} -origin {700 3290}
+  make name_net_s -name {inR1[29]} -origin {700 3410}
+  make name_net_s -name {inR1[30]} -origin {700 3530}
+  make name_net_s -name {inR1[31]} -origin {700 3650}
+  make name_net_s -name {inR2[0]} -origin {740 -50}
+  make name_net_s -name {inR2[1]} -origin {740 50}
+  make name_net_s -name {inR2[2]} -origin {740 170}
+  make name_net_s -name {inR2[3]} -origin {740 290}
+  make name_net_s -name {inR2[4]} -origin {740 410}
+  make name_net_s -name {inR2[5]} -origin {740 530}
+  make name_net_s -name {inR2[6]} -origin {740 650}
+  make name_net_s -name {inR2[7]} -origin {740 770}
+  make name_net_s -name {inR2[8]} -origin {740 890}
+  make name_net_s -name {inR2[9]} -origin {740 1020}
+  make name_net_s -name {inR2[10]} -origin {740 1140}
+  make name_net_s -name {inR2[11]} -origin {740 1260}
+  make name_net_s -name {inR2[12]} -origin {740 1380}
+  make name_net_s -name {inR2[13]} -origin {740 1500}
+  make name_net_s -name {inR2[14]} -origin {740 1620}
+  make name_net_s -name {inR2[15]} -origin {740 1740}
+  make name_net_s -name {inR2[16]} -origin {740 1860}
+  make name_net_s -name {inR2[17]} -origin {740 1980}
+  make name_net_s -name {inR2[18]} -origin {740 2100}
+  make name_net_s -name {inR2[19]} -origin {740 2220}
+  make name_net_s -name {inR2[20]} -origin {740 2340}
+  make name_net_s -name {inR2[21]} -origin {740 2460}
+  make name_net_s -name {inR2[22]} -origin {740 2580}
+  make name_net_s -name {inR2[23]} -origin {740 2700}
+  make name_net_s -name {inR2[24]} -origin {740 2820}
+  make name_net_s -name {inR2[25]} -origin {740 2950}
+  make name_net_s -name {inR2[26]} -origin {740 3070}
+  make name_net_s -name {inR2[27]} -origin {740 3190}
+  make name_net_s -name {inR2[28]} -origin {740 3310}
+  make name_net_s -name {inR2[29]} -origin {740 3430}
+  make name_net_s -name {inR2[30]} -origin {740 3550}
+  make name_net_s -name {inR2[31]} -origin {740 3670}
+  make name_net_s -name {w[1]} -origin {810 70}
+  make name_net_s -name {w[2]} -origin {810 190}
+  make name_net_s -name {w[3]} -origin {810 310}
+  make name_net_s -name {w[4]} -origin {810 430}
+  make name_net_s -name {w[5]} -origin {810 550}
+  make name_net_s -name {w[6]} -origin {810 670}
+  make name_net_s -name {w[7]} -origin {810 790}
+  make name_net_s -name {w[8]} -origin {810 910}
+  make name_net_s -name {w[9]} -origin {810 1040}
+  make name_net_s -name {w[10]} -origin {810 1160}
+  make name_net_s -name {w[11]} -origin {810 1280}
+  make name_net_s -name {w[12]} -origin {810 1400}
+  make name_net_s -name {w[13]} -origin {810 1520}
+  make name_net_s -name {w[14]} -origin {810 1640}
+  make name_net_s -name {w[15]} -origin {810 1760}
+  make name_net_s -name {w[16]} -origin {810 1880}
+  make name_net_s -name {w[17]} -origin {810 2000}
+  make name_net_s -name {w[18]} -origin {810 2120}
+  make name_net_s -name {w[19]} -origin {810 2240}
+  make name_net_s -name {w[20]} -origin {810 2360}
+  make name_net_s -name {w[21]} -origin {810 2480}
+  make name_net_s -name {w[22]} -origin {810 2600}
+  make name_net_s -name {w[23]} -origin {810 2720}
+  make name_net_s -name {w[24]} -origin {810 2840}
+  make name_net_s -name {w[25]} -origin {810 2970}
+  make name_net_s -name {w[26]} -origin {810 3090}
+  make name_net_s -name {w[27]} -origin {810 3210}
+  make name_net_s -name {w[28]} -origin {810 3330}
+  make name_net_s -name {w[29]} -origin {810 3450}
+  make name_net_s -name {w[30]} -origin {810 3570}
+  make name_net_s -name {w[31]} -origin {810 3690}
+  make input -name {address_read2[4:0]} -origin {-60 270}
+  make input -name {address_read1[4:0]} -origin {-60 140}
+  make input -name {address_write[4:0]} -origin {-60 400}
+  make input -name write_enable -origin {300 430}
+  make Reg_32bit -origin {940 50}
+  make Reg_32bit -origin {940 170}
+  make Reg_32bit -origin {940 290}
+  make Reg_32bit -origin {940 410}
+  make Reg_32bit -origin {940 530}
+  make Reg_32bit -origin {940 650}
+  make Reg_32bit -origin {940 770}
+  make Reg_32bit -origin {940 890}
+  make Reg_32bit -origin {940 1020}
+  make Reg_32bit -origin {940 1140}
+  make Reg_32bit -origin {940 1260}
+  make Reg_32bit -origin {940 1380}
+  make Reg_32bit -origin {940 1500}
+  make Reg_32bit -origin {940 1620}
+  make Reg_32bit -origin {940 1740}
+  make Reg_32bit -origin {940 1860}
+  make Reg_32bit -origin {940 1980}
+  make Reg_32bit -origin {940 2100}
+  make Reg_32bit -origin {940 2220}
+  make Reg_32bit -origin {940 2340}
+  make Reg_32bit -origin {940 2460}
+  make Reg_32bit -origin {940 2580}
+  make Reg_32bit -origin {940 2700}
+  make Reg_32bit -origin {940 2820}
+  make Reg_32bit -origin {940 2950}
+  make Reg_32bit -origin {940 3070}
+  make Reg_32bit -origin {940 3190}
+  make Reg_32bit -origin {940 3310}
+  make Reg_32bit -origin {940 3430}
+  make Reg_32bit -origin {940 3550}
+  make Reg_32bit -origin {940 3670}
+  make_wire 140 400 300 400
+  make_wire 1050 30 1200 30
+  make_wire 1050 60 1100 60
+  make_wire 850 70 810 70
+  make_wire 600 10 850 10
+  make_wire 740 50 850 50
+  make_wire 700 30 850 30
+  make_wire 1050 150 1200 150
+  make_wire 1050 180 1100 180
+  make_wire 600 130 850 130
+  make_wire 740 170 850 170
+  make_wire 700 150 850 150
+  make_wire 1050 270 1200 270
+  make_wire 1050 300 1100 300
+  make_wire 850 310 810 310
+  make_wire 600 250 850 250
+  make_wire 740 290 850 290
+  make_wire 1050 390 1200 390
+  make_wire 1050 420 1100 420
+  make_wire 850 430 810 430
+  make_wire 600 370 850 370
+  make_wire 740 410 850 410
+  make_wire 700 390 850 390
+  make_wire 1050 510 1200 510
+  make_wire 1050 540 1100 540
+  make_wire 850 550 810 550
+  make_wire 600 490 850 490
+  make_wire 740 530 850 530
+  make_wire 700 510 850 510
+  make_wire 1050 630 1200 630
+  make_wire 1050 660 1100 660
+  make_wire 850 670 810 670
+  make_wire 600 610 850 610
+  make_wire 740 650 850 650
+  make_wire 700 630 850 630
+  make_wire 1050 750 1200 750
+  make_wire 1050 780 1100 780
+  make_wire 850 790 810 790
+  make_wire 600 730 850 730
+  make_wire 740 770 850 770
+  make_wire 700 750 850 750
+  make_wire 1050 870 1200 870
+  make_wire 1050 900 1100 900
+  make_wire 850 910 810 910
+  make_wire 600 850 850 850
+  make_wire 740 890 850 890
+  make_wire 700 870 850 870
+  make_wire 1050 1000 1200 1000
+  make_wire 1050 1030 1100 1030
+  make_wire 850 1040 810 1040
+  make_wire 600 980 850 980
+  make_wire 740 1020 850 1020
+  make_wire 700 1000 850 1000
+  make_wire 1050 1120 1200 1120
+  make_wire 1050 1150 1100 1150
+  make_wire 850 1160 810 1160
+  make_wire 600 1100 850 1100
+  make_wire 740 1140 850 1140
+  make_wire 700 1120 850 1120
+  make_wire 1050 1240 1200 1240
+  make_wire 1050 1270 1100 1270
+  make_wire 850 1280 810 1280
+  make_wire 600 1220 850 1220
+  make_wire 740 1260 850 1260
+  make_wire 700 1240 850 1240
+  make_wire 1050 1360 1200 1360
+  make_wire 1050 1390 1100 1390
+  make_wire 850 1400 810 1400
+  make_wire 600 1340 850 1340
+  make_wire 740 1380 850 1380
+  make_wire 700 1360 850 1360
+  make_wire 1050 1480 1200 1480
+  make_wire 1050 1510 1100 1510
+  make_wire 850 1520 810 1520
+  make_wire 600 1460 850 1460
+  make_wire 740 1500 850 1500
+  make_wire 700 1480 850 1480
+  make_wire 1050 1600 1200 1600
+  make_wire 1050 1630 1100 1630
+  make_wire 850 1640 810 1640
+  make_wire 600 1580 850 1580
+  make_wire 740 1620 850 1620
+  make_wire 700 1600 850 1600
+  make_wire 1050 1720 1200 1720
+  make_wire 1050 1750 1100 1750
+  make_wire 850 1760 810 1760
+  make_wire 600 1700 850 1700
+  make_wire 740 1740 850 1740
+  make_wire 700 1720 850 1720
+  make_wire 1050 1840 1200 1840
+  make_wire 1050 1870 1100 1870
+  make_wire 850 1880 810 1880
+  make_wire 600 1820 850 1820
+  make_wire 740 1860 850 1860
+  make_wire 700 1840 850 1840
+  make_wire 1050 1960 1200 1960
+  make_wire 1050 1990 1100 1990
+  make_wire 850 2000 810 2000
+  make_wire 600 1940 850 1940
+  make_wire 740 1980 850 1980
+  make_wire 700 1960 850 1960
+  make_wire 1050 2080 1200 2080
+  make_wire 1050 2110 1100 2110
+  make_wire 850 2120 810 2120
+  make_wire 600 2060 850 2060
+  make_wire 740 2100 850 2100
+  make_wire 700 2080 850 2080
+  make_wire 1050 2200 1200 2200
+  make_wire 1050 2230 1100 2230
+  make_wire 850 2240 810 2240
+  make_wire 600 2180 850 2180
+  make_wire 740 2220 850 2220
+  make_wire 700 2200 850 2200
+  make_wire 1050 2320 1200 2320
+  make_wire 1050 2350 1100 2350
+  make_wire 850 2360 810 2360
+  make_wire 600 2300 850 2300
+  make_wire 740 2340 850 2340
+  make_wire 700 2320 850 2320
+  make_wire 1050 2440 1200 2440
+  make_wire 1050 2470 1100 2470
+  make_wire 850 2480 810 2480
+  make_wire 600 2420 850 2420
+  make_wire 740 2460 850 2460
+  make_wire 700 2440 850 2440
+  make_wire 1050 2560 1200 2560
+  make_wire 1050 2590 1100 2590
+  make_wire 850 2600 810 2600
+  make_wire 600 2540 850 2540
+  make_wire 740 2580 850 2580
+  make_wire 700 2560 850 2560
+  make_wire 1050 2680 1200 2680
+  make_wire 1050 2710 1100 2710
+  make_wire 850 2720 810 2720
+  make_wire 600 2660 850 2660
+  make_wire 740 2700 850 2700
+  make_wire 700 2680 850 2680
+  make_wire 1050 2800 1200 2800
+  make_wire 1050 2830 1100 2830
+  make_wire 850 2840 810 2840
+  make_wire 600 2780 850 2780
+  make_wire 740 2820 850 2820
+  make_wire 700 2800 850 2800
+  make_wire 1050 2930 1200 2930
+  make_wire 1050 2960 1100 2960
+  make_wire 850 2970 810 2970
+  make_wire 600 2910 850 2910
+  make_wire 740 2950 850 2950
+  make_wire 700 2930 850 2930
+  make_wire 1050 3050 1200 3050
+  make_wire 1050 3080 1100 3080
+  make_wire 850 3090 810 3090
+  make_wire 600 3030 850 3030
+  make_wire 740 3070 850 3070
+  make_wire 700 3050 850 3050
+  make_wire 1050 3170 1200 3170
+  make_wire 1050 3200 1100 3200
+  make_wire 850 3210 810 3210
+  make_wire 600 3150 850 3150
+  make_wire 740 3190 850 3190
+  make_wire 700 3170 850 3170
+  make_wire 1050 3290 1200 3290
+  make_wire 1050 3320 1100 3320
+  make_wire 850 3330 810 3330
+  make_wire 600 3270 850 3270
+  make_wire 740 3310 850 3310
+  make_wire 700 3290 850 3290
+  make_wire 1050 3410 1200 3410
+  make_wire 1050 3440 1100 3440
+  make_wire 850 3450 810 3450
+  make_wire 600 3390 850 3390
+  make_wire 740 3430 850 3430
+  make_wire 700 3410 850 3410
+  make_wire 1050 3530 1200 3530
+  make_wire 1050 3560 1100 3560
+  make_wire 850 3570 810 3570
+  make_wire 600 3510 850 3510
+  make_wire 740 3550 850 3550
+  make_wire 700 3530 850 3530
+  make_wire 1050 3650 1200 3650
+  make_wire 1050 3680 1100 3680
+  make_wire 850 3690 810 3690
+  make_wire 600 3630 850 3630
+  make_wire 740 3670 850 3670
+  make_wire 700 3650 850 3650
+  make_wire 600 10 600 130
+  make_wire 600 130 600 250
+  make_wire 600 250 600 370
+  make_wire 600 370 600 490
+  make_wire 600 490 600 610
+  make_wire 600 610 600 730
+  make_wire 600 730 600 850
+  make_wire 600 850 600 980
+  make_wire 600 980 600 1100
+  make_wire 600 1100 600 1220
+  make_wire 600 1220 600 1340
+  make_wire 600 1340 600 1460
+  make_wire 600 1460 600 1580
+  make_wire 600 1580 600 1700
+  make_wire 600 1700 600 1820
+  make_wire 600 1820 600 1940
+  make_wire 600 1940 600 2060
+  make_wire 600 2060 600 2180
+  make_wire 600 2180 600 2300
+  make_wire 600 2300 600 2420
+  make_wire 600 2420 600 2540
+  make_wire 600 2540 600 2660
+  make_wire 600 2660 600 2780
+  make_wire 600 2780 600 2910
+  make_wire 600 2910 600 3030
+  make_wire 600 3030 600 3150
+  make_wire 600 3150 600 3270
+  make_wire 600 3270 600 3390
+  make_wire 600 3390 600 3510
+  make_wire 600 3510 600 3630
+  make_wire 140 140 200 140
+  make_wire 500 410 550 410
+  make_wire 140 270 200 270
+  make_wire 810 190 850 190
+  make_wire 850 270 700 270
+  make_wire 1050 -50 1100 -50
+  make_wire 700 -70 850 -70
+  make_wire 1050 -80 1200 -80
+  make_wire 740 -50 850 -50
+}
+
+proc ICON_Register_file_32bits args {
+  icon_setup $args {{origin {0 0}} {orient R0} {name {}} {M {}} {dpc {}}}
+  icon_term -type input -origin {-120 -90} -name {address_read1[4:0]}
+  icon_term -type input -origin {-120 -60} -name {address_read2[4:0]}
+  icon_term -type input -origin {-120 -30} -name {address_write[4:0]}
+  icon_term -type input -origin {-120 0} -name {data[31:0]}
+  icon_term -type input -origin {-120 30} -name write_enable
+  icon_term -type output -origin {210 -40} -name {out1[31:0]}
+  icon_term -type output -origin {210 -10} -name {out2[31:0]}
+  icon_property -origin {-70 120} -type user -name name
+  icon_property -origin {-70 140} -type user -name M
+  icon_property -origin {-70 160} -type user -name dpc
+  icon_line -120 -120 -120 100 210 100 210 -110 210 -120 -120 -120
+  icon_property -origin {-110 -90} -label {address_read1[4:0]}
+  icon_property -origin {-110 -60} -label {address_read2[4:0]}
+  icon_property -origin {-110 -30} -label {address_write[4:0]}
+  icon_property -origin {-110 0} -label {data[31:0]}
+  icon_property -origin {-110 30} -label write_enable
+  icon_property -origin {200 -40} -anchor e -label {out1[31:0]}
+  icon_property -origin {200 -10} -anchor e -label {out2[31:0]}
+  icon_property -origin {-20 80} -label Register_file_32bits
+}
+

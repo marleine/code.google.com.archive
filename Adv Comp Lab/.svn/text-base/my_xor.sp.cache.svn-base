@@ -1,0 +1,7 @@
+set NETLIST_CACHE(my_xor,cells) {{schematic xgate} {schematic inverter {}}}
+set netlist_props spice
+set netlist_level 1000
+set NETLIST_CACHE(my_xor,version) MMI_SUE4.4.0
+set NETLIST_CACHE(my_xor) {{.SUBCKT my_xor in1 in2 out } {Xinverter in1 net_1 inverter } {Xinverter_1 net_2 out inverter WP=6 WN=3} {Xinverter_2 in2 net_3 inverter } {Xxgate in1 net_1 in2 net_2 xgate } {Xxgate_1 net_1 in1 net_3 net_2 xgate } {.ENDS	$ my_xor} {}}
+set NETLIST_CACHE(my_xor,names) {{360 340 {0 Xinverter_2}} {470 450 {0 net_1}} {690 410 {1 out}} {410 340 {0 net_3}} {470 370 {0 net_1}} {330 340 {0 in2}} {360 410 {0 Xinverter}} {470 300 {0 in1}} {240 270 {1 in1}} {470 490 {0 Xxgate}} {660 410 {0 out}} {470 340 {0 Xxgate_1}} {410 410 {0 net_1}} {580 410 {0 net_2}} {500 490 {0 net_2}} {470 520 {0 in1}} {330 410 {0 in1}} {240 490 {1 in2}} {610 410 {0 Xinverter_1}} {500 340 {0 net_2}} {440 490 {0 in2}} {440 340 {0 net_3}}}
+set NETLIST_CACHE(my_xor,wires) {{300 560 470 560 in1} {470 520 470 560 in1} {300 410 330 410 in1} {500 340 540 340 net_2} {500 490 540 490 net_2} {540 410 580 410 net_2} {660 410 690 410 out} {270 340 330 340 in2} {240 490 270 490 in2} {270 490 440 490 in2} {300 410 300 560 in1} {410 410 470 410 net_1} {410 340 440 340 net_3} {300 270 300 410 in1} {270 340 270 490 in2} {470 270 470 300 in1} {540 340 540 410 net_2} {540 410 540 490 net_2} {470 370 470 410 net_1} {470 410 470 450 net_1} {240 270 300 270 in1} {300 270 470 270 in1}}

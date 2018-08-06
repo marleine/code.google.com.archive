@@ -1,0 +1,53 @@
+| units: 1.0  tech: sue  format: MIT
+A A input
+A B input
+A Cout output
+A S output
+| begin my_xor 450 350
+| begin my_xor.inverter 360 410
+| device my_xor.inverter.nmos 550 360
+n A gnd my_xor.net_3 24 100
+| device my_xor.inverter.pmos 550 200
+p A vdd my_xor.net_3 24 200
+| end my_xor.inverter
+| begin my_xor.inverter_1 610 410
+| device my_xor.inverter_1.nmos 550 360
+n my_xor.net_2 gnd S 24 300
+| device my_xor.inverter_1.pmos 550 200
+p my_xor.net_2 vdd S 24 600
+| end my_xor.inverter_1
+| begin my_xor.inverter_2 360 340
+| device my_xor.inverter_2.nmos 550 360
+n B gnd my_xor.net_1 24 100
+| device my_xor.inverter_2.pmos 550 200
+p B vdd my_xor.net_1 24 200
+| end my_xor.inverter_2
+| begin my_xor.xgate 470 490
+| device my_xor.xgate.pmos 520 310
+p my_xor.net_3 B my_xor.net_2 24 200
+| device my_xor.xgate.nmos 520 250
+n A B my_xor.net_2 24 100
+| end my_xor.xgate
+| begin my_xor.xgate_1 470 340
+| device my_xor.xgate_1.pmos 520 310
+p A my_xor.net_1 my_xor.net_2 24 200
+| device my_xor.xgate_1.nmos 520 250
+n my_xor.net_3 my_xor.net_1 my_xor.net_2 24 100
+| end my_xor.xgate_1
+| end my_xor
+| begin nand2 510 470
+| device nand2.pmos 0 -100
+p A vdd net_1 24 200
+| device nand2.nmos 0 0
+n A nand2.net_1 net_1 24 200
+| device nand2.pmos_1 160 -100
+p B vdd net_1 24 200
+| device nand2.nmos_1 0 100
+n B gnd nand2.net_1 24 200
+| end nand2
+| begin inverter 650 470
+| device inverter.nmos 550 360
+n net_1 gnd Cout 24 100
+| device inverter.pmos 550 200
+p net_1 vdd Cout 24 200
+| end inverter

@@ -1,0 +1,39 @@
+# SUE version MMI_SUE4.4.0
+
+proc SCHEMATIC_MUX_2_1 {} {
+  make nand2 -origin {360 340}
+  make nand2 -origin {360 460}
+  make nand2 -origin {530 390}
+  make input -name a -origin {340 320}
+  make input -name b -origin {340 440}
+  make input -name S0 -origin {190 360}
+  make output -name out -origin {600 390}
+  make inverter -origin {290 360}
+  make_wire 430 340 490 340
+  make_wire 430 460 480 460
+  make_wire 480 410 510 410
+  make_wire 480 410 480 460
+  make_wire 490 370 510 370
+  make_wire 490 340 490 370
+  make_wire 190 360 260 360
+  make_wire 190 360 190 480
+  make_wire 190 480 340 480
+}
+
+proc ICON_MUX_2_1 args {
+  icon_setup $args {{origin {0 0}} {orient R0} {name {}} {M {}} {dpc {}}}
+  icon_term -type input -origin {-100 -20} -name a
+  icon_term -type input -origin {-100 0} -name b
+  icon_term -type input -origin {-100 20} -name S0
+  icon_term -type output -origin {100 -20} -name out
+  icon_property -origin {-50 130} -type user -name name
+  icon_property -origin {-50 150} -type user -name M
+  icon_property -origin {-50 170} -type user -name dpc
+  icon_line -100 -50 -100 40 100 40 100 -50 -100 -50
+  icon_property -origin {-80 -20} -label a
+  icon_property -origin {-80 0} -label b
+  icon_property -origin {-80 20} -label S0
+  icon_property -origin {60 -20} -label out
+  icon_property -origin {-30 20} -label MUX_2_1
+}
+

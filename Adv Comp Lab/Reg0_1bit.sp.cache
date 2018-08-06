@@ -1,0 +1,8 @@
+set NETLIST_CACHE(Reg0_1bit,cells) {{icon nmos {}}}
+set netlist_props spice
+set netlist_level 1000
+set NETLIST_CACHE(Reg0_1bit,globals) gnd
+set NETLIST_CACHE(Reg0_1bit,version) MMI_SUE4.4.0
+set NETLIST_CACHE(Reg0_1bit) {{.SUBCKT Reg0_1bit R1 R2 out1 out2 } {M_1 out1 R1 gnd gnd n W='1*1u' L=ln_min ad='arean(1,sdd)' as='arean(1,sdd)' } {+ pd='perin(1,sdd)' ps='perin(1,sdd)' } {M_2 out2 R2 gnd gnd n W='1*1u' L=ln_min ad='arean(1,sdd)' as='arean(1,sdd)' } {+ pd='perin(1,sdd)' ps='perin(1,sdd)' } {.ENDS	$ Reg0_1bit} {}}
+set NETLIST_CACHE(Reg0_1bit,names) {{440 0 {0 R1} {2 R1}} {440 140 {0 R2} {2 R2}} {440 200 {0 M_2}} {440 60 {0 M_1}} {400 200 {0 gnd}} {480 200 {0 out2} {2 out2}} {400 60 {0 gnd}} {480 60 {0 out1} {2 out1}} {130 200 {1 gnd}}}
+set NETLIST_CACHE(Reg0_1bit,wires) {{320 200 400 200 gnd} {130 200 320 200 gnd} {320 60 400 60 gnd} {320 60 320 200 gnd}}

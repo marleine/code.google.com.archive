@@ -1,0 +1,7 @@
+set NETLIST_CACHE(Reg0_1bit,cells) {{icon nmos {}}}
+set netlist_props verilog
+set netlist_level 1000
+set NETLIST_CACHE(Reg0_1bit,version) MMI_SUE4.4.0
+set NETLIST_CACHE(Reg0_1bit) {{module Reg0_1bit (R1, R2, out1, out2);} {	input		R1;} {	input		R2;} {	output		out1;} {	output		out2;} { } {	nmos n(out1,1'b0,R1);} {	nmos n_1(out2,1'b0,R2);} {} {endmodule		// Reg0_1bit} {}}
+set NETLIST_CACHE(Reg0_1bit,names) {{440 0 {0 R1} {2 R1}} {440 140 {0 R2} {2 R2}} {440 200 {0 n_1}} {440 60 {0 n}} {400 200 {0 1'b0}} {480 200 {0 out2} {2 out2}} {400 60 {0 1'b0}} {480 60 {0 out1} {2 out1}} {130 200 {1 1'b0}}}
+set NETLIST_CACHE(Reg0_1bit,wires) {{320 200 400 200 1'b0} {130 200 320 200 1'b0} {320 60 400 60 1'b0} {320 60 320 200 1'b0}}

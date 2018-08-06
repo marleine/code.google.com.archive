@@ -1,0 +1,65 @@
+# SUE version MMI_SUE4.4.0
+
+proc SCHEMATIC_Adder_32bits {} {
+  make Adder_8bits -origin {480 200}
+  make Adder_8bits -origin {480 360}
+  make Adder_8bits -origin {480 510}
+  make Adder_8bits -origin {480 660}
+  make input -name {A[7:0]} -origin {270 180}
+  make input -name {A[15:8]} -origin {270 340}
+  make input -name {A[23:16]} -origin {270 490}
+  make input -name {A[31:24]} -origin {270 640}
+  make input -name {B[7:0]} -origin {300 200}
+  make input -name {B[15:8]} -origin {300 360}
+  make input -name {B[23:16]} -origin {300 510}
+  make input -name {B[31:24]} -origin {300 660}
+  make output -name {S[7:0]} -origin {580 200}
+  make output -name {S[15:8]} -origin {580 360}
+  make output -name {S[23:16]} -origin {580 510}
+  make output -name {S[31:24]} -origin {580 660}
+  make input -name Cin -origin {380 220}
+  make output -name Cout -origin {580 640}
+  make_wire 380 180 270 180
+  make_wire 380 340 270 340
+  make_wire 380 490 270 490
+  make_wire 380 640 270 640
+  make_wire 380 200 300 200
+  make_wire 380 360 300 360
+  make_wire 380 510 300 510
+  make_wire 380 660 300 660
+  make_wire 580 180 630 180
+  make_wire 630 180 630 280
+  make_wire 630 280 350 280
+  make_wire 350 280 350 380
+  make_wire 350 380 380 380
+  make_wire 580 340 630 340
+  make_wire 630 340 630 440
+  make_wire 630 440 350 440
+  make_wire 350 440 350 530
+  make_wire 350 530 380 530
+  make_wire 580 490 630 490
+  make_wire 630 490 630 580
+  make_wire 630 580 350 580
+  make_wire 350 580 350 680
+  make_wire 350 680 380 680
+}
+
+proc ICON_Adder_32bits args {
+  icon_setup $args {{origin {0 0}} {orient R0} {name {}} {M {}} {dpc {}}}
+  icon_term -type input -origin {-100 -10} -name {A[31:0]}
+  icon_term -type input -origin {-100 10} -name {B[31:0]}
+  icon_term -type input -origin {-100 30} -name Cin
+  icon_term -type output -origin {100 -10} -name Cout
+  icon_term -type output -origin {100 10} -name {S[31:0]}
+  icon_property -origin {-50 140} -type user -name name
+  icon_property -origin {-50 160} -type user -name M
+  icon_property -origin {-50 180} -type user -name dpc
+  icon_line -100 -40 -100 50 100 50 100 -40 -100 -40
+  icon_property -origin {-90 -10} -label {A[31:0]}
+  icon_property -origin {-90 10} -label {B[31:0]}
+  icon_property -origin {-90 30} -label Cin
+  icon_property -origin {50 -10} -label Cout
+  icon_property -origin {40 10} -label {S[31:0]}
+  icon_property -origin {-40 40} -label {32bits Adder}
+}
+

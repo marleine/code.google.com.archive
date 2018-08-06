@@ -1,0 +1,7 @@
+set NETLIST_CACHE(Adder_FA,cells) {{schematic Adder_HA} {icon nor2 has_schematic} {icon inverter has_schematic}}
+set netlist_props verilog
+set netlist_level 1000
+set NETLIST_CACHE(Adder_FA,version) MMI_SUE4.4.0
+set NETLIST_CACHE(Adder_FA) {{module Adder_FA (A, B, Cin, Cout, S);} {	input		A;} {	input		B;} {	input		Cin;} {	output		Cout;} {	output		S;} { } {	wire		net_2;} {	wire		net_3;} {	wire		net_4;} {	wire		net_1;} { } {	Adder_HA Adder_HA(.S(net_1), .Cout(net_2), .A(A), .B(B));} {	Adder_HA Adder_HA_1(.A(net_1), .Cout(net_3), .B(Cin), .S(S));} {	assign net_4 = !(net_3 || net_2);} {	not #0 inv(Cout, net_4);} {} {endmodule		// Adder_FA} {}}
+set NETLIST_CACHE(Adder_FA,names) {{190 170 {0 A}} {510 220 {0 net_1}} {190 190 {0 B}} {390 170 {0 net_2}} {510 240 {0 Cin} {2 Cin}} {710 220 {0 net_3}} {770 330 {0 net_2}} {390 190 {0 net_1}} {710 240 {0 S} {2 S}} {180 170 {1 A}} {770 290 {0 net_3}} {860 310 {0 net_4}} {180 190 {1 B}} {960 310 {0 Cout} {2 Cout}} {610 230 {0 Adder_HA_1}} {290 180 {0 Adder_HA}} {880 310 {0 net_4}} {910 310 {0 inv}}}
+set NETLIST_CACHE(Adder_FA,wires) {{860 310 880 310 net_4} {420 330 770 330 net_2} {740 290 770 290 net_3} {710 220 740 220 net_3} {740 220 740 290 net_3} {450 220 510 220 net_1} {390 170 420 170 net_2} {420 170 420 330 net_2} {180 190 190 190 B} {390 190 450 190 net_1} {450 190 450 220 net_1} {180 170 190 170 A}}

@@ -1,0 +1,77 @@
+///////////////////////////////
+// Top Level Instrumentation //
+///////////////////////////////
+module test();
+// needed for interactive verilog probing.
+   integer         tmp_channel;
+// clock
+   wire clk;
+
+// test registers
+   reg [64:0] x;
+   wire cout;
+   wire [32:0] out;
+   reg [32:0] vout;	
+
+initial
+	begin
+	x=0;
+	end
+
+
+clock clock(clk);
+
+ always @(posedge clk)
+    begin
+     x = x+ 32;
+     if (x==0) 
+	begin	
+	$display("Passes all tests");
+	$finish;
+	end
+    end
+
+ // Instantiate yourcell
+
+   Adder_32bits Adder_32bits(x[64:33],x[32:0],x[64],cout,out);
+
+// Check it !!
+
+ always @(negedge clk)
+    begin
+	vout = x[64:33]+x[32:0]+{7'd0,x[64]};
+
+	if (vout !== out) 
+		begin
+		$display("Error a=%d b=%d cin=%d",x[64:33],x[32:0],x[z]);
+
+		$display("Error vout=%d out=%d",vout,out);
+
+		$finish;	
+		end
+    end
+
+endmodule
+
+
+///////////
+// clock //
+///////////
+module clock(clk);
+
+  // Interface
+  output     clk;
+
+  // Internal clk signal
+  reg clk;
+
+  // Generate Clock with period = 66  delays
+  initial
+    forever
+      begin
+        clk = 1; #33;
+        clk = 0; #33;
+      end
+
+endmodule
+

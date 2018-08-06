@@ -1,0 +1,8 @@
+set NETLIST_CACHE(MUX_4_1,cells) {{schematic inverter {}} {schematic MUX_2_1}}
+set netlist_props spice
+set netlist_level 1000
+set NETLIST_CACHE(MUX_4_1,level) main
+set NETLIST_CACHE(MUX_4_1,version) MMI_SUE4.4.0
+set NETLIST_CACHE(MUX_4_1) {{* start main CELL MUX_4_1} {* .SUBCKT MUX_4_1 S0 S1 a b c d out } {XMUX_2_1 net_1 a b net_2 MUX_2_1 } {XMUX_2_2 S0 c d net_3 MUX_2_1 } {XMUX_2_3 S1 net_2 net_3 out MUX_2_1 } {Xinverter S0 net_1 inverter } {* .ENDS	$ MUX_4_1} {}}
+set NETLIST_CACHE(MUX_4_1,names) {{260 440 {0 c} {2 c}} {260 460 {0 d} {2 d}} {460 440 {0 net_3}} {360 460 {0 XMUX_2_2}} {260 480 {0 S0}} {460 380 {1 S1}} {510 340 {0 net_2}} {710 340 {0 out} {2 out}} {510 360 {0 net_3}} {610 360 {0 XMUX_2_3}} {190 340 {0 Xinverter}} {510 380 {0 S1}} {260 300 {0 a} {2 a}} {140 340 {1 S0}} {240 340 {0 net_1}} {260 320 {0 b} {2 b}} {460 300 {0 net_2}} {360 320 {0 XMUX_2_1}} {160 340 {0 S0}} {260 340 {0 net_1}}}
+set NETLIST_CACHE(MUX_4_1,wires) {{140 340 140 480 S0} {460 380 510 380 S1} {460 300 490 300 net_2} {490 300 490 340 net_2} {490 340 510 340 net_2} {460 440 490 440 net_3} {490 360 490 440 net_3} {490 360 510 360 net_3} {240 340 260 340 net_1} {140 340 160 340 S0} {140 480 260 480 S0}}

@@ -1,0 +1,37 @@
+# SUE version MMI_SUE4.4.0 (auto-save)
+
+proc SCHEMATIC_Adder_HA {} {
+  make my_xor -origin {450 350}
+  make nand2 -origin {510 470}
+  make inverter -origin {650 470}
+  make input -name A -origin {390 330}
+  make input -name B -origin {360 370}
+  make output -name S -origin {540 350}
+  make output -name Cout -origin {700 470}
+  make_wire 410 370 360 370
+  make_wire 390 330 410 330
+  make_wire 390 450 490 450
+  make_wire 360 370 360 490
+  make_wire 360 490 490 490
+  make_wire 500 350 540 350
+  make_wire 580 470 620 470
+  make_wire 390 330 390 450
+}
+
+proc ICON_Adder_HA args {
+  icon_setup $args {{origin {0 0}} {orient R0} {name {}} {M {}} {dpc {}}}
+  icon_term -type input -origin {-100 -10} -name A
+  icon_term -type input -origin {-100 10} -name B
+  icon_term -type output -origin {100 -10} -name Cout
+  icon_term -type output -origin {100 10} -name S
+  icon_property -origin {-50 140} -type user -name name
+  icon_property -origin {-50 160} -type user -name M
+  icon_property -origin {-50 180} -type user -name dpc
+  icon_line -100 -40 -100 40 100 40 100 -40 -100 -40 -90 -40
+  icon_property -origin {-10 20} -label HA
+  icon_property -origin {-90 -10} -label A
+  icon_property -origin {-90 10} -label B
+  icon_property -origin {50 -10} -label Cout
+  icon_property -origin {60 10} -label S
+}
+

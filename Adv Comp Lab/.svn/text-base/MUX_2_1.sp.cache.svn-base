@@ -1,0 +1,7 @@
+set NETLIST_CACHE(MUX_2_1,cells) {{schematic inverter {}} {schematic nand2 {}}}
+set netlist_props spice
+set netlist_level 1000
+set NETLIST_CACHE(MUX_2_1,version) MMI_SUE4.4.0
+set NETLIST_CACHE(MUX_2_1) {{.SUBCKT MUX_2_1 S0 a b out } {Xnand2 a net_2 net_1 nand2 } {Xnand2_1 b S0 net_3 nand2 } {Xnand2_2 net_1 net_3 out nand2 } {Xinverter S0 net_2 inverter } {.ENDS	$ MUX_2_1} {}}
+set NETLIST_CACHE(MUX_2_1,names) {{360 340 {0 Xnand2}} {340 360 {0 net_2} {1 net_2}} {510 370 {0 net_1}} {260 360 {0 S0}} {360 460 {0 Xnand2_1}} {340 480 {0 S0}} {530 390 {0 Xnand2_2}} {430 340 {0 net_1}} {430 460 {0 net_3}} {600 390 {0 out} {2 out}} {510 410 {0 net_3}} {190 360 {1 S0}} {290 360 {0 Xinverter}} {340 320 {0 a} {2 a}} {340 440 {0 b} {2 b}}}
+set NETLIST_CACHE(MUX_2_1,wires) {{430 340 490 340 net_1} {430 460 480 460 net_3} {480 410 510 410 net_3} {480 410 480 460 net_3} {490 370 510 370 net_1} {490 340 490 370 net_1} {190 360 260 360 S0} {190 360 190 480 S0} {190 480 340 480 S0}}

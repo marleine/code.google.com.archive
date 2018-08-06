@@ -1,0 +1,296 @@
+# SUE version MMI_SUE4.4.0
+
+proc SCHEMATIC_Reg0_32bit {} {
+  make Reg0_1bit -origin {460 60}
+  make Reg0_1bit -origin {460 160}
+  make Reg0_1bit -origin {460 260}
+  make Reg0_1bit -origin {460 360}
+  make Reg0_1bit -origin {460 470}
+  make Reg0_1bit -origin {460 570}
+  make Reg0_1bit -origin {460 670}
+  make Reg0_1bit -origin {460 770}
+  make Reg0_1bit -origin {460 870}
+  make Reg0_1bit -origin {460 970}
+  make Reg0_1bit -origin {460 1070}
+  make Reg0_1bit -origin {460 1170}
+  make Reg0_1bit -origin {460 1280}
+  make Reg0_1bit -origin {460 1380}
+  make Reg0_1bit -origin {460 1480}
+  make Reg0_1bit -origin {460 1580}
+  make Reg0_1bit -origin {460 1680}
+  make Reg0_1bit -origin {460 1780}
+  make Reg0_1bit -origin {460 1880}
+  make Reg0_1bit -origin {460 1980}
+  make Reg0_1bit -origin {460 2090}
+  make Reg0_1bit -origin {460 2190}
+  make Reg0_1bit -origin {460 2290}
+  make Reg0_1bit -origin {460 2390}
+  make Reg0_1bit -origin {460 2490}
+  make Reg0_1bit -origin {460 2590}
+  make Reg0_1bit -origin {460 2690}
+  make Reg0_1bit -origin {460 2790}
+  make Reg0_1bit -origin {460 2900}
+  make Reg0_1bit -origin {460 3000}
+  make Reg0_1bit -origin {460 3100}
+  make Reg0_1bit -origin {460 3200}
+  make output -name {out1[0]} -origin {730 50}
+  make output -name {out1[1]} -origin {730 150}
+  make output -name {out1[2]} -origin {730 250}
+  make output -name {out1[3]} -origin {730 350}
+  make output -name {out1[4]} -origin {730 460}
+  make output -name {out1[5]} -origin {730 560}
+  make output -name {out1[6]} -origin {730 660}
+  make output -name {out1[7]} -origin {730 760}
+  make output -name {out1[8]} -origin {730 860}
+  make output -name {out1[9]} -origin {730 960}
+  make output -name {out1[10]} -origin {730 1060}
+  make output -name {out1[11]} -origin {730 1160}
+  make output -name {out1[12]} -origin {730 1270}
+  make output -name {out1[13]} -origin {730 1370}
+  make output -name {out1[14]} -origin {730 1470}
+  make output -name {out1[15]} -origin {730 1570}
+  make output -name {out1[16]} -origin {730 1670}
+  make output -name {out1[17]} -origin {730 1770}
+  make output -name {out1[18]} -origin {730 1870}
+  make output -name {out1[19]} -origin {730 1970}
+  make output -name {out1[20]} -origin {730 2080}
+  make output -name {out1[21]} -origin {730 2180}
+  make output -name {out1[22]} -origin {730 2280}
+  make output -name {out1[23]} -origin {730 2380}
+  make output -name {out1[24]} -origin {730 2480}
+  make output -name {out1[25]} -origin {730 2580}
+  make output -name {out1[26]} -origin {730 2680}
+  make output -name {out1[27]} -origin {730 2780}
+  make output -name {out1[28]} -origin {730 2890}
+  make output -name {out1[29]} -origin {730 2990}
+  make output -name {out1[30]} -origin {730 3090}
+  make output -name {out1[31]} -origin {730 3190}
+  make output -name {out2[0]} -origin {640 80}
+  make output -name {out2[1]} -origin {640 180}
+  make output -name {out2[2]} -origin {640 280}
+  make output -name {out2[3]} -origin {640 380}
+  make output -name {out2[4]} -origin {640 490}
+  make output -name {out2[5]} -origin {640 590}
+  make output -name {out2[6]} -origin {640 690}
+  make output -name {out2[7]} -origin {640 790}
+  make output -name {out2[8]} -origin {640 890}
+  make output -name {out2[9]} -origin {640 990}
+  make output -name {out2[10]} -origin {640 1090}
+  make output -name {out2[11]} -origin {640 1190}
+  make output -name {out2[12]} -origin {640 1300}
+  make output -name {out2[13]} -origin {640 1400}
+  make output -name {out2[14]} -origin {640 1500}
+  make output -name {out2[15]} -origin {640 1600}
+  make output -name {out2[16]} -origin {640 1700}
+  make output -name {out2[17]} -origin {640 1800}
+  make output -name {out2[18]} -origin {640 1900}
+  make output -name {out2[19]} -origin {640 2000}
+  make output -name {out2[20]} -origin {640 2110}
+  make output -name {out2[21]} -origin {640 2210}
+  make output -name {out2[22]} -origin {640 2310}
+  make output -name {out2[23]} -origin {640 2410}
+  make output -name {out2[24]} -origin {640 2510}
+  make output -name {out2[25]} -origin {640 2610}
+  make output -name {out2[26]} -origin {640 2710}
+  make output -name {out2[27]} -origin {640 2810}
+  make output -name {out2[28]} -origin {640 2920}
+  make output -name {out2[29]} -origin {640 3020}
+  make output -name {out2[30]} -origin {640 3120}
+  make output -name {out2[31]} -origin {640 3220}
+  make input -name R1 -origin {200 50}
+  make input -name R2 -origin {270 80}
+  make_wire 360 50 200 50
+  make_wire 360 80 270 80
+  make_wire 560 50 730 50
+  make_wire 560 80 640 80
+  make_wire 360 150 200 150
+  make_wire 360 180 270 180
+  make_wire 560 150 730 150
+  make_wire 560 180 640 180
+  make_wire 360 250 200 250
+  make_wire 360 280 270 280
+  make_wire 560 250 730 250
+  make_wire 560 280 640 280
+  make_wire 360 350 200 350
+  make_wire 360 380 270 380
+  make_wire 560 350 730 350
+  make_wire 560 380 640 380
+  make_wire 360 460 200 460
+  make_wire 360 490 270 490
+  make_wire 560 460 730 460
+  make_wire 560 490 640 490
+  make_wire 360 560 200 560
+  make_wire 360 590 270 590
+  make_wire 560 560 730 560
+  make_wire 560 590 640 590
+  make_wire 360 660 200 660
+  make_wire 360 690 270 690
+  make_wire 560 660 730 660
+  make_wire 560 690 640 690
+  make_wire 360 760 200 760
+  make_wire 360 790 270 790
+  make_wire 560 760 730 760
+  make_wire 560 790 640 790
+  make_wire 360 860 200 860
+  make_wire 360 890 270 890
+  make_wire 560 860 730 860
+  make_wire 560 890 640 890
+  make_wire 360 960 200 960
+  make_wire 360 990 270 990
+  make_wire 560 960 730 960
+  make_wire 560 990 640 990
+  make_wire 360 1060 200 1060
+  make_wire 360 1090 270 1090
+  make_wire 560 1060 730 1060
+  make_wire 560 1090 640 1090
+  make_wire 360 1160 200 1160
+  make_wire 360 1190 270 1190
+  make_wire 560 1160 730 1160
+  make_wire 560 1190 640 1190
+  make_wire 360 1270 200 1270
+  make_wire 360 1300 270 1300
+  make_wire 560 1270 730 1270
+  make_wire 560 1300 640 1300
+  make_wire 360 1370 200 1370
+  make_wire 360 1400 270 1400
+  make_wire 560 1370 730 1370
+  make_wire 560 1400 640 1400
+  make_wire 360 1470 200 1470
+  make_wire 360 1500 270 1500
+  make_wire 560 1470 730 1470
+  make_wire 560 1500 640 1500
+  make_wire 360 1570 200 1570
+  make_wire 360 1600 270 1600
+  make_wire 560 1570 730 1570
+  make_wire 560 1600 640 1600
+  make_wire 360 1670 200 1670
+  make_wire 360 1700 270 1700
+  make_wire 560 1670 730 1670
+  make_wire 560 1700 640 1700
+  make_wire 360 1770 200 1770
+  make_wire 360 1800 270 1800
+  make_wire 560 1770 730 1770
+  make_wire 560 1800 640 1800
+  make_wire 360 1870 200 1870
+  make_wire 360 1900 270 1900
+  make_wire 560 1870 730 1870
+  make_wire 560 1900 640 1900
+  make_wire 360 1970 200 1970
+  make_wire 360 2000 270 2000
+  make_wire 560 1970 730 1970
+  make_wire 560 2000 640 2000
+  make_wire 360 2080 200 2080
+  make_wire 360 2110 270 2110
+  make_wire 560 2080 730 2080
+  make_wire 560 2110 640 2110
+  make_wire 360 2180 200 2180
+  make_wire 360 2210 270 2210
+  make_wire 560 2180 730 2180
+  make_wire 560 2210 640 2210
+  make_wire 360 2280 200 2280
+  make_wire 360 2310 270 2310
+  make_wire 560 2280 730 2280
+  make_wire 560 2310 640 2310
+  make_wire 360 2380 200 2380
+  make_wire 360 2410 270 2410
+  make_wire 560 2380 730 2380
+  make_wire 560 2410 640 2410
+  make_wire 360 2480 200 2480
+  make_wire 360 2510 270 2510
+  make_wire 560 2480 730 2480
+  make_wire 560 2510 640 2510
+  make_wire 360 2580 200 2580
+  make_wire 360 2610 270 2610
+  make_wire 560 2580 730 2580
+  make_wire 560 2610 640 2610
+  make_wire 360 2680 200 2680
+  make_wire 360 2710 270 2710
+  make_wire 560 2680 730 2680
+  make_wire 560 2710 640 2710
+  make_wire 360 2780 200 2780
+  make_wire 360 2810 270 2810
+  make_wire 560 2780 730 2780
+  make_wire 560 2810 640 2810
+  make_wire 360 2890 200 2890
+  make_wire 360 2920 270 2920
+  make_wire 560 2890 730 2890
+  make_wire 560 2920 640 2920
+  make_wire 360 2990 200 2990
+  make_wire 360 3020 270 3020
+  make_wire 560 2990 730 2990
+  make_wire 560 3020 640 3020
+  make_wire 360 3090 200 3090
+  make_wire 360 3120 270 3120
+  make_wire 560 3090 730 3090
+  make_wire 560 3120 640 3120
+  make_wire 360 3190 200 3190
+  make_wire 360 3220 270 3220
+  make_wire 560 3190 730 3190
+  make_wire 560 3220 640 3220
+  make_wire 200 860 200 50
+  make_wire 200 960 200 860
+  make_wire 200 1060 200 960
+  make_wire 200 1160 200 1060
+  make_wire 200 1270 200 1160
+  make_wire 200 1370 200 1270
+  make_wire 200 1470 200 1370
+  make_wire 200 1570 200 1470
+  make_wire 200 1670 200 1570
+  make_wire 200 1770 200 1670
+  make_wire 200 1870 200 1770
+  make_wire 200 1970 200 1870
+  make_wire 200 2080 200 1970
+  make_wire 200 2180 200 2080
+  make_wire 200 2280 200 2180
+  make_wire 200 2380 200 2280
+  make_wire 200 2480 200 2380
+  make_wire 200 2580 200 2480
+  make_wire 200 2680 200 2580
+  make_wire 200 2780 200 2680
+  make_wire 200 2890 200 2780
+  make_wire 200 2990 200 2890
+  make_wire 200 3090 200 2990
+  make_wire 200 3090 200 3190
+  make_wire 270 990 270 890
+  make_wire 270 1090 270 990
+  make_wire 270 1190 270 1090
+  make_wire 270 1300 270 1190
+  make_wire 270 1400 270 1300
+  make_wire 270 1500 270 1400
+  make_wire 270 1600 270 1500
+  make_wire 270 1700 270 1600
+  make_wire 270 1800 270 1700
+  make_wire 270 1900 270 1800
+  make_wire 270 2000 270 1900
+  make_wire 270 2110 270 2000
+  make_wire 270 2210 270 2110
+  make_wire 270 2310 270 2210
+  make_wire 270 2410 270 2310
+  make_wire 270 2510 270 2410
+  make_wire 270 2610 270 2510
+  make_wire 270 2710 270 2610
+  make_wire 270 2810 270 2710
+  make_wire 270 2920 270 2810
+  make_wire 270 3020 270 2920
+  make_wire 270 3120 270 3020
+  make_wire 270 3120 270 3220
+  make_wire 270 80 270 890
+}
+
+proc ICON_Reg0_32bit args {
+  icon_setup $args {{origin {0 0}} {orient R0} {name {}} {M {}} {dpc {}}}
+  icon_term -type input -origin {-100 -10} -name R1
+  icon_term -type input -origin {-100 10} -name R2
+  icon_term -type output -origin {100 -20} -name {out1[31:0]}
+  icon_term -type output -origin {100 10} -name {out2[31:0]}
+  icon_property -origin {-50 140} -type user -name name
+  icon_property -origin {-50 160} -type user -name M
+  icon_property -origin {-50 180} -type user -name dpc
+  icon_line -100 -40 -100 40 100 40 100 -40 -100 -40
+  icon_property -origin {-90 -10} -label R1
+  icon_property -origin {-90 10} -label R2
+  icon_property -origin {0 -20} -label {out1[31:0]}
+  icon_property -origin {0 10} -label {out2[31:0]}
+  icon_property -origin {-70 30} -label Reg0_32bit
+}
+

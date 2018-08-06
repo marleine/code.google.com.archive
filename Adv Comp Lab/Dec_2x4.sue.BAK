@@ -1,0 +1,82 @@
+# SUE version MMI_SUE4.4.0
+
+proc SCHEMATIC_Dec_2x4 {} {
+  make input -name enable -origin {230 110}
+  make inverter -origin {370 170}
+  make inverter -origin {370 240}
+  generate nand2 nand3 -ninputs 3
+  make nand3 -WN 2 -origin {600 210}
+  make input -name {a[0]} -origin {100 170}
+  make input -name {a[1]} -origin {250 240}
+  make inverter -origin {370 390}
+  make nand3 -WN 2 -origin {600 360}
+  make nand3 -WN 2 -origin {600 510}
+  make inverter -origin {370 470}
+  make nand3 -WN 2 -origin {600 630}
+  make inverter -origin {700 210}
+  make inverter -origin {700 360}
+  make inverter -origin {700 510}
+  make inverter -origin {700 630}
+  make output -name {outD[0]} -origin {750 210}
+  make output -name {outD[1]} -origin {750 360}
+  make output -name {outD[2]} -origin {750 510}
+  make output -name {outD[3]} -origin {750 630}
+  make_wire 420 170 520 170
+  make_wire 520 170 520 210
+  make_wire 520 210 580 210
+  make_wire 420 240 520 240
+  make_wire 520 240 520 230
+  make_wire 520 230 580 230
+  make_wire 230 110 550 110
+  make_wire 550 110 550 190
+  make_wire 550 190 580 190
+  make_wire 520 320 520 360
+  make_wire 520 360 580 360
+  make_wire 420 390 520 390
+  make_wire 520 390 520 380
+  make_wire 520 380 580 380
+  make_wire 550 340 580 340
+  make_wire 250 390 340 390
+  make_wire 100 170 340 170
+  make_wire 550 340 550 190
+  make_wire 100 320 520 320
+  make_wire 250 240 340 240
+  make_wire 520 540 520 530
+  make_wire 520 530 580 530
+  make_wire 550 490 580 490
+  make_wire 550 340 550 490
+  make_wire 420 470 420 510
+  make_wire 420 510 580 510
+  make_wire 250 540 520 540
+  make_wire 340 470 100 470
+  make_wire 520 660 520 650
+  make_wire 520 650 580 650
+  make_wire 420 590 420 630
+  make_wire 420 630 580 630
+  make_wire 250 660 520 660
+  make_wire 580 610 550 610
+  make_wire 550 610 550 490
+  make_wire 420 590 100 590
+  make_wire 250 390 250 240
+  make_wire 250 540 250 390
+  make_wire 250 540 250 660
+  make_wire 100 320 100 170
+  make_wire 100 470 100 320
+  make_wire 100 470 100 590
+}
+
+proc ICON_Dec_2x4 args {
+  icon_setup $args {{origin {0 0}} {orient R0} {name {}} {M {}} {dpc {}}}
+  icon_term -type input -origin {-100 -10} -name {a[1:0]}
+  icon_term -type input -origin {-100 10} -name enable
+  icon_term -type output -origin {110 -20} -name {outD[3:0]}
+  icon_property -origin {-50 140} -type user -name name
+  icon_property -origin {-50 160} -type user -name M
+  icon_property -origin {-50 180} -type user -name dpc
+  icon_line -100 -60 -100 70 110 70 110 -60 -100 -60
+  icon_property -origin {-90 -10} -label {a[1:0]}
+  icon_property -origin {-90 10} -label enable
+  icon_property -origin {100 -20} -anchor e -label {outD[3:0]}
+  icon_property -origin {-30 50} -label Dec_2x4
+}
+

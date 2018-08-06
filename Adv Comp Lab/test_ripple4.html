@@ -1,0 +1,73 @@
+<title> Documentation for test_ripple4 </title>
+
+<h1>
+  <img src="gif_files/logo1.gif" align=bottom>
+  Micro Magic, Inc.
+</h1>
+<img src="gif_files/blue-rule.gif">
+
+<h2>Documentation for test_ripple4 </h2>
+<pre>
+This is a demo of a 4-bit ripple adder.  It consists of two blocks; an
+8 bit counter (counter), and a simple 4 bit ripple carry adder (ripple4).
+
+The outputs of the counter are broken into two busses which are inputs
+to the 4-bit ripple adder.  ripple4 adds up the outputs from the
+counter and the input carry (cin) into cout,sum[3:0] outputs.
+
+<b>Counter:</b>
+
+The counter behaves differently in verilog vs. spice.  In verilog mode
+the counter simply counts from 0 up to 2^8-1 (255).  In spice mode the
+counter puts all 1's on the A inputs to the ripple adder, and all 0's
+on the B inputs.  It then pulses the low order B input from a 0 to a 1
+thus causing a ripple across the ripple adder.  This carry ripple in
+turn causes all of the Sum outputs to change allowing the critical
+path of the adder to be measured.
+
+<a href=ripple4.html>ripple4</a>
+
+rippple4 consists of four full adders (FA) tied together using the
+classical ripple technique.
+
+<b>Verilog operation:</b>
+
+The counter calls the counter module in counter.vb.  ripple4 can be
+netlisted using the ripple4.bv model, or using FA.bv models, or down
+to the transistor level.  To run Verilog do the following:
+
+	Sim menu: Change Simulation Mode to verilog (if necessary)
+	Sim menu: VERILOG Netlist
+	Sim menu: Display Design Hierarchy
+	Sim menu: change design hierarchy if desired and hit Netlist
+	Sim menu: Init Probe
+	hot key: hit "s" to step time - you should see the flags change
+
+<b>Irsim operation:</b>
+
+Irsim is run interactively.  To speed things up you can init and run a
+few patterns by sourcing the command file (counter.cmd).  To run
+irsim do the following:
+
+	Sim menu: Change Simulation Mode to sim (if necessary)
+	Sim menu: SIM It
+	Go to the window you started sue from and type:
+		i counter
+	This will run the command found in the file counter.cmd
+	You can also run other irsim commands by typing i followed
+	by a space and then the command.
+	select wires then type "p" for plot also works.
+
+<b>Spice operation:</b>
+
+The counter has a spice circuit under the icon.  It does NOT relate to
+the counter verilog.  The reason is that it would take too long to
+spice all possible patterns.  Spice operation was described above. To
+run spice do the following:
+
+	Sim menu: Change Simulation Mode to spice (if necessary)
+	Sim menu: SPICE Netlist
+	hot key: hit "h" - spice should run and nst should come up
+	select wires then type "p" for plot net.
+</pre>
+

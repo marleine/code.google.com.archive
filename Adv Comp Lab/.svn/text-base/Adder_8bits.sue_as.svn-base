@@ -1,0 +1,43 @@
+# SUE version MMI_SUE4.4.0 (auto-save)
+
+proc SCHEMATIC_Adder_8bits {} {
+  make Adder_4bits -origin {470 160}
+  make Adder_4bits -origin {470 340}
+  make input -name Cin -origin {370 190}
+  make output -name Cout -origin {570 330}
+  make input -name {B[7:4]} -origin {320 350}
+  make input -name {A[7:4]} -origin {280 330}
+  make output -name {S[7:4]} -origin {570 350}
+  make output -name {S[3:0]} -origin {570 170}
+  make input -name {A[3:0]} -origin {280 150}
+  make input -name {B[3:0]} -origin {320 170}
+  make_wire 370 150 280 150
+  make_wire 370 330 280 330
+  make_wire 370 170 320 170
+  make_wire 370 350 320 350
+  make_wire 570 150 640 150
+  make_wire 640 150 640 270
+  make_wire 640 270 330 270
+  make_wire 330 270 330 370
+  make_wire 330 370 370 370
+}
+
+proc ICON_Adder_8bits args {
+  icon_setup $args {{origin {0 0}} {orient R0} {name {}} {M {}} {dpc {}}}
+  icon_term -type input -origin {-100 -20} -name {A[7:0]}
+  icon_term -type input -origin {-100 0} -name {B[7:0]}
+  icon_term -type input -origin {-100 20} -name Cin
+  icon_term -type output -origin {100 -20} -name Cout
+  icon_term -type output -origin {100 0} -name {S[7:0]}
+  icon_property -origin {-50 130} -type user -name name
+  icon_property -origin {-50 150} -type user -name M
+  icon_property -origin {-50 170} -type user -name dpc
+  icon_line -100 -50 -100 50 100 50 100 -50 -100 -50
+  icon_property -origin {-90 -20} -label {A[7:0]}
+  icon_property -origin {-90 0} -label {B[7:0]}
+  icon_property -origin {-90 20} -label Cin
+  icon_property -origin {50 -20} -label Cout
+  icon_property -origin {40 0} -label {S[7:0]}
+  icon_property -origin {-30 40} -label {8bits Adder}
+}
+

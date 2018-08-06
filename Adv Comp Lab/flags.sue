@@ -1,0 +1,39 @@
+# SUE version MMI_SUE4.4.0
+
+proc SCHEMATIC_flags {} {
+  make inverter -orient RXY -origin {560 210}
+  make output -name out -origin {690 270}
+  make input -name data -origin {230 260}
+  make nmos -orient R90 -M 4 -origin {390 260}
+  make inverter -M 4 -origin {550 380}
+  make input -orient R90 -name write -origin {390 200}
+  make inverter -M 4 -origin {290 260}
+  make_wire 660 270 690 270
+  make_wire 590 210 660 210
+  make_wire 440 210 510 210
+  make_wire 600 380 660 380
+  make_wire 660 210 660 270
+  make_wire 660 270 660 380
+  make_wire 440 380 520 380
+  make_wire 440 210 440 260
+  make_wire 440 260 440 380
+  make_wire 230 260 260 260
+  make_wire 340 260 350 260
+  make_wire 430 260 440 260
+}
+
+proc ICON_flags args {
+  icon_setup $args {{origin {0 0}} {orient R0} {name {}} {M {}} {dpc {}}}
+  icon_term -type input -origin {-100 -10} -name data
+  icon_term -type input -origin {-100 10} -name write
+  icon_term -type output -origin {100 -10} -name out
+  icon_property -origin {-50 140} -type user -name name
+  icon_property -origin {-50 160} -type user -name M
+  icon_property -origin {-50 180} -type user -name dpc
+  icon_line -50 50 100 50 100 -60 -100 -60 -100 50 -50 50
+  icon_property -origin {-20 40} -label Flags
+  icon_property -origin {-90 -10} -label data
+  icon_property -origin {-90 10} -label write
+  icon_property -origin {50 -10} -label out
+}
+

@@ -1,0 +1,7 @@
+set NETLIST_CACHE(flags,cells) {{icon nmos {}} {schematic inverter {}}}
+set netlist_props spice
+set netlist_level 1000
+set NETLIST_CACHE(flags,version) MMI_SUE4.4.0
+set NETLIST_CACHE(flags) {{.SUBCKT flags data out write } {Xinverter data net_2 inverter } {Xinverter_1 out net_1 inverter } {M_1 net_1 write net_2 gnd n W='1*1u' L=ln_min ad='arean(1,sdd)' } {+ as='arean(1,sdd)' pd='perin(1,sdd)' ps='perin(1,sdd)' M=4} {Xinverter_2 net_1 out inverter M=4} {.ENDS	$ flags} {}}
+set NETLIST_CACHE(flags,names) {{550 330 {0 Xinverter_2}} {440 260 {0 net_1}} {360 260 {0 net_2} {1 net_2}} {600 210 {0 out}} {280 260 {0 data} {2 data}} {520 210 {0 net_1}} {600 330 {0 out}} {310 260 {0 Xinverter}} {520 330 {0 net_1}} {400 200 {1 write} {2 write}} {400 260 {0 M_1}} {660 270 {1 out}} {570 210 {0 Xinverter_1}}}
+set NETLIST_CACHE(flags,wires) {{440 260 440 330 net_1} {440 330 520 330 net_1} {600 330 660 330 out} {600 210 660 210 out} {440 210 520 210 net_1} {440 210 440 260 net_1} {660 270 660 330 out} {660 210 660 270 out}}

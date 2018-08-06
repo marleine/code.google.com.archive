@@ -1,0 +1,44 @@
+# SUE version MMI_SUE4.4.0
+
+proc SCHEMATIC_Adder_FA {} {
+  make Adder_HA -origin {280 180}
+  make Adder_HA -origin {610 230}
+  make nor2 -origin {790 310}
+  make inverter -origin {910 310}
+  make input -name A -origin {180 170}
+  make input -name B -origin {180 190}
+  make input -name Cin -origin {510 240}
+  make output -name S -origin {710 240}
+  make output -name Cout -origin {960 310}
+  make_wire 380 190 450 190
+  make_wire 450 190 450 220
+  make_wire 450 220 510 220
+  make_wire 380 170 380 190
+  make_wire 380 170 420 170
+  make_wire 710 220 740 220
+  make_wire 880 310 860 310
+  make_wire 420 330 770 330
+  make_wire 420 170 420 330
+  make_wire 740 290 770 290
+  make_wire 740 220 740 290
+}
+
+proc ICON_Adder_FA args {
+  icon_setup $args {{origin {0 0}} {orient R0} {name {}} {M {}} {dpc {}}}
+  icon_term -type input -origin {-100 -20} -name A
+  icon_term -type input -origin {-100 0} -name B
+  icon_term -type input -origin {-100 20} -name Cin
+  icon_term -type output -origin {100 -20} -name Cout
+  icon_term -type output -origin {100 0} -name S
+  icon_property -origin {-50 130} -type user -name name
+  icon_property -origin {-50 150} -type user -name M
+  icon_property -origin {-50 170} -type user -name dpc
+  icon_line -100 -50 -100 40 100 40 100 -50 -100 -50
+  icon_property -origin {-90 -20} -label A
+  icon_property -origin {-90 0} -label B
+  icon_property -origin {-90 20} -label Cin
+  icon_property -origin {60 -20} -label Cout
+  icon_property -origin {70 0} -label S
+  icon_property -origin {-10 20} -label FA
+}
+

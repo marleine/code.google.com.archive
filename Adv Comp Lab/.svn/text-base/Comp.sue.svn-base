@@ -1,0 +1,180 @@
+# SUE version MMI_SUE4.4.0
+
+proc SCHEMATIC_Comp {} {
+  make output -name {Out[0]} -origin {450 160}
+  make output -name {Out[1]} -origin {450 230}
+  make output -name {Out[2]} -origin {450 300}
+  make output -name {Out[3]} -origin {450 370}
+  make output -name {Out[4]} -origin {450 440}
+  make output -name {Out[5]} -origin {450 510}
+  make output -name {Out[6]} -origin {450 580}
+  make output -name {Out[7]} -origin {450 650}
+  make output -name {Out[8]} -origin {440 720}
+  make output -name {Out[9]} -origin {440 790}
+  make output -name {Out[10]} -origin {440 860}
+  make output -name {Out[11]} -origin {440 930}
+  make output -name {Out[12]} -origin {440 1000}
+  make output -name {Out[13]} -origin {440 1070}
+  make output -name {Out[14]} -origin {440 1140}
+  make output -name {Out[15]} -origin {440 1210}
+  make output -name {Out[16]} -origin {440 1280}
+  make output -name {Out[17]} -origin {440 1350}
+  make output -name {Out[18]} -origin {440 1420}
+  make output -name {Out[19]} -origin {440 1490}
+  make output -name {Out[20]} -origin {440 1560}
+  make output -name {Out[21]} -origin {440 1630}
+  make output -name {Out[22]} -origin {440 1700}
+  make output -name {Out[23]} -origin {440 1770}
+  make output -name {Out[24]} -origin {430 1840}
+  make output -name {Out[25]} -origin {430 1910}
+  make output -name {Out[26]} -origin {430 1980}
+  make output -name {Out[27]} -origin {430 2050}
+  make output -name {Out[28]} -origin {430 2120}
+  make output -name {Out[29]} -origin {430 2190}
+  make output -name {Out[30]} -origin {430 2260}
+  make output -name {Out[31]} -origin {430 2330}
+  make input -name {B[0]} -origin {360 140}
+  make input -name {B[1]} -origin {360 210}
+  make input -name {B[2]} -origin {360 280}
+  make input -name {B[3]} -origin {360 350}
+  make input -name {B[4]} -origin {360 420}
+  make input -name {B[5]} -origin {360 490}
+  make input -name {B[6]} -origin {360 560}
+  make input -name {B[7]} -origin {360 630}
+  make input -name {B[8]} -origin {350 700}
+  make input -name {B[9]} -origin {350 770}
+  make input -name {B[10]} -origin {350 840}
+  make input -name {B[11]} -origin {350 910}
+  make input -name {B[12]} -origin {350 980}
+  make input -name {B[13]} -origin {350 1050}
+  make input -name {B[14]} -origin {350 1120}
+  make input -name {B[15]} -origin {350 1190}
+  make input -name {B[16]} -origin {350 1260}
+  make input -name {B[17]} -origin {350 1330}
+  make input -name {B[18]} -origin {350 1400}
+  make input -name {B[19]} -origin {350 1470}
+  make input -name {B[20]} -origin {350 1540}
+  make input -name {B[21]} -origin {350 1610}
+  make input -name {B[22]} -origin {350 1680}
+  make input -name {B[23]} -origin {350 1750}
+  make input -name {B[24]} -origin {340 1820}
+  make input -name {B[25]} -origin {340 1890}
+  make input -name {B[26]} -origin {340 1960}
+  make input -name {B[27]} -origin {340 2030}
+  make input -name {B[28]} -origin {340 2100}
+  make input -name {B[29]} -origin {340 2170}
+  make input -name {B[30]} -origin {340 2240}
+  make input -name {B[31]} -origin {340 2310}
+  make input -name {S[1]} -origin {160 180}
+  make my_xor -origin {380 2330}
+  make my_xor -origin {380 2260}
+  make my_xor -origin {380 2190}
+  make my_xor -origin {380 2120}
+  make my_xor -origin {380 2050}
+  make my_xor -origin {380 1980}
+  make my_xor -origin {380 1910}
+  make my_xor -origin {380 1840}
+  make my_xor -origin {390 1770}
+  make my_xor -origin {390 1700}
+  make my_xor -origin {390 1630}
+  make my_xor -origin {390 1560}
+  make my_xor -origin {390 1490}
+  make my_xor -origin {390 1420}
+  make my_xor -origin {390 1350}
+  make my_xor -origin {390 1280}
+  make my_xor -origin {390 1210}
+  make my_xor -origin {390 1140}
+  make my_xor -origin {390 1070}
+  make my_xor -origin {390 1000}
+  make my_xor -origin {390 930}
+  make my_xor -origin {390 860}
+  make my_xor -origin {390 790}
+  make my_xor -origin {390 720}
+  make my_xor -origin {400 650}
+  make my_xor -origin {400 580}
+  make my_xor -origin {400 510}
+  make my_xor -origin {400 440}
+  make my_xor -origin {400 370}
+  make my_xor -origin {400 300}
+  make my_xor -origin {400 230}
+  make my_xor -origin {400 160}
+  make_wire 160 180 360 180
+  make_wire 160 2350 340 2350
+  make_wire 340 2280 160 2280
+  make_wire 160 2280 160 2350
+  make_wire 340 2210 160 2210
+  make_wire 160 2210 160 2280
+  make_wire 340 2140 160 2140
+  make_wire 160 2140 160 2210
+  make_wire 340 2070 160 2070
+  make_wire 160 2070 160 2140
+  make_wire 340 2000 160 2000
+  make_wire 160 2000 160 2070
+  make_wire 340 1930 160 1930
+  make_wire 160 1930 160 2000
+  make_wire 340 1860 160 1860
+  make_wire 160 1860 160 1930
+  make_wire 350 1790 160 1790
+  make_wire 160 1790 160 1860
+  make_wire 350 1720 160 1720
+  make_wire 160 1720 160 1790
+  make_wire 350 1650 160 1650
+  make_wire 160 1650 160 1720
+  make_wire 350 1580 160 1580
+  make_wire 160 1580 160 1650
+  make_wire 350 1510 160 1510
+  make_wire 160 1510 160 1580
+  make_wire 350 1440 160 1440
+  make_wire 160 1440 160 1510
+  make_wire 160 1370 160 1440
+  make_wire 350 1300 160 1300
+  make_wire 160 1300 160 1370
+  make_wire 160 1230 160 1300
+  make_wire 350 1160 160 1160
+  make_wire 160 1160 160 1230
+  make_wire 160 1090 160 1160
+  make_wire 350 1090 160 1090
+  make_wire 350 1020 160 1020
+  make_wire 160 1020 160 1090
+  make_wire 350 950 160 950
+  make_wire 160 950 160 1020
+  make_wire 350 880 160 880
+  make_wire 160 880 160 950
+  make_wire 350 810 160 810
+  make_wire 160 810 160 880
+  make_wire 350 740 160 740
+  make_wire 160 740 160 810
+  make_wire 360 670 160 670
+  make_wire 160 670 160 740
+  make_wire 360 600 160 600
+  make_wire 160 600 160 670
+  make_wire 360 530 160 530
+  make_wire 160 530 160 600
+  make_wire 360 460 160 460
+  make_wire 160 460 160 530
+  make_wire 360 390 160 390
+  make_wire 160 390 160 460
+  make_wire 360 320 160 320
+  make_wire 160 320 160 390
+  make_wire 360 250 160 250
+  make_wire 160 250 160 320
+  make_wire 160 250 160 180
+  make_wire 160 1230 350 1230
+  make_wire 160 1370 350 1370
+}
+
+proc ICON_Comp args {
+  icon_setup $args {{origin {0 0}} {orient R0} {name {}} {M {}} {dpc {}}}
+  icon_term -type input -origin {-100 -10} -name {B[31:0]}
+  icon_term -type input -origin {-100 10} -name {S[1]}
+  icon_term -type output -origin {90 -10} -name {Out[31:0]}
+  icon_property -origin {-50 140} -type user -name name
+  icon_property -origin {-50 160} -type user -name M
+  icon_property -origin {-50 180} -type user -name dpc
+  icon_line -100 -50 -100 40 90 40 90 -50 -100 -50
+  icon_property -origin {-90 -10} -label {B[31:0]}
+  icon_property -origin {0 -10} -label {Out[31:0]}
+  icon_property -origin {-20 30} -label Comp
+  icon_property -origin {-90 10} -label {S[1]}
+}
+

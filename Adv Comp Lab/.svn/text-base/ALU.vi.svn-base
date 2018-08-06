@@ -1,0 +1,100 @@
+///////////////////////////////
+// Top Level Instrumentation //
+///////////////////////////////
+module test();
+// needed for interactive verilog probing.
+   integer         tmp_channel;
+// clock
+   wire clk;
+
+// test registers
+   reg [31:0] a;
+   reg [31:0] b;
+   reg [2:0] S;
+   wire cout;
+   wire [31:0] ALU_Result;
+   reg [31:0] vout;	
+
+initial
+	begin
+	S=0;
+	a=32;
+	b=0;
+	end
+
+
+clock clock(clk);
+
+ always @(posedge clk)
+    begin
+     S = S+ 1;
+a=$random;
+b=$random;
+     if (S==0) 
+	begin	
+	$display("Passes all tests");
+	$finish;
+	end
+    end
+
+
+ // Instantiate yourcell
+
+   ALU alu(ALU_Result[31:0],a,b,cout,S);
+
+// Check it !!
+
+ always @(negedge clk)
+    begin
+	if(S==0)
+	vout = a+b;
+   else if(S==1)
+        vout = a+b+1;
+  else if(S==2)
+        vout = a-b-1;
+  else if(S==3)
+        vout = a-b;
+  else if(S==4)
+       vout = a&b;
+  else if(S==5)
+        vout = a|b;
+  else if(S==6)
+        vout = a^b;
+  else if(S==7)
+        vout = ~(a^b);
+      
+
+	if (vout !== ALU_Result) 
+		begin
+		//$display("Error a=%d b=%d cin=%d",x[15:8],x[7:0],x[16]);
+
+		$display("Error S=%d \n a=%b \n b=%b \n v=%b \n A=%b \n vout=%d ALU_Result=%d",S, a, b, vout, ALU_Result, vout,ALU_Result);
+
+		$finish;	
+		end
+    end
+
+endmodule
+
+
+///////////
+// clock //
+///////////
+module clock(clk);
+
+  // Interface
+  output     clk;
+
+  // Internal clk signal
+  reg clk;
+
+  // Generate Clock with period = 66  delays
+  initial
+    forever
+      begin
+        clk = 1; #33;
+        clk = 0; #33;
+      end
+
+endmodule
+

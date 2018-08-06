@@ -1,0 +1,7 @@
+set NETLIST_CACHE(MUX_2_1,cells) {{icon inverter has_schematic} {icon nand2 has_schematic}}
+set netlist_props verilog
+set netlist_level 1000
+set NETLIST_CACHE(MUX_2_1,version) MMI_SUE4.4.0
+set NETLIST_CACHE(MUX_2_1) {{module MUX_2_1 (S0, a, b, out);} {	input		S0;} {	input		a;} {	input		b;} {	output		out;} { } {	wire		net_2;} {	wire		net_3;} {	wire		net_1;} { } {	assign #0 net_1 = !(a && net_2);} {	assign #0 net_3 = !(b && S0);} {	assign #0 out = !(net_1 && net_3);} {	not #0 inv(net_2, S0);} {} {endmodule		// MUX_2_1} {}}
+set NETLIST_CACHE(MUX_2_1,names) {}
+set NETLIST_CACHE(MUX_2_1,wires) {}

@@ -1,0 +1,7 @@
+set NETLIST_CACHE(Adder_8bits,cells) {{schematic Adder_4bits}}
+set netlist_props spice
+set netlist_level 1000
+set NETLIST_CACHE(Adder_8bits,version) MMI_SUE4.4.0
+set NETLIST_CACHE(Adder_8bits) {{.SUBCKT Adder_8bits A[0] A[1] A[2] A[3] A[4] A[5] A[6] A[7] B[0] B[1] B[2] } {+ B[3] B[4] B[5] B[6] B[7] Cin Cout S[0] S[1] S[2] S[3] S[4] S[5] S[6] S[7] } {+ } {XAdder_4bits A[0] A[1] A[2] A[3] B[0] B[1] B[2] B[3] Cin net_1 S[0] S[1] } {+ S[2] S[3] Adder_4bits } {XAdder_4bits_1 A[4] A[5] A[6] A[7] B[4] B[5] B[6] B[7] net_1 Cout S[4] S[5] } {+ S[6] S[7] Adder_4bits } {.ENDS	$ Adder_8bits} {}}
+set NETLIST_CACHE(Adder_8bits,names) {{370 150 {0 A[3:0]}} {370 330 {0 A[7:4]}} {370 170 {0 B[3:0]}} {570 150 {0 net_1}} {370 350 {0 B[7:4]}} {570 330 {0 Cout} {2 Cout}} {370 190 {0 Cin} {2 Cin}} {570 170 {0 S[3:0]} {2 S[3:0]}} {370 370 {0 net_1}} {570 350 {0 S[7:4]} {2 S[7:4]}} {320 170 {1 B[3:0]}} {320 350 {1 B[7:4]}} {280 150 {1 A[3:0]}} {280 330 {1 A[7:4]}} {470 340 {0 XAdder_4bits_1}} {470 160 {0 XAdder_4bits}}}
+set NETLIST_CACHE(Adder_8bits,wires) {{280 150 370 150 A[3:0]} {280 330 370 330 A[7:4]} {320 170 370 170 B[3:0]} {320 350 370 350 B[7:4]} {570 150 640 150 net_1} {640 150 640 270 net_1} {330 270 640 270 net_1} {330 270 330 370 net_1} {330 370 370 370 net_1}}

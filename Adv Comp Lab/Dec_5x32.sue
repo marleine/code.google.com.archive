@@ -1,0 +1,72 @@
+# SUE version MMI_SUE4.4.0
+
+proc SCHEMATIC_Dec_5x32 {} {
+  make Dec_3x8 -origin {110 100}
+  make Dec_2x4 -origin {520 100}
+  make Dec_2x4 -origin {520 230}
+  make input -name {in[1:0]} -origin {340 50}
+  make input -name {in[4:2]} -origin {10 100}
+  make Dec_2x4 -origin {520 360}
+  make Dec_2x4 -origin {520 490}
+  make Dec_2x4 -origin {520 620}
+  make Dec_2x4 -origin {520 750}
+  make Dec_2x4 -origin {520 880}
+  make Dec_2x4 -origin {520 1010}
+  make output -name {outD5[3:0]} -origin {620 80}
+  make output -name {outD5[7:4]} -origin {620 210}
+  make output -name {outD5[11:8]} -origin {620 340}
+  make output -name {outD5[15:12]} -origin {620 470}
+  make output -name {outD5[19:16]} -origin {620 600}
+  make output -name {outD5[23:20]} -origin {620 730}
+  make output -name {outD5[27:24]} -origin {620 860}
+  make output -name {outD5[31:28]} -origin {620 990}
+  make name_net_s -name {out[0]} -origin {320 100}
+  make name_net_s -name {out[1]} -origin {330 230}
+  make name_net_s -name {out[2]} -origin {330 360}
+  make name_net_s -name {out[3]} -origin {330 490}
+  make name_net_s -name {out[4]} -origin {330 620}
+  make name_net_s -name {out[5]} -origin {330 750}
+  make name_net_s -name {out[6]} -origin {330 880}
+  make name_net_s -name {out[7]} -origin {330 1010}
+  make name_net_s -name {out[7:0]} -origin {240 100}
+  make_wire 420 80 400 80
+  make_wire 420 230 330 230
+  make_wire 420 210 400 210
+  make_wire 420 360 330 360
+  make_wire 420 340 400 340
+  make_wire 420 490 330 490
+  make_wire 420 470 400 470
+  make_wire 420 620 330 620
+  make_wire 420 600 400 600
+  make_wire 420 750 330 750
+  make_wire 420 730 400 730
+  make_wire 420 880 330 880
+  make_wire 420 860 400 860
+  make_wire 420 1010 330 1010
+  make_wire 420 990 400 990
+  make_wire 400 210 400 80
+  make_wire 400 340 400 210
+  make_wire 400 470 400 340
+  make_wire 400 600 400 470
+  make_wire 400 730 400 600
+  make_wire 400 860 400 730
+  make_wire 400 860 400 990
+  make_wire 210 100 240 100
+  make_wire 420 100 320 100
+  make_wire 340 50 400 50
+  make_wire 400 50 400 80
+}
+
+proc ICON_Dec_5x32 args {
+  icon_setup $args {{origin {0 0}} {orient R0} {name {}} {M {}} {dpc {}}}
+  icon_term -type input -origin {-100 0} -name {in[4:0]}
+  icon_term -type output -origin {100 0} -name {outD5[31:0]}
+  icon_property -origin {-50 150} -type user -name name
+  icon_property -origin {-50 170} -type user -name M
+  icon_property -origin {-50 190} -type user -name dpc
+  icon_line -100 -50 -100 50 100 50 100 -40 100 -50 -100 -50
+  icon_property -origin {-90 0} -label {in[4:0]}
+  icon_property -origin {90 0} -anchor e -label {outD5[31:0]}
+  icon_property -origin {-40 40} -label Dec_5x32
+}
+

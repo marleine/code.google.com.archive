@@ -1,0 +1,7 @@
+set NETLIST_CACHE(Adder_HA,cells) {{schematic my_xor} {schematic inverter {}} {schematic nand2 {}}}
+set netlist_props spice
+set netlist_level 1000
+set NETLIST_CACHE(Adder_HA,version) MMI_SUE4.4.0
+set NETLIST_CACHE(Adder_HA) {{.SUBCKT Adder_HA A B Cout S } {Xmy_xor A B S my_xor } {Xnand2 A B net_1 nand2 } {Xinverter net_1 Cout inverter } {.ENDS	$ Adder_HA} {}}
+set NETLIST_CACHE(Adder_HA,names) {{580 470 {0 net_1}} {510 470 {0 Xnand2}} {450 350 {0 Xmy_xor}} {390 330 {1 A}} {500 350 {0 S}} {650 470 {0 Xinverter}} {490 450 {0 A}} {540 350 {1 S}} {490 490 {0 B}} {700 470 {0 Cout} {2 Cout}} {410 330 {0 A}} {620 470 {0 net_1}} {360 370 {1 B}} {410 370 {0 B}}}
+set NETLIST_CACHE(Adder_HA,wires) {{360 370 410 370 B} {390 330 410 330 A} {390 450 490 450 A} {360 370 360 490 B} {360 490 490 490 B} {500 350 540 350 S} {580 470 620 470 net_1} {390 330 390 450 A}}

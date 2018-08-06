@@ -1,0 +1,278 @@
+# SUE version MMI_SUE4.4.0
+
+proc SCHEMATIC_MUX_64_32 {} {
+  make MUX_2_1 -origin {460 100}
+  make MUX_2_1 -origin {460 200}
+  make MUX_2_1 -origin {460 300}
+  make MUX_2_1 -origin {460 400}
+  make MUX_2_1 -origin {460 500}
+  make MUX_2_1 -origin {460 600}
+  make MUX_2_1 -origin {460 700}
+  make MUX_2_1 -origin {460 800}
+  make MUX_2_1 -origin {460 900}
+  make MUX_2_1 -origin {460 1000}
+  make MUX_2_1 -origin {460 1100}
+  make MUX_2_1 -origin {460 1200}
+  make MUX_2_1 -origin {460 1300}
+  make MUX_2_1 -origin {460 1400}
+  make MUX_2_1 -origin {460 1500}
+  make MUX_2_1 -origin {460 1600}
+  make MUX_2_1 -origin {460 1700}
+  make MUX_2_1 -origin {460 1800}
+  make MUX_2_1 -origin {460 1900}
+  make MUX_2_1 -origin {460 2000}
+  make MUX_2_1 -origin {460 2100}
+  make MUX_2_1 -origin {460 2200}
+  make MUX_2_1 -origin {460 2300}
+  make MUX_2_1 -origin {460 2400}
+  make MUX_2_1 -origin {460 2500}
+  make MUX_2_1 -origin {460 2600}
+  make MUX_2_1 -origin {460 2700}
+  make MUX_2_1 -origin {460 2800}
+  make MUX_2_1 -origin {460 2900}
+  make MUX_2_1 -origin {460 3000}
+  make MUX_2_1 -origin {460 3100}
+  make MUX_2_1 -origin {460 3200}
+  make output -name {Out[0]} -origin {560 80}
+  make output -name {Out[1]} -origin {560 180}
+  make output -name {Out[2]} -origin {560 280}
+  make output -name {Out[3]} -origin {560 380}
+  make output -name {Out[4]} -origin {560 480}
+  make output -name {Out[5]} -origin {560 580}
+  make output -name {Out[6]} -origin {560 680}
+  make output -name {Out[7]} -origin {560 780}
+  make output -name {Out[8]} -origin {560 880}
+  make output -name {Out[9]} -origin {560 980}
+  make output -name {Out[10]} -origin {560 1080}
+  make output -name {Out[11]} -origin {560 1180}
+  make output -name {Out[12]} -origin {560 1280}
+  make output -name {Out[13]} -origin {560 1380}
+  make output -name {Out[14]} -origin {560 1480}
+  make output -name {Out[15]} -origin {560 1580}
+  make output -name {Out[16]} -origin {560 1680}
+  make output -name {Out[17]} -origin {560 1780}
+  make output -name {Out[18]} -origin {560 1880}
+  make output -name {Out[19]} -origin {560 1980}
+  make output -name {Out[20]} -origin {560 2080}
+  make output -name {Out[21]} -origin {560 2180}
+  make output -name {Out[22]} -origin {560 2280}
+  make output -name {Out[23]} -origin {560 2380}
+  make output -name {Out[24]} -origin {560 2480}
+  make output -name {Out[25]} -origin {560 2580}
+  make output -name {Out[26]} -origin {560 2680}
+  make output -name {Out[27]} -origin {560 2780}
+  make output -name {Out[28]} -origin {560 2880}
+  make output -name {Out[29]} -origin {560 2980}
+  make output -name {Out[30]} -origin {560 3080}
+  make output -name {Out[31]} -origin {560 3180}
+  make input -name {B[0]} -origin {260 100}
+  make input -name {B[1]} -origin {260 200}
+  make input -name {B[2]} -origin {260 300}
+  make input -name {B[3]} -origin {260 400}
+  make input -name {B[4]} -origin {260 500}
+  make input -name {B[5]} -origin {260 600}
+  make input -name {B[6]} -origin {260 700}
+  make input -name {B[7]} -origin {260 800}
+  make input -name {B[8]} -origin {260 900}
+  make input -name {B[9]} -origin {260 1000}
+  make input -name {B[10]} -origin {260 1100}
+  make input -name {B[11]} -origin {260 1200}
+  make input -name {B[12]} -origin {260 1300}
+  make input -name {B[13]} -origin {260 1400}
+  make input -name {B[14]} -origin {260 1500}
+  make input -name {B[15]} -origin {260 1600}
+  make input -name {B[16]} -origin {260 1700}
+  make input -name {B[17]} -origin {260 1800}
+  make input -name {B[18]} -origin {260 1900}
+  make input -name {B[19]} -origin {260 2000}
+  make input -name {B[20]} -origin {260 2100}
+  make input -name {B[21]} -origin {260 2200}
+  make input -name {B[22]} -origin {260 2300}
+  make input -name {B[23]} -origin {260 2400}
+  make input -name {B[24]} -origin {260 2500}
+  make input -name {B[25]} -origin {260 2600}
+  make input -name {B[26]} -origin {260 2700}
+  make input -name {B[27]} -origin {260 2800}
+  make input -name {B[28]} -origin {260 2900}
+  make input -name {B[29]} -origin {260 3000}
+  make input -name {B[30]} -origin {260 3100}
+  make input -name {B[31]} -origin {260 3200}
+  make input -name {A[0]} -origin {180 80}
+  make input -name {A[1]} -origin {180 180}
+  make input -name {A[2]} -origin {180 280}
+  make input -name {A[3]} -origin {180 380}
+  make input -name {A[4]} -origin {180 480}
+  make input -name {A[5]} -origin {180 580}
+  make input -name {A[6]} -origin {180 680}
+  make input -name {A[7]} -origin {180 780}
+  make input -name {A[8]} -origin {180 880}
+  make input -name {A[9]} -origin {180 980}
+  make input -name {A[10]} -origin {180 1080}
+  make input -name {A[11]} -origin {180 1180}
+  make input -name {A[12]} -origin {180 1280}
+  make input -name {A[13]} -origin {180 1380}
+  make input -name {A[14]} -origin {180 1480}
+  make input -name {A[15]} -origin {180 1580}
+  make input -name {A[16]} -origin {180 1680}
+  make input -name {A[17]} -origin {180 1780}
+  make input -name {A[18]} -origin {180 1880}
+  make input -name {A[19]} -origin {180 1980}
+  make input -name {A[20]} -origin {180 2080}
+  make input -name {A[21]} -origin {180 2180}
+  make input -name {A[22]} -origin {180 2280}
+  make input -name {A[23]} -origin {180 2380}
+  make input -name {A[24]} -origin {180 2480}
+  make input -name {A[25]} -origin {180 2580}
+  make input -name {A[26]} -origin {180 2680}
+  make input -name {A[27]} -origin {180 2780}
+  make input -name {A[28]} -origin {180 2880}
+  make input -name {A[29]} -origin {180 2980}
+  make input -name {A[30]} -origin {180 3080}
+  make input -name {A[31]} -origin {180 3180}
+  make input -name {S[2]} -origin {20 120}
+  make_wire 360 80 180 80
+  make_wire 360 180 180 180
+  make_wire 360 280 180 280
+  make_wire 360 380 180 380
+  make_wire 360 100 260 100
+  make_wire 360 200 260 200
+  make_wire 360 300 260 300
+  make_wire 360 400 260 400
+  make_wire 360 480 180 480
+  make_wire 360 580 180 580
+  make_wire 360 680 180 680
+  make_wire 360 780 180 780
+  make_wire 360 500 260 500
+  make_wire 360 600 260 600
+  make_wire 360 700 260 700
+  make_wire 360 800 260 800
+  make_wire 360 880 180 880
+  make_wire 360 980 180 980
+  make_wire 360 1080 180 1080
+  make_wire 360 1180 180 1180
+  make_wire 360 900 260 900
+  make_wire 360 1000 260 1000
+  make_wire 360 1100 260 1100
+  make_wire 360 1200 260 1200
+  make_wire 360 1280 180 1280
+  make_wire 360 1380 180 1380
+  make_wire 360 1480 180 1480
+  make_wire 360 1580 180 1580
+  make_wire 360 1300 260 1300
+  make_wire 360 1400 260 1400
+  make_wire 360 1500 260 1500
+  make_wire 360 1600 260 1600
+  make_wire 360 1680 180 1680
+  make_wire 360 1780 180 1780
+  make_wire 360 1880 180 1880
+  make_wire 360 1980 180 1980
+  make_wire 360 1700 260 1700
+  make_wire 360 1800 260 1800
+  make_wire 360 1900 260 1900
+  make_wire 360 2000 260 2000
+  make_wire 360 2080 180 2080
+  make_wire 360 2180 180 2180
+  make_wire 360 2280 180 2280
+  make_wire 360 2380 180 2380
+  make_wire 360 2100 260 2100
+  make_wire 360 2200 260 2200
+  make_wire 360 2300 260 2300
+  make_wire 360 2400 260 2400
+  make_wire 360 2480 180 2480
+  make_wire 360 2580 180 2580
+  make_wire 360 2680 180 2680
+  make_wire 360 2780 180 2780
+  make_wire 360 2500 260 2500
+  make_wire 360 2600 260 2600
+  make_wire 360 2700 260 2700
+  make_wire 360 2800 260 2800
+  make_wire 360 2880 180 2880
+  make_wire 360 2980 180 2980
+  make_wire 360 3080 180 3080
+  make_wire 360 3180 180 3180
+  make_wire 360 2900 260 2900
+  make_wire 360 3000 260 3000
+  make_wire 360 3100 260 3100
+  make_wire 360 3200 260 3200
+  make_wire 360 120 20 120
+  make_wire 20 3220 360 3220
+  make_wire 360 220 20 220
+  make_wire 20 220 20 120
+  make_wire 360 320 20 320
+  make_wire 20 320 20 220
+  make_wire 360 420 20 420
+  make_wire 20 420 20 320
+  make_wire 360 520 20 520
+  make_wire 20 520 20 420
+  make_wire 360 620 20 620
+  make_wire 20 620 20 520
+  make_wire 360 720 20 720
+  make_wire 20 720 20 620
+  make_wire 360 820 20 820
+  make_wire 20 820 20 720
+  make_wire 360 920 20 920
+  make_wire 20 920 20 820
+  make_wire 360 1020 20 1020
+  make_wire 20 1020 20 920
+  make_wire 360 1120 20 1120
+  make_wire 20 1120 20 1020
+  make_wire 360 1220 20 1220
+  make_wire 20 1220 20 1120
+  make_wire 360 1320 20 1320
+  make_wire 20 1320 20 1220
+  make_wire 360 1420 20 1420
+  make_wire 20 1420 20 1320
+  make_wire 360 1520 20 1520
+  make_wire 20 1520 20 1420
+  make_wire 360 1620 20 1620
+  make_wire 20 1620 20 1520
+  make_wire 360 1720 20 1720
+  make_wire 20 1720 20 1620
+  make_wire 360 1820 20 1820
+  make_wire 20 1820 20 1720
+  make_wire 360 1920 20 1920
+  make_wire 20 1920 20 1820
+  make_wire 360 2020 20 2020
+  make_wire 20 2020 20 1920
+  make_wire 360 2120 20 2120
+  make_wire 20 2120 20 2020
+  make_wire 360 2220 20 2220
+  make_wire 20 2220 20 2120
+  make_wire 360 2320 20 2320
+  make_wire 20 2320 20 2220
+  make_wire 360 2420 20 2420
+  make_wire 20 2420 20 2320
+  make_wire 360 2520 20 2520
+  make_wire 20 2520 20 2420
+  make_wire 360 2620 20 2620
+  make_wire 20 2620 20 2520
+  make_wire 360 2720 20 2720
+  make_wire 20 2720 20 2620
+  make_wire 360 2820 20 2820
+  make_wire 20 2820 20 2720
+  make_wire 360 2920 20 2920
+  make_wire 20 2920 20 2820
+  make_wire 360 3020 20 3020
+  make_wire 20 3020 20 2920
+  make_wire 360 3120 20 3120
+  make_wire 20 3120 20 3020
+  make_wire 20 3120 20 3220
+}
+
+proc ICON_MUX_64_32 args {
+  icon_setup $args {{origin {0 0}} {orient R0} {name {}} {M {}} {dpc {}}}
+  icon_term -type input -origin {-100 -20} -name {A[31:0]}
+  icon_term -type input -origin {-100 0} -name {B[31:0]}
+  icon_term -type input -origin {-100 20} -name {S[2]}
+  icon_term -type output -origin {100 -20} -name {Out[31:0]}
+  icon_property -origin {-50 130} -type user -name name
+  icon_property -origin {-50 150} -type user -name M
+  icon_property -origin {-50 170} -type user -name dpc
+  icon_line -100 -50 -100 40 100 40 100 -50 -100 -50
+  icon_property -origin {-90 -20} -label {A[31:0]}
+  icon_property -origin {-90 0} -label {B[31:0]}
+  icon_property -origin {-90 20} -label {S[2]}
+  icon_property -origin {10 -20} -label {Out[31:0]}
+  icon_property -origin {-20 30} -label MUX_64_32
+}
+

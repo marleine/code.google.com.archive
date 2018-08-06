@@ -1,0 +1,54 @@
+| units: 1.0  tech: sue  format: MIT
+A data input
+A write input
+A out output
+| begin inverter 560 210
+| device inverter.nmos 550 360
+n out gnd net_2 24 100
+| device inverter.pmos 550 200
+p out vdd net_2 24 200
+| end inverter
+| device nmos.1 390 260
+n write net_1 net_2 24 100
+| device nmos.2 390 260
+n write net_1 net_2 24 100
+| device nmos.3 390 260
+n write net_1 net_2 24 100
+| device nmos.4 390 260
+n write net_1 net_2 24 100
+| begin inverter_1 550 380
+| device inverter_1.nmos.1 550 360
+n net_2 gnd out 24 100
+| device inverter_1.nmos.2 550 360
+n net_2 gnd out 24 100
+| device inverter_1.nmos.3 550 360
+n net_2 gnd out 24 100
+| device inverter_1.nmos.4 550 360
+n net_2 gnd out 24 100
+| device inverter_1.pmos.1 550 200
+p net_2 vdd out 24 200
+| device inverter_1.pmos.2 550 200
+p net_2 vdd out 24 200
+| device inverter_1.pmos.3 550 200
+p net_2 vdd out 24 200
+| device inverter_1.pmos.4 550 200
+p net_2 vdd out 24 200
+| end inverter_1
+| begin inverter_2 290 260
+| device inverter_2.nmos.1 550 360
+n data gnd net_1 24 100
+| device inverter_2.nmos.2 550 360
+n data gnd net_1 24 100
+| device inverter_2.nmos.3 550 360
+n data gnd net_1 24 100
+| device inverter_2.nmos.4 550 360
+n data gnd net_1 24 100
+| device inverter_2.pmos.1 550 200
+p data vdd net_1 24 200
+| device inverter_2.pmos.2 550 200
+p data vdd net_1 24 200
+| device inverter_2.pmos.3 550 200
+p data vdd net_1 24 200
+| device inverter_2.pmos.4 550 200
+p data vdd net_1 24 200
+| end inverter_2

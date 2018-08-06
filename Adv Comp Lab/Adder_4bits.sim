@@ -1,0 +1,487 @@
+| units: 1.0  tech: sue  format: MIT
+A A[0] input
+A A[1] input
+A A[2] input
+A A[3] input
+A B[0] input
+A B[1] input
+A B[2] input
+A B[3] input
+A Cin input
+A Cout output
+A S[0] output
+A S[1] output
+A S[2] output
+A S[3] output
+| begin Adder_FA 410 180
+| begin Adder_FA.Adder_HA 290 180
+| begin Adder_FA.Adder_HA.my_xor 450 350
+| begin Adder_FA.Adder_HA.my_xor.inverter 360 410
+| device Adder_FA.Adder_HA.my_xor.inverter.nmos 550 360
+n A[0] gnd Adder_FA.Adder_HA.my_xor.net_3 24 100
+| device Adder_FA.Adder_HA.my_xor.inverter.pmos 550 200
+p A[0] vdd Adder_FA.Adder_HA.my_xor.net_3 24 200
+| end Adder_FA.Adder_HA.my_xor.inverter
+| begin Adder_FA.Adder_HA.my_xor.inverter_1 610 410
+| device Adder_FA.Adder_HA.my_xor.inverter_1.nmos 550 360
+n Adder_FA.Adder_HA.my_xor.net_2 gnd Adder_FA.net_1 24 300
+| device Adder_FA.Adder_HA.my_xor.inverter_1.pmos 550 200
+p Adder_FA.Adder_HA.my_xor.net_2 vdd Adder_FA.net_1 24 600
+| end Adder_FA.Adder_HA.my_xor.inverter_1
+| begin Adder_FA.Adder_HA.my_xor.inverter_2 360 340
+| device Adder_FA.Adder_HA.my_xor.inverter_2.nmos 550 360
+n B[0] gnd Adder_FA.Adder_HA.my_xor.net_1 24 100
+| device Adder_FA.Adder_HA.my_xor.inverter_2.pmos 550 200
+p B[0] vdd Adder_FA.Adder_HA.my_xor.net_1 24 200
+| end Adder_FA.Adder_HA.my_xor.inverter_2
+| begin Adder_FA.Adder_HA.my_xor.xgate 470 490
+| device Adder_FA.Adder_HA.my_xor.xgate.pmos 520 310
+p Adder_FA.Adder_HA.my_xor.net_3 B[0] Adder_FA.Adder_HA.my_xor.net_2 24 200
+| device Adder_FA.Adder_HA.my_xor.xgate.nmos 520 250
+n A[0] B[0] Adder_FA.Adder_HA.my_xor.net_2 24 100
+| end Adder_FA.Adder_HA.my_xor.xgate
+| begin Adder_FA.Adder_HA.my_xor.xgate_1 470 340
+| device Adder_FA.Adder_HA.my_xor.xgate_1.pmos 520 310
+p A[0] Adder_FA.Adder_HA.my_xor.net_1 Adder_FA.Adder_HA.my_xor.net_2 24 200
+| device Adder_FA.Adder_HA.my_xor.xgate_1.nmos 520 250
+n Adder_FA.Adder_HA.my_xor.net_3 Adder_FA.Adder_HA.my_xor.net_1 Adder_FA.Adder_HA.my_xor.net_2 24 100
+| end Adder_FA.Adder_HA.my_xor.xgate_1
+| end Adder_FA.Adder_HA.my_xor
+| begin Adder_FA.Adder_HA.nand2 510 470
+| device Adder_FA.Adder_HA.nand2.pmos 0 -100
+p A[0] vdd Adder_FA.Adder_HA.net_1 24 200
+| device Adder_FA.Adder_HA.nand2.nmos 0 0
+n A[0] Adder_FA.Adder_HA.nand2.net_1 Adder_FA.Adder_HA.net_1 24 200
+| device Adder_FA.Adder_HA.nand2.pmos_1 160 -100
+p B[0] vdd Adder_FA.Adder_HA.net_1 24 200
+| device Adder_FA.Adder_HA.nand2.nmos_1 0 100
+n B[0] gnd Adder_FA.Adder_HA.nand2.net_1 24 200
+| end Adder_FA.Adder_HA.nand2
+| begin Adder_FA.Adder_HA.inverter 650 470
+| device Adder_FA.Adder_HA.inverter.nmos 550 360
+n Adder_FA.Adder_HA.net_1 gnd Adder_FA.net_2 24 100
+| device Adder_FA.Adder_HA.inverter.pmos 550 200
+p Adder_FA.Adder_HA.net_1 vdd Adder_FA.net_2 24 200
+| end Adder_FA.Adder_HA.inverter
+| end Adder_FA.Adder_HA
+| begin Adder_FA.Adder_HA_1 610 230
+| begin Adder_FA.Adder_HA_1.my_xor 450 350
+| begin Adder_FA.Adder_HA_1.my_xor.inverter 360 410
+| device Adder_FA.Adder_HA_1.my_xor.inverter.nmos 550 360
+n Adder_FA.net_1 gnd Adder_FA.Adder_HA_1.my_xor.net_3 24 100
+| device Adder_FA.Adder_HA_1.my_xor.inverter.pmos 550 200
+p Adder_FA.net_1 vdd Adder_FA.Adder_HA_1.my_xor.net_3 24 200
+| end Adder_FA.Adder_HA_1.my_xor.inverter
+| begin Adder_FA.Adder_HA_1.my_xor.inverter_1 610 410
+| device Adder_FA.Adder_HA_1.my_xor.inverter_1.nmos 550 360
+n Adder_FA.Adder_HA_1.my_xor.net_2 gnd S[0] 24 300
+| device Adder_FA.Adder_HA_1.my_xor.inverter_1.pmos 550 200
+p Adder_FA.Adder_HA_1.my_xor.net_2 vdd S[0] 24 600
+| end Adder_FA.Adder_HA_1.my_xor.inverter_1
+| begin Adder_FA.Adder_HA_1.my_xor.inverter_2 360 340
+| device Adder_FA.Adder_HA_1.my_xor.inverter_2.nmos 550 360
+n Cin gnd Adder_FA.Adder_HA_1.my_xor.net_1 24 100
+| device Adder_FA.Adder_HA_1.my_xor.inverter_2.pmos 550 200
+p Cin vdd Adder_FA.Adder_HA_1.my_xor.net_1 24 200
+| end Adder_FA.Adder_HA_1.my_xor.inverter_2
+| begin Adder_FA.Adder_HA_1.my_xor.xgate 470 490
+| device Adder_FA.Adder_HA_1.my_xor.xgate.pmos 520 310
+p Adder_FA.Adder_HA_1.my_xor.net_3 Cin Adder_FA.Adder_HA_1.my_xor.net_2 24 200
+| device Adder_FA.Adder_HA_1.my_xor.xgate.nmos 520 250
+n Adder_FA.net_1 Cin Adder_FA.Adder_HA_1.my_xor.net_2 24 100
+| end Adder_FA.Adder_HA_1.my_xor.xgate
+| begin Adder_FA.Adder_HA_1.my_xor.xgate_1 470 340
+| device Adder_FA.Adder_HA_1.my_xor.xgate_1.pmos 520 310
+p Adder_FA.net_1 Adder_FA.Adder_HA_1.my_xor.net_1 Adder_FA.Adder_HA_1.my_xor.net_2 24 200
+| device Adder_FA.Adder_HA_1.my_xor.xgate_1.nmos 520 250
+n Adder_FA.Adder_HA_1.my_xor.net_3 Adder_FA.Adder_HA_1.my_xor.net_1 Adder_FA.Adder_HA_1.my_xor.net_2 24 100
+| end Adder_FA.Adder_HA_1.my_xor.xgate_1
+| end Adder_FA.Adder_HA_1.my_xor
+| begin Adder_FA.Adder_HA_1.nand2 510 470
+| device Adder_FA.Adder_HA_1.nand2.pmos 0 -100
+p Adder_FA.net_1 vdd Adder_FA.Adder_HA_1.net_1 24 200
+| device Adder_FA.Adder_HA_1.nand2.nmos 0 0
+n Adder_FA.net_1 Adder_FA.Adder_HA_1.nand2.net_1 Adder_FA.Adder_HA_1.net_1 24 200
+| device Adder_FA.Adder_HA_1.nand2.pmos_1 160 -100
+p Cin vdd Adder_FA.Adder_HA_1.net_1 24 200
+| device Adder_FA.Adder_HA_1.nand2.nmos_1 0 100
+n Cin gnd Adder_FA.Adder_HA_1.nand2.net_1 24 200
+| end Adder_FA.Adder_HA_1.nand2
+| begin Adder_FA.Adder_HA_1.inverter 650 470
+| device Adder_FA.Adder_HA_1.inverter.nmos 550 360
+n Adder_FA.Adder_HA_1.net_1 gnd Adder_FA.net_3 24 100
+| device Adder_FA.Adder_HA_1.inverter.pmos 550 200
+p Adder_FA.Adder_HA_1.net_1 vdd Adder_FA.net_3 24 200
+| end Adder_FA.Adder_HA_1.inverter
+| end Adder_FA.Adder_HA_1
+| begin Adder_FA.nor2 790 310
+| device Adder_FA.nor2.nmos 0 100
+n Adder_FA.net_2 gnd Adder_FA.net_4 24 100
+| device Adder_FA.nor2.pmos 0 0
+p Adder_FA.net_2 Adder_FA.nor2.net_1 Adder_FA.net_4 24 400
+| device Adder_FA.nor2.nmos_1 160 100
+n Adder_FA.net_3 gnd Adder_FA.net_4 24 100
+| device Adder_FA.nor2.pmos_1 0 -100
+p Adder_FA.net_3 vdd Adder_FA.nor2.net_1 24 400
+| end Adder_FA.nor2
+| begin Adder_FA.inverter 910 310
+| device Adder_FA.inverter.nmos 550 360
+n Adder_FA.net_4 gnd net_2 24 100
+| device Adder_FA.inverter.pmos 550 200
+p Adder_FA.net_4 vdd net_2 24 200
+| end Adder_FA.inverter
+| end Adder_FA
+| begin Adder_FA_1 410 320
+| begin Adder_FA_1.Adder_HA 290 180
+| begin Adder_FA_1.Adder_HA.my_xor 450 350
+| begin Adder_FA_1.Adder_HA.my_xor.inverter 360 410
+| device Adder_FA_1.Adder_HA.my_xor.inverter.nmos 550 360
+n A[1] gnd Adder_FA_1.Adder_HA.my_xor.net_3 24 100
+| device Adder_FA_1.Adder_HA.my_xor.inverter.pmos 550 200
+p A[1] vdd Adder_FA_1.Adder_HA.my_xor.net_3 24 200
+| end Adder_FA_1.Adder_HA.my_xor.inverter
+| begin Adder_FA_1.Adder_HA.my_xor.inverter_1 610 410
+| device Adder_FA_1.Adder_HA.my_xor.inverter_1.nmos 550 360
+n Adder_FA_1.Adder_HA.my_xor.net_2 gnd Adder_FA_1.net_1 24 300
+| device Adder_FA_1.Adder_HA.my_xor.inverter_1.pmos 550 200
+p Adder_FA_1.Adder_HA.my_xor.net_2 vdd Adder_FA_1.net_1 24 600
+| end Adder_FA_1.Adder_HA.my_xor.inverter_1
+| begin Adder_FA_1.Adder_HA.my_xor.inverter_2 360 340
+| device Adder_FA_1.Adder_HA.my_xor.inverter_2.nmos 550 360
+n B[1] gnd Adder_FA_1.Adder_HA.my_xor.net_1 24 100
+| device Adder_FA_1.Adder_HA.my_xor.inverter_2.pmos 550 200
+p B[1] vdd Adder_FA_1.Adder_HA.my_xor.net_1 24 200
+| end Adder_FA_1.Adder_HA.my_xor.inverter_2
+| begin Adder_FA_1.Adder_HA.my_xor.xgate 470 490
+| device Adder_FA_1.Adder_HA.my_xor.xgate.pmos 520 310
+p Adder_FA_1.Adder_HA.my_xor.net_3 B[1] Adder_FA_1.Adder_HA.my_xor.net_2 24 200
+| device Adder_FA_1.Adder_HA.my_xor.xgate.nmos 520 250
+n A[1] B[1] Adder_FA_1.Adder_HA.my_xor.net_2 24 100
+| end Adder_FA_1.Adder_HA.my_xor.xgate
+| begin Adder_FA_1.Adder_HA.my_xor.xgate_1 470 340
+| device Adder_FA_1.Adder_HA.my_xor.xgate_1.pmos 520 310
+p A[1] Adder_FA_1.Adder_HA.my_xor.net_1 Adder_FA_1.Adder_HA.my_xor.net_2 24 200
+| device Adder_FA_1.Adder_HA.my_xor.xgate_1.nmos 520 250
+n Adder_FA_1.Adder_HA.my_xor.net_3 Adder_FA_1.Adder_HA.my_xor.net_1 Adder_FA_1.Adder_HA.my_xor.net_2 24 100
+| end Adder_FA_1.Adder_HA.my_xor.xgate_1
+| end Adder_FA_1.Adder_HA.my_xor
+| begin Adder_FA_1.Adder_HA.nand2 510 470
+| device Adder_FA_1.Adder_HA.nand2.pmos 0 -100
+p A[1] vdd Adder_FA_1.Adder_HA.net_1 24 200
+| device Adder_FA_1.Adder_HA.nand2.nmos 0 0
+n A[1] Adder_FA_1.Adder_HA.nand2.net_1 Adder_FA_1.Adder_HA.net_1 24 200
+| device Adder_FA_1.Adder_HA.nand2.pmos_1 160 -100
+p B[1] vdd Adder_FA_1.Adder_HA.net_1 24 200
+| device Adder_FA_1.Adder_HA.nand2.nmos_1 0 100
+n B[1] gnd Adder_FA_1.Adder_HA.nand2.net_1 24 200
+| end Adder_FA_1.Adder_HA.nand2
+| begin Adder_FA_1.Adder_HA.inverter 650 470
+| device Adder_FA_1.Adder_HA.inverter.nmos 550 360
+n Adder_FA_1.Adder_HA.net_1 gnd Adder_FA_1.net_2 24 100
+| device Adder_FA_1.Adder_HA.inverter.pmos 550 200
+p Adder_FA_1.Adder_HA.net_1 vdd Adder_FA_1.net_2 24 200
+| end Adder_FA_1.Adder_HA.inverter
+| end Adder_FA_1.Adder_HA
+| begin Adder_FA_1.Adder_HA_1 610 230
+| begin Adder_FA_1.Adder_HA_1.my_xor 450 350
+| begin Adder_FA_1.Adder_HA_1.my_xor.inverter 360 410
+| device Adder_FA_1.Adder_HA_1.my_xor.inverter.nmos 550 360
+n Adder_FA_1.net_1 gnd Adder_FA_1.Adder_HA_1.my_xor.net_3 24 100
+| device Adder_FA_1.Adder_HA_1.my_xor.inverter.pmos 550 200
+p Adder_FA_1.net_1 vdd Adder_FA_1.Adder_HA_1.my_xor.net_3 24 200
+| end Adder_FA_1.Adder_HA_1.my_xor.inverter
+| begin Adder_FA_1.Adder_HA_1.my_xor.inverter_1 610 410
+| device Adder_FA_1.Adder_HA_1.my_xor.inverter_1.nmos 550 360
+n Adder_FA_1.Adder_HA_1.my_xor.net_2 gnd S[1] 24 300
+| device Adder_FA_1.Adder_HA_1.my_xor.inverter_1.pmos 550 200
+p Adder_FA_1.Adder_HA_1.my_xor.net_2 vdd S[1] 24 600
+| end Adder_FA_1.Adder_HA_1.my_xor.inverter_1
+| begin Adder_FA_1.Adder_HA_1.my_xor.inverter_2 360 340
+| device Adder_FA_1.Adder_HA_1.my_xor.inverter_2.nmos 550 360
+n net_2 gnd Adder_FA_1.Adder_HA_1.my_xor.net_1 24 100
+| device Adder_FA_1.Adder_HA_1.my_xor.inverter_2.pmos 550 200
+p net_2 vdd Adder_FA_1.Adder_HA_1.my_xor.net_1 24 200
+| end Adder_FA_1.Adder_HA_1.my_xor.inverter_2
+| begin Adder_FA_1.Adder_HA_1.my_xor.xgate 470 490
+| device Adder_FA_1.Adder_HA_1.my_xor.xgate.pmos 520 310
+p Adder_FA_1.Adder_HA_1.my_xor.net_3 net_2 Adder_FA_1.Adder_HA_1.my_xor.net_2 24 200
+| device Adder_FA_1.Adder_HA_1.my_xor.xgate.nmos 520 250
+n Adder_FA_1.net_1 net_2 Adder_FA_1.Adder_HA_1.my_xor.net_2 24 100
+| end Adder_FA_1.Adder_HA_1.my_xor.xgate
+| begin Adder_FA_1.Adder_HA_1.my_xor.xgate_1 470 340
+| device Adder_FA_1.Adder_HA_1.my_xor.xgate_1.pmos 520 310
+p Adder_FA_1.net_1 Adder_FA_1.Adder_HA_1.my_xor.net_1 Adder_FA_1.Adder_HA_1.my_xor.net_2 24 200
+| device Adder_FA_1.Adder_HA_1.my_xor.xgate_1.nmos 520 250
+n Adder_FA_1.Adder_HA_1.my_xor.net_3 Adder_FA_1.Adder_HA_1.my_xor.net_1 Adder_FA_1.Adder_HA_1.my_xor.net_2 24 100
+| end Adder_FA_1.Adder_HA_1.my_xor.xgate_1
+| end Adder_FA_1.Adder_HA_1.my_xor
+| begin Adder_FA_1.Adder_HA_1.nand2 510 470
+| device Adder_FA_1.Adder_HA_1.nand2.pmos 0 -100
+p Adder_FA_1.net_1 vdd Adder_FA_1.Adder_HA_1.net_1 24 200
+| device Adder_FA_1.Adder_HA_1.nand2.nmos 0 0
+n Adder_FA_1.net_1 Adder_FA_1.Adder_HA_1.nand2.net_1 Adder_FA_1.Adder_HA_1.net_1 24 200
+| device Adder_FA_1.Adder_HA_1.nand2.pmos_1 160 -100
+p net_2 vdd Adder_FA_1.Adder_HA_1.net_1 24 200
+| device Adder_FA_1.Adder_HA_1.nand2.nmos_1 0 100
+n net_2 gnd Adder_FA_1.Adder_HA_1.nand2.net_1 24 200
+| end Adder_FA_1.Adder_HA_1.nand2
+| begin Adder_FA_1.Adder_HA_1.inverter 650 470
+| device Adder_FA_1.Adder_HA_1.inverter.nmos 550 360
+n Adder_FA_1.Adder_HA_1.net_1 gnd Adder_FA_1.net_3 24 100
+| device Adder_FA_1.Adder_HA_1.inverter.pmos 550 200
+p Adder_FA_1.Adder_HA_1.net_1 vdd Adder_FA_1.net_3 24 200
+| end Adder_FA_1.Adder_HA_1.inverter
+| end Adder_FA_1.Adder_HA_1
+| begin Adder_FA_1.nor2 790 310
+| device Adder_FA_1.nor2.nmos 0 100
+n Adder_FA_1.net_2 gnd Adder_FA_1.net_4 24 100
+| device Adder_FA_1.nor2.pmos 0 0
+p Adder_FA_1.net_2 Adder_FA_1.nor2.net_1 Adder_FA_1.net_4 24 400
+| device Adder_FA_1.nor2.nmos_1 160 100
+n Adder_FA_1.net_3 gnd Adder_FA_1.net_4 24 100
+| device Adder_FA_1.nor2.pmos_1 0 -100
+p Adder_FA_1.net_3 vdd Adder_FA_1.nor2.net_1 24 400
+| end Adder_FA_1.nor2
+| begin Adder_FA_1.inverter 910 310
+| device Adder_FA_1.inverter.nmos 550 360
+n Adder_FA_1.net_4 gnd net_3 24 100
+| device Adder_FA_1.inverter.pmos 550 200
+p Adder_FA_1.net_4 vdd net_3 24 200
+| end Adder_FA_1.inverter
+| end Adder_FA_1
+| begin Adder_FA_2 410 460
+| begin Adder_FA_2.Adder_HA 290 180
+| begin Adder_FA_2.Adder_HA.my_xor 450 350
+| begin Adder_FA_2.Adder_HA.my_xor.inverter 360 410
+| device Adder_FA_2.Adder_HA.my_xor.inverter.nmos 550 360
+n A[2] gnd Adder_FA_2.Adder_HA.my_xor.net_3 24 100
+| device Adder_FA_2.Adder_HA.my_xor.inverter.pmos 550 200
+p A[2] vdd Adder_FA_2.Adder_HA.my_xor.net_3 24 200
+| end Adder_FA_2.Adder_HA.my_xor.inverter
+| begin Adder_FA_2.Adder_HA.my_xor.inverter_1 610 410
+| device Adder_FA_2.Adder_HA.my_xor.inverter_1.nmos 550 360
+n Adder_FA_2.Adder_HA.my_xor.net_2 gnd Adder_FA_2.net_1 24 300
+| device Adder_FA_2.Adder_HA.my_xor.inverter_1.pmos 550 200
+p Adder_FA_2.Adder_HA.my_xor.net_2 vdd Adder_FA_2.net_1 24 600
+| end Adder_FA_2.Adder_HA.my_xor.inverter_1
+| begin Adder_FA_2.Adder_HA.my_xor.inverter_2 360 340
+| device Adder_FA_2.Adder_HA.my_xor.inverter_2.nmos 550 360
+n B[2] gnd Adder_FA_2.Adder_HA.my_xor.net_1 24 100
+| device Adder_FA_2.Adder_HA.my_xor.inverter_2.pmos 550 200
+p B[2] vdd Adder_FA_2.Adder_HA.my_xor.net_1 24 200
+| end Adder_FA_2.Adder_HA.my_xor.inverter_2
+| begin Adder_FA_2.Adder_HA.my_xor.xgate 470 490
+| device Adder_FA_2.Adder_HA.my_xor.xgate.pmos 520 310
+p Adder_FA_2.Adder_HA.my_xor.net_3 B[2] Adder_FA_2.Adder_HA.my_xor.net_2 24 200
+| device Adder_FA_2.Adder_HA.my_xor.xgate.nmos 520 250
+n A[2] B[2] Adder_FA_2.Adder_HA.my_xor.net_2 24 100
+| end Adder_FA_2.Adder_HA.my_xor.xgate
+| begin Adder_FA_2.Adder_HA.my_xor.xgate_1 470 340
+| device Adder_FA_2.Adder_HA.my_xor.xgate_1.pmos 520 310
+p A[2] Adder_FA_2.Adder_HA.my_xor.net_1 Adder_FA_2.Adder_HA.my_xor.net_2 24 200
+| device Adder_FA_2.Adder_HA.my_xor.xgate_1.nmos 520 250
+n Adder_FA_2.Adder_HA.my_xor.net_3 Adder_FA_2.Adder_HA.my_xor.net_1 Adder_FA_2.Adder_HA.my_xor.net_2 24 100
+| end Adder_FA_2.Adder_HA.my_xor.xgate_1
+| end Adder_FA_2.Adder_HA.my_xor
+| begin Adder_FA_2.Adder_HA.nand2 510 470
+| device Adder_FA_2.Adder_HA.nand2.pmos 0 -100
+p A[2] vdd Adder_FA_2.Adder_HA.net_1 24 200
+| device Adder_FA_2.Adder_HA.nand2.nmos 0 0
+n A[2] Adder_FA_2.Adder_HA.nand2.net_1 Adder_FA_2.Adder_HA.net_1 24 200
+| device Adder_FA_2.Adder_HA.nand2.pmos_1 160 -100
+p B[2] vdd Adder_FA_2.Adder_HA.net_1 24 200
+| device Adder_FA_2.Adder_HA.nand2.nmos_1 0 100
+n B[2] gnd Adder_FA_2.Adder_HA.nand2.net_1 24 200
+| end Adder_FA_2.Adder_HA.nand2
+| begin Adder_FA_2.Adder_HA.inverter 650 470
+| device Adder_FA_2.Adder_HA.inverter.nmos 550 360
+n Adder_FA_2.Adder_HA.net_1 gnd Adder_FA_2.net_2 24 100
+| device Adder_FA_2.Adder_HA.inverter.pmos 550 200
+p Adder_FA_2.Adder_HA.net_1 vdd Adder_FA_2.net_2 24 200
+| end Adder_FA_2.Adder_HA.inverter
+| end Adder_FA_2.Adder_HA
+| begin Adder_FA_2.Adder_HA_1 610 230
+| begin Adder_FA_2.Adder_HA_1.my_xor 450 350
+| begin Adder_FA_2.Adder_HA_1.my_xor.inverter 360 410
+| device Adder_FA_2.Adder_HA_1.my_xor.inverter.nmos 550 360
+n Adder_FA_2.net_1 gnd Adder_FA_2.Adder_HA_1.my_xor.net_3 24 100
+| device Adder_FA_2.Adder_HA_1.my_xor.inverter.pmos 550 200
+p Adder_FA_2.net_1 vdd Adder_FA_2.Adder_HA_1.my_xor.net_3 24 200
+| end Adder_FA_2.Adder_HA_1.my_xor.inverter
+| begin Adder_FA_2.Adder_HA_1.my_xor.inverter_1 610 410
+| device Adder_FA_2.Adder_HA_1.my_xor.inverter_1.nmos 550 360
+n Adder_FA_2.Adder_HA_1.my_xor.net_2 gnd S[2] 24 300
+| device Adder_FA_2.Adder_HA_1.my_xor.inverter_1.pmos 550 200
+p Adder_FA_2.Adder_HA_1.my_xor.net_2 vdd S[2] 24 600
+| end Adder_FA_2.Adder_HA_1.my_xor.inverter_1
+| begin Adder_FA_2.Adder_HA_1.my_xor.inverter_2 360 340
+| device Adder_FA_2.Adder_HA_1.my_xor.inverter_2.nmos 550 360
+n net_3 gnd Adder_FA_2.Adder_HA_1.my_xor.net_1 24 100
+| device Adder_FA_2.Adder_HA_1.my_xor.inverter_2.pmos 550 200
+p net_3 vdd Adder_FA_2.Adder_HA_1.my_xor.net_1 24 200
+| end Adder_FA_2.Adder_HA_1.my_xor.inverter_2
+| begin Adder_FA_2.Adder_HA_1.my_xor.xgate 470 490
+| device Adder_FA_2.Adder_HA_1.my_xor.xgate.pmos 520 310
+p Adder_FA_2.Adder_HA_1.my_xor.net_3 net_3 Adder_FA_2.Adder_HA_1.my_xor.net_2 24 200
+| device Adder_FA_2.Adder_HA_1.my_xor.xgate.nmos 520 250
+n Adder_FA_2.net_1 net_3 Adder_FA_2.Adder_HA_1.my_xor.net_2 24 100
+| end Adder_FA_2.Adder_HA_1.my_xor.xgate
+| begin Adder_FA_2.Adder_HA_1.my_xor.xgate_1 470 340
+| device Adder_FA_2.Adder_HA_1.my_xor.xgate_1.pmos 520 310
+p Adder_FA_2.net_1 Adder_FA_2.Adder_HA_1.my_xor.net_1 Adder_FA_2.Adder_HA_1.my_xor.net_2 24 200
+| device Adder_FA_2.Adder_HA_1.my_xor.xgate_1.nmos 520 250
+n Adder_FA_2.Adder_HA_1.my_xor.net_3 Adder_FA_2.Adder_HA_1.my_xor.net_1 Adder_FA_2.Adder_HA_1.my_xor.net_2 24 100
+| end Adder_FA_2.Adder_HA_1.my_xor.xgate_1
+| end Adder_FA_2.Adder_HA_1.my_xor
+| begin Adder_FA_2.Adder_HA_1.nand2 510 470
+| device Adder_FA_2.Adder_HA_1.nand2.pmos 0 -100
+p Adder_FA_2.net_1 vdd Adder_FA_2.Adder_HA_1.net_1 24 200
+| device Adder_FA_2.Adder_HA_1.nand2.nmos 0 0
+n Adder_FA_2.net_1 Adder_FA_2.Adder_HA_1.nand2.net_1 Adder_FA_2.Adder_HA_1.net_1 24 200
+| device Adder_FA_2.Adder_HA_1.nand2.pmos_1 160 -100
+p net_3 vdd Adder_FA_2.Adder_HA_1.net_1 24 200
+| device Adder_FA_2.Adder_HA_1.nand2.nmos_1 0 100
+n net_3 gnd Adder_FA_2.Adder_HA_1.nand2.net_1 24 200
+| end Adder_FA_2.Adder_HA_1.nand2
+| begin Adder_FA_2.Adder_HA_1.inverter 650 470
+| device Adder_FA_2.Adder_HA_1.inverter.nmos 550 360
+n Adder_FA_2.Adder_HA_1.net_1 gnd Adder_FA_2.net_3 24 100
+| device Adder_FA_2.Adder_HA_1.inverter.pmos 550 200
+p Adder_FA_2.Adder_HA_1.net_1 vdd Adder_FA_2.net_3 24 200
+| end Adder_FA_2.Adder_HA_1.inverter
+| end Adder_FA_2.Adder_HA_1
+| begin Adder_FA_2.nor2 790 310
+| device Adder_FA_2.nor2.nmos 0 100
+n Adder_FA_2.net_2 gnd Adder_FA_2.net_4 24 100
+| device Adder_FA_2.nor2.pmos 0 0
+p Adder_FA_2.net_2 Adder_FA_2.nor2.net_1 Adder_FA_2.net_4 24 400
+| device Adder_FA_2.nor2.nmos_1 160 100
+n Adder_FA_2.net_3 gnd Adder_FA_2.net_4 24 100
+| device Adder_FA_2.nor2.pmos_1 0 -100
+p Adder_FA_2.net_3 vdd Adder_FA_2.nor2.net_1 24 400
+| end Adder_FA_2.nor2
+| begin Adder_FA_2.inverter 910 310
+| device Adder_FA_2.inverter.nmos 550 360
+n Adder_FA_2.net_4 gnd net_1 24 100
+| device Adder_FA_2.inverter.pmos 550 200
+p Adder_FA_2.net_4 vdd net_1 24 200
+| end Adder_FA_2.inverter
+| end Adder_FA_2
+| begin Adder_FA_3 410 590
+| begin Adder_FA_3.Adder_HA 290 180
+| begin Adder_FA_3.Adder_HA.my_xor 450 350
+| begin Adder_FA_3.Adder_HA.my_xor.inverter 360 410
+| device Adder_FA_3.Adder_HA.my_xor.inverter.nmos 550 360
+n A[3] gnd Adder_FA_3.Adder_HA.my_xor.net_3 24 100
+| device Adder_FA_3.Adder_HA.my_xor.inverter.pmos 550 200
+p A[3] vdd Adder_FA_3.Adder_HA.my_xor.net_3 24 200
+| end Adder_FA_3.Adder_HA.my_xor.inverter
+| begin Adder_FA_3.Adder_HA.my_xor.inverter_1 610 410
+| device Adder_FA_3.Adder_HA.my_xor.inverter_1.nmos 550 360
+n Adder_FA_3.Adder_HA.my_xor.net_2 gnd Adder_FA_3.net_1 24 300
+| device Adder_FA_3.Adder_HA.my_xor.inverter_1.pmos 550 200
+p Adder_FA_3.Adder_HA.my_xor.net_2 vdd Adder_FA_3.net_1 24 600
+| end Adder_FA_3.Adder_HA.my_xor.inverter_1
+| begin Adder_FA_3.Adder_HA.my_xor.inverter_2 360 340
+| device Adder_FA_3.Adder_HA.my_xor.inverter_2.nmos 550 360
+n B[3] gnd Adder_FA_3.Adder_HA.my_xor.net_1 24 100
+| device Adder_FA_3.Adder_HA.my_xor.inverter_2.pmos 550 200
+p B[3] vdd Adder_FA_3.Adder_HA.my_xor.net_1 24 200
+| end Adder_FA_3.Adder_HA.my_xor.inverter_2
+| begin Adder_FA_3.Adder_HA.my_xor.xgate 470 490
+| device Adder_FA_3.Adder_HA.my_xor.xgate.pmos 520 310
+p Adder_FA_3.Adder_HA.my_xor.net_3 B[3] Adder_FA_3.Adder_HA.my_xor.net_2 24 200
+| device Adder_FA_3.Adder_HA.my_xor.xgate.nmos 520 250
+n A[3] B[3] Adder_FA_3.Adder_HA.my_xor.net_2 24 100
+| end Adder_FA_3.Adder_HA.my_xor.xgate
+| begin Adder_FA_3.Adder_HA.my_xor.xgate_1 470 340
+| device Adder_FA_3.Adder_HA.my_xor.xgate_1.pmos 520 310
+p A[3] Adder_FA_3.Adder_HA.my_xor.net_1 Adder_FA_3.Adder_HA.my_xor.net_2 24 200
+| device Adder_FA_3.Adder_HA.my_xor.xgate_1.nmos 520 250
+n Adder_FA_3.Adder_HA.my_xor.net_3 Adder_FA_3.Adder_HA.my_xor.net_1 Adder_FA_3.Adder_HA.my_xor.net_2 24 100
+| end Adder_FA_3.Adder_HA.my_xor.xgate_1
+| end Adder_FA_3.Adder_HA.my_xor
+| begin Adder_FA_3.Adder_HA.nand2 510 470
+| device Adder_FA_3.Adder_HA.nand2.pmos 0 -100
+p A[3] vdd Adder_FA_3.Adder_HA.net_1 24 200
+| device Adder_FA_3.Adder_HA.nand2.nmos 0 0
+n A[3] Adder_FA_3.Adder_HA.nand2.net_1 Adder_FA_3.Adder_HA.net_1 24 200
+| device Adder_FA_3.Adder_HA.nand2.pmos_1 160 -100
+p B[3] vdd Adder_FA_3.Adder_HA.net_1 24 200
+| device Adder_FA_3.Adder_HA.nand2.nmos_1 0 100
+n B[3] gnd Adder_FA_3.Adder_HA.nand2.net_1 24 200
+| end Adder_FA_3.Adder_HA.nand2
+| begin Adder_FA_3.Adder_HA.inverter 650 470
+| device Adder_FA_3.Adder_HA.inverter.nmos 550 360
+n Adder_FA_3.Adder_HA.net_1 gnd Adder_FA_3.net_2 24 100
+| device Adder_FA_3.Adder_HA.inverter.pmos 550 200
+p Adder_FA_3.Adder_HA.net_1 vdd Adder_FA_3.net_2 24 200
+| end Adder_FA_3.Adder_HA.inverter
+| end Adder_FA_3.Adder_HA
+| begin Adder_FA_3.Adder_HA_1 610 230
+| begin Adder_FA_3.Adder_HA_1.my_xor 450 350
+| begin Adder_FA_3.Adder_HA_1.my_xor.inverter 360 410
+| device Adder_FA_3.Adder_HA_1.my_xor.inverter.nmos 550 360
+n Adder_FA_3.net_1 gnd Adder_FA_3.Adder_HA_1.my_xor.net_3 24 100
+| device Adder_FA_3.Adder_HA_1.my_xor.inverter.pmos 550 200
+p Adder_FA_3.net_1 vdd Adder_FA_3.Adder_HA_1.my_xor.net_3 24 200
+| end Adder_FA_3.Adder_HA_1.my_xor.inverter
+| begin Adder_FA_3.Adder_HA_1.my_xor.inverter_1 610 410
+| device Adder_FA_3.Adder_HA_1.my_xor.inverter_1.nmos 550 360
+n Adder_FA_3.Adder_HA_1.my_xor.net_2 gnd S[3] 24 300
+| device Adder_FA_3.Adder_HA_1.my_xor.inverter_1.pmos 550 200
+p Adder_FA_3.Adder_HA_1.my_xor.net_2 vdd S[3] 24 600
+| end Adder_FA_3.Adder_HA_1.my_xor.inverter_1
+| begin Adder_FA_3.Adder_HA_1.my_xor.inverter_2 360 340
+| device Adder_FA_3.Adder_HA_1.my_xor.inverter_2.nmos 550 360
+n net_1 gnd Adder_FA_3.Adder_HA_1.my_xor.net_1 24 100
+| device Adder_FA_3.Adder_HA_1.my_xor.inverter_2.pmos 550 200
+p net_1 vdd Adder_FA_3.Adder_HA_1.my_xor.net_1 24 200
+| end Adder_FA_3.Adder_HA_1.my_xor.inverter_2
+| begin Adder_FA_3.Adder_HA_1.my_xor.xgate 470 490
+| device Adder_FA_3.Adder_HA_1.my_xor.xgate.pmos 520 310
+p Adder_FA_3.Adder_HA_1.my_xor.net_3 net_1 Adder_FA_3.Adder_HA_1.my_xor.net_2 24 200
+| device Adder_FA_3.Adder_HA_1.my_xor.xgate.nmos 520 250
+n Adder_FA_3.net_1 net_1 Adder_FA_3.Adder_HA_1.my_xor.net_2 24 100
+| end Adder_FA_3.Adder_HA_1.my_xor.xgate
+| begin Adder_FA_3.Adder_HA_1.my_xor.xgate_1 470 340
+| device Adder_FA_3.Adder_HA_1.my_xor.xgate_1.pmos 520 310
+p Adder_FA_3.net_1 Adder_FA_3.Adder_HA_1.my_xor.net_1 Adder_FA_3.Adder_HA_1.my_xor.net_2 24 200
+| device Adder_FA_3.Adder_HA_1.my_xor.xgate_1.nmos 520 250
+n Adder_FA_3.Adder_HA_1.my_xor.net_3 Adder_FA_3.Adder_HA_1.my_xor.net_1 Adder_FA_3.Adder_HA_1.my_xor.net_2 24 100
+| end Adder_FA_3.Adder_HA_1.my_xor.xgate_1
+| end Adder_FA_3.Adder_HA_1.my_xor
+| begin Adder_FA_3.Adder_HA_1.nand2 510 470
+| device Adder_FA_3.Adder_HA_1.nand2.pmos 0 -100
+p Adder_FA_3.net_1 vdd Adder_FA_3.Adder_HA_1.net_1 24 200
+| device Adder_FA_3.Adder_HA_1.nand2.nmos 0 0
+n Adder_FA_3.net_1 Adder_FA_3.Adder_HA_1.nand2.net_1 Adder_FA_3.Adder_HA_1.net_1 24 200
+| device Adder_FA_3.Adder_HA_1.nand2.pmos_1 160 -100
+p net_1 vdd Adder_FA_3.Adder_HA_1.net_1 24 200
+| device Adder_FA_3.Adder_HA_1.nand2.nmos_1 0 100
+n net_1 gnd Adder_FA_3.Adder_HA_1.nand2.net_1 24 200
+| end Adder_FA_3.Adder_HA_1.nand2
+| begin Adder_FA_3.Adder_HA_1.inverter 650 470
+| device Adder_FA_3.Adder_HA_1.inverter.nmos 550 360
+n Adder_FA_3.Adder_HA_1.net_1 gnd Adder_FA_3.net_3 24 100
+| device Adder_FA_3.Adder_HA_1.inverter.pmos 550 200
+p Adder_FA_3.Adder_HA_1.net_1 vdd Adder_FA_3.net_3 24 200
+| end Adder_FA_3.Adder_HA_1.inverter
+| end Adder_FA_3.Adder_HA_1
+| begin Adder_FA_3.nor2 790 310
+| device Adder_FA_3.nor2.nmos 0 100
+n Adder_FA_3.net_2 gnd Adder_FA_3.net_4 24 100
+| device Adder_FA_3.nor2.pmos 0 0
+p Adder_FA_3.net_2 Adder_FA_3.nor2.net_1 Adder_FA_3.net_4 24 400
+| device Adder_FA_3.nor2.nmos_1 160 100
+n Adder_FA_3.net_3 gnd Adder_FA_3.net_4 24 100
+| device Adder_FA_3.nor2.pmos_1 0 -100
+p Adder_FA_3.net_3 vdd Adder_FA_3.nor2.net_1 24 400
+| end Adder_FA_3.nor2
+| begin Adder_FA_3.inverter 910 310
+| device Adder_FA_3.inverter.nmos 550 360
+n Adder_FA_3.net_4 gnd Cout 24 100
+| device Adder_FA_3.inverter.pmos 550 200
+p Adder_FA_3.net_4 vdd Cout 24 200
+| end Adder_FA_3.inverter
+| end Adder_FA_3
